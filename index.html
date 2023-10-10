@@ -15,33 +15,33 @@
     <button type="button" name="menu" class="header__button-menu">menu</button>
   </header>
 
-  <main class="main">
+  <main>
 
-    <section class="main__outdoor-furniture outdoor-furniture">
+    <section class="outdoor-furniture">
       <div class="outdoor-furniture__wrapper">
         <h1 class="outdoor-furniture__title">Уличная мебель</h1>
         <p class="outdoor-furniture__subtitle">из натурального дерева</p>
         <p class="outdoor-furniture__subsubtitle">от Казахстанского производителя</p>
         <button type="button" name="request" class="outdoor-furniture__button">Оставить заявку</button>
 
-        <ul class="outdoor-furniture__benefits.benefits">
-          <li class="benefit__item">
-            <img src="" alt="Доставка" class="benefit__img-truck">
-            <p class="benefit__description">Доставка по всему Казахстану и в страны СНГ</p>
+        <ul class="outdoor-furniture__benefits benefits">
+          <li class="benefits__item">
+            <img src="" alt="Доставка" class="benefits__img-truck">
+            <p class="benefits__description">Доставка по всему Казахстану и в страны СНГ</p>
           </li>
-          <li class="benefit__item">
-            <img src="" alt="Коттедж" class="benefit__img-cottage">
-            <p class="benefit__description">Для дома, дачи, зон отдыха и аквапарков</p>
+          <li class="benefits__item">
+            <img src="" alt="Коттедж" class="benefist__img-cottage">
+            <p class="benefits__description">Для дома, дачи, зон отдыха и аквапарков</p>
           </li>
-          <li class="benefit__item">
-            <img src="" alt="Щит"  class="benefit__img-shield">
-            <p class="benefit__description">Долговечная и надёжная</p>
+          <li class="benefits__item">
+            <img src="" alt="Щит"  class="benefits__img-shield">
+            <p class="benefits__description">Долговечная и надёжная</p>
           </li>
         </ul>   
       </div>
     </section>
 
-    <section class="main__company company">
+    <section class="company">
       <div class="company__wrapper">
         <h2 class="company__title">О компании</h2>
         <img class="company__image" src="" alt="Шлифование" >
@@ -55,7 +55,7 @@
             <p class="company__item-text">Довольных покупателей</p>
           </li>
           <li class="company__list-item">
-            <p class="company__item-number">Собственное производство</p>
+            <p class="company__item-production">Собственное производство</p>
             <p class="company__item-text">в г. Алматы</p>
           </li>
         </ul>
@@ -63,15 +63,15 @@
       </div>
     </section>
 
-    <section class="main__products products">
+    <section class="products">
       <div class="products__wrapper">
         <h2 class="products__title">Об изделиях</h2>
-
+        
         <div class="products__detail information">
           <button type="button" name="details" class="information__toggle">+ Посмотреть преимущество мебели</button>
           <h3 class="information__title">Обработанное дерево</h3>
           <p class="information__description">
-            Сохраняет первоначальный внешний вид даже под воздействием
+            Сохраняет <b>первоначальный внешний вид</b> даже под воздействием
             солнца и влаги
           </p>
         </div>
@@ -86,7 +86,7 @@
           <button type="button" name="details"  class="information__toggle">+ Посмотреть преимущество мебели</button>
           <h3 class="information__title">Акриловая ткань</h3>
           <p class="information__description">
-            Обладает водо- и грязеоталкивающими свойствами, ткань
+            Обладает <b>водо- и грязеоталкивающими свойствами,</b> ткань
             сохраняет цвет окраса даже после стирки и длительного
             воздействия солнца
           </p>
@@ -99,7 +99,7 @@
       </div>
     </section>
 
-    <section class="main__catalog catalog">
+    <section class="catalog">
       <div class="catalog__wrapper">
         <h2 class="catalog__title">Каталог</h2>
         <ul class="catalog__list">
@@ -148,19 +148,21 @@
       </div>
     </section>
 
-    <section class="main__custom-order custom-order">
+    <section class="custom-order">
       <div class="custom-order__wrapper">
         <h2 class="custom-order__title">Ничего не подошло?</h2>
         <p class="custom-order__para">Тогда мы можем изготовить для вас мебель</p>
-        <p class="custom-order__para">по индивидуальному дизайну</p>
+        <p class="custom-order__subpara">по индивидуальному дизайну</p>
         <form class="custom-order__form">
-          <label class="custom-order__label">
+          <label class="custom-order__label-name">
             <input class="custom-order__input" type="text" placeholder="Ваше имя*" required >
           </label>
-          <label class="custom-order__label">
+          <label class="custom-order__label-telephone">
             <input class="custom-order__input" type="text" placeholder="Ваш телефон*" required >
           </label>
-          <textarea class="custom-order__textarea" name="comment" placeholder="Ваш комментарий"></textarea>
+          <label class="custom-order__label-textarea">
+            <textarea class="custom-order__textarea" name="comment" placeholder="Ваш комментарий"></textarea>
+          </label>
           <p class="custom-order__agreement">Нажимая на кнопку, вы даете согласие на
             <a href="#" class="custom-order__link">обработку персональных данных</a>
           </p>
@@ -169,7 +171,7 @@
       </div>
     </section>
 
-    <section class="main__order-process order-process">
+    <section class="order-process">
       <div class="order-process__wrapper">
         <h2 class="order-process__title">Как получить заказ?</h2>
         <ul class="order-process__list">
@@ -189,54 +191,61 @@
             <p class="order-process__description">Срок доставки зависит от вашего региона и занимает от 3-7 дней</p>
           </li>
         </ul>
+        <button type="button" name="request" class="catalog__button">Оставить заявку</button>
       </div>
     </section>
 
-    <article class="main__article article">
+    <article class="article">
       <div class="article__wrapper">
         <h2 class="article__title">Отзывы</h2>
-          <img class="article__image" src="" alt="Анна Иванова">
-          <h3 class="article__author">Анна Иванова</h3>
-          <p class="article__text">
-            Качество и прочность этой мебели просто потрясают меня. Она
-            изготовлена из высококачественного дерева, которое не только
-            выглядит прекрасно, но и обладает прочными свойствами. Мебель
-            выдерживает даже интенсивное использование и долгие периоды на
-            открытом воздухе, сохраняя свою привлекательность и
-            функциональность. Дачная мебель из дерева также добавила
-            особый шарм и натуральность моему саду. Она гармонично
-            вписывается в окружающую природу и создает приятную атмосферу
-            для отдыха и проведения времени на природе. Кроме того, дерево
-            придает мебели теплоту и природную красоту, что делает ее
-            привлекательной для глаза и приятной на ощупь.
-          </p>
-          <img src="" alt="Кирилл Котов" >
-          <h3 class="article__author">Кирилл Котов</h3>
-          <p class="article__text">
-            Я бы хотел поделиться своим восхищением относительно мебели из
-            дерева для моей дачи. Она превратила мою отдыхающую зону в
-            настоящий райский уголок и добавила неповторимую атмосферу
-            природы и комфорта. Первое, что я заметил, это качество
-            изготовления. Каждая деталь моей дачной мебели тщательно
-            вырезана и скручена, создавая прочную и устойчивую
-            конструкцию. Дерево, используемое в изготовлении, кажется
-            очень прочным и долговечным, что делает мою мебель идеальной
-            для использования на открытом воздухе.
-          </p>
-          <img src="" alt="Андрей Головин" >
-          <h3 class="article__author">Андрей Головин</h3>
-          <p class="article__text">
-            В целом, дачная мебель из дерева оправдала все наши ожидания и
-            стала незаменимым элементом нашего загородного участка. Мы
-            наслаждаемся ее красотой, прочностью и функциональностью, и
-            настоятельно рекомендуем ее всем, кто ищет качественную и
-            привлекательную мебель для отдыха на своей даче.
-          </p>
+          <div class="article__reviews reviews">
+            <img class="reviews__image" src="" alt="Анна Иванова">
+            <h3 class="reviews__author">Анна Иванова</h3>
+            <p class="reviews__text">
+              Качество и прочность этой мебели просто потрясают меня. Она
+              изготовлена из высококачественного дерева, которое не только
+              выглядит прекрасно, но и обладает прочными свойствами. Мебель
+              выдерживает даже интенсивное использование и долгие периоды на
+              открытом воздухе, сохраняя свою привлекательность и
+              функциональность. Дачная мебель из дерева также добавила
+              особый шарм и натуральность моему саду. Она гармонично
+              вписывается в окружающую природу и создает приятную атмосферу
+              для отдыха и проведения времени на природе. Кроме того, дерево
+              придает мебели теплоту и природную красоту, что делает ее
+              привлекательной для глаза и приятной на ощупь.
+            </p>
+          </div>
+          <div class="article__reviews reviews">
+            <img class="reviews__image" src="" alt="Кирилл Котов" >
+            <h3 class="reviews__author">Кирилл Котов</h3>
+            <p class="reviews__text">
+              Я бы хотел поделиться своим восхищением относительно мебели из
+              дерева для моей дачи. Она превратила мою отдыхающую зону в
+              настоящий райский уголок и добавила неповторимую атмосферу
+              природы и комфорта. Первое, что я заметил, это качество
+              изготовления. Каждая деталь моей дачной мебели тщательно
+              вырезана и скручена, создавая прочную и устойчивую
+              конструкцию. Дерево, используемое в изготовлении, кажется
+              очень прочным и долговечным, что делает мою мебель идеальной
+              для использования на открытом воздухе.
+            </p>
+          </div>
+          <div class="article__reviews reviews">
+            <img class="reviews__image" src="" alt="Андрей Головин" >
+            <h3 class="reviews__author">Андрей Головин</h3>
+            <p class="reviews__text">
+              В целом, дачная мебель из дерева оправдала все наши ожидания и
+              стала незаменимым элементом нашего загородного участка. Мы
+              наслаждаемся ее красотой, прочностью и функциональностью, и
+              настоятельно рекомендуем ее всем, кто ищет качественную и
+              привлекательную мебель для отдыха на своей даче.
+            </p>
+          </div>
         <button class="article__button" type="button" name="request">Оставить заявку</button>
       </div>
     </article>
 
-    <section class="main__clients clients">
+    <section class="clients">
       <div class="clients__wrapper">
         <h2 class="clients__title">Наши клиенты</h2>
         <ul class="clients-list">
@@ -279,8 +288,8 @@
       г.Астана, ул.Кордай, 2, кв.60 ИИК KZ76 9650 3F00 0817 5335 БИК IRTYKZKA
       в АО "ForteBank"
     </p>
-    <p class="footer__contact-info">мобильный/ватсап<a href="tel:77787757768"> +7 (778) 775-7768</a></p>
-    <a class="footer__email" href="mailto:info@fintax.kz">info@fintax.kz</a>
+    <p class="footer__address">мобильный/ватсап<a class="footer__telephone" href="tel:77787757768"> +7 (778) 775-7768</a></p>
+    <p class="footer__address"><a class="footer__email" href="mailto:info@fintax.kz">info@fintax.kz</a></p>
   </footer>
 </body>
 

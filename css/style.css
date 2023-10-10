@@ -50,14 +50,19 @@
 
 :root {
     --button-color:#9EAF7C;
-    --background-color:#F3F1EC;
-    --backgroundfooter-color:#9EAF7C;
+    --background-color: #F3F1EC;
+    --backgroundfooter-color: #9EAF7C;
     --text-color: #FFFFFF;
+    --subtext-color:#000;
+    --number-color:#9EAF7C;
+    --title-color: #4B4B4B;
+    --border-color: #C3BEBE;
+    --form-color:#FFFFFF;
     font-size: 62.5%;
 }
 body{
     background-color: var(--background-color);
-    width: 390px;
+    width: 300px;
     height: 10060px;
 }
 .header{
@@ -115,17 +120,17 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: 1.92rem;
-    letter-spacing: -0.32px;
-    border-radius: 10px;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
     background: var(--button-color);
-    width: 300px;
-    height: 58px;
+    width: 30rem;
+    height: 5.8rem;
     flex-shrink: 0;
 }
-.benefit__item{
+.benefits__item{
     list-style-type: none;
 }
-.benefit__description{
+.benefits__description{
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
@@ -134,4 +139,380 @@ body{
     line-height: normal;
     letter-spacing: -0.108rem;
 }
-
+.company__title{
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.company__item-number{
+    color: var(--number-color);
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.company__item-production{
+    color: var(--number-color);
+    text-align: center;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.1rem;
+}
+.company__item-text{
+    color: var(--subtext-color);
+    text-align: center;
+    font-family: 'Inter',serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.company__list-item{
+    list-style-type: none;
+}
+.company__button{
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.92rem;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    background: var(--button-color);
+    width: 30rem;
+    height: 5.8rem;
+    flex-shrink: 0;
+}
+.products__title{
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.products__detail{
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
+    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(10.5px);
+}
+.information__title{
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+.information__description{
+    color: var(--title-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.catalog__title{
+    color: var(--title-color);
+    font-family: 'Philosopher',serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.catalog__item{
+    list-style-type: none;
+}
+.product__link{
+    color: var(--title-color);
+    font-family: 'Philosopher',serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6rem;
+    text-decoration: none;
+}
+.catalog__button{
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.92rem;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    background: var(--button-color);
+    width: 30rem;
+    height: 5.8rem;
+    flex-shrink: 0;
+}
+.custom-order__wrapper{
+    background-color: #444237B2;
+    width: 393px;
+    height: 786px;
+    flex-shrink: 0;
+}
+.custom-order__title{
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.192rem;
+}
+.custom-order__para{
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.144rem;
+}
+.custom-order__subpara{
+    color: #FFF;
+    font-family: 'Philosopher', serif;
+    font-size: 3.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.custom-order__label-name{
+    display: flex;
+    width: 300px;
+    height: 48px;
+    padding: 0px 206px 0px 21px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: var(--form-color);
+}
+.custom-order__label-telephone{
+    display: flex;
+    width: 300px;
+    height: 48px;
+    padding: 0px 180px 0px 21px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: var(--form-color);
+}
+.custom-order__input{
+    color:#101213;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.96rem;
+    outline: none;
+    border: none;
+}
+.custom-order__label-textarea{
+    display: inline-flex;
+    height: 110px;
+    padding: 19px 158px 81px 21px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--form-color);
+}
+.custom-order__textarea{
+    color:#101213;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.96rem; 
+    resize: none;
+    outline: none;
+    border: none;
+}
+.custom-order__agreement{
+    color:#FFF;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.custom-order__link{
+    color: #9EAF7C;
+    text-decoration-line: underline;
+}
+.custom-order__button{
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.92rem;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    background: var(--button-color);
+    width: 30rem;
+    height: 5.8rem;
+    flex-shrink: 0;
+}
+.order-process__title{
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.order-process__item{
+    width: 301.154px;
+    height: 406.558px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--form-color);
+    list-style-type: none;
+}
+.order-process__subtitle{
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.96rem;
+}
+.order-process__description{
+    color:var(--title-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.order-process__button{
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.92rem;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    background: var(--button-color);
+    width: 30rem;
+    height: 5.8rem;
+    flex-shrink: 0;
+}
+.article__title{
+    color: var(--title-color);
+    font-family: 'Philosopher',serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.article__reviews{
+    width: 300px;
+    height: 492px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--form-color);
+    
+}
+.reviews__author{
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+.reviews__text{
+    color: var(--title-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.article__button{
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.92rem;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    background: var(--button-color);
+    width: 30rem;
+    height: 5.8rem;
+    flex-shrink: 0;
+}
+.clients__title{
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.clients-list__item{
+    border-radius: 20px;
+    background: var(--form-color);
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+    list-style-type: none;
+    
+}
+.clients-list__name{
+    color: var(--title-color);
+    font-family: 'Philosopher',serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.12rem;
+}
+.footer{
+    background-color: var(--backgroundfooter-color);
+}
+.footer__title{
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer__address{
+    color: var(--text-color);
+    font-family: 'Philosopher',serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8669rem;
+    list-style-type: none;
+}
+.footer__email{
+    text-decoration-line: none;
+    color: var(--text-color);
+}
+.footer__telephone{
+    text-decoration-line: none;
+    color: var(--text-color);
+}
