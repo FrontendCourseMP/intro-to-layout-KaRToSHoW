@@ -1,10 +1,137 @@
+/* inter-300 - cyrillic */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/inter-v13-cyrillic-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-regular - cyrillic */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v13-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - cyrillic */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v13-cyrillic-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* philosopher-regular - cyrillic */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/philosopher-v19-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* philosopher-italic - cyrillic */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/philosopher-v19-cyrillic-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* philosopher-700 - cyrillic */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/philosopher-v19-cyrillic-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
 :root {
-    --button-color: #9EAF7C;
+    --button-color:#9EAF7C;
     --background-color:#F3F1EC;
-    --font
-
+    --backgroundfooter-color:#9EAF7C;
+    --text-color: #FFFFFF;
+    font-size: 62.5%;
 }
-span {
-    font-family:, sans-serif;
-
+body{
+    background-color: var(--background-color);
+    width: 390px;
+    height: 10060px;
 }
+.header{
+    background-color:#444237B2 ;
+    width: 39rem;
+}
+.header__logo-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Philosopher',serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.outdoor-furniture__wrapper{
+    background-color: #444237B2;
+    width: 39rem;
+    height: 78.3rem;
+    flex-shrink: 0;
+    opacity:70%
+}
+.outdoor-furniture__title{
+    color:var(--text-color);
+    font-family: "Inter", sans-serif;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.204rem;
+    width: 92.5rem;
+}
+.outdoor-furniture__subtitle{
+    color: var(--text-color);
+    font-family: 'Philosopher', serif;
+    font-size: 4.0rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.outdoor-furniture__subsubtitle{
+    color: var(--text-color);
+    font-family: 'Inter',sans-serif;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.204rem;
+}
+.outdoor-furniture__button{
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.92rem;
+    letter-spacing: -0.32px;
+    border-radius: 10px;
+    background: var(--button-color);
+    width: 300px;
+    height: 58px;
+    flex-shrink: 0;
+}
+.benefit__item{
+    list-style-type: none;
+}
+.benefit__description{
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.108rem;
+}
+
