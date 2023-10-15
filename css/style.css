@@ -62,12 +62,12 @@
 }
 body{
     background-color: var(--background-color);
-    width: 30rem;
-    height: 1006rem;
 }
 .header{
-    background-color:#444237B2 ;
-    width: 39rem;
+    padding: 25px 0 0;
+    margin-bottom: -77px;
+    position: relative;
+    z-index: 100;
 }
 .header__logo-link{
     text-decoration: none;
@@ -77,11 +77,11 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding: 0px 0px 0px 45px;
 }
 .header__button-menu{
     border-radius: 60px;
     background: var(--button-color);
-    display: flex;
     width: 45px;
     height: 45px;
     padding: 16px;
@@ -89,12 +89,20 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: 0
+    border: 0;
+    margin: 0 0 0 167px;
+}
+.outdoor-furniture{
+    background-image: url(/photo_2023-06-26\ 15.34\ 1\ \(1\).png);
+    width: 390px;
+    height: 804px;
+    padding: 0.01rem 0rem 0;
 }
 .outdoor-furniture__wrapper{
-    background-color: #444237B2;
-    padding: 0.8rem;
-    opacity:70%
+    background: rgba(68, 66, 55, 0.70);
+    width: 390px;
+    height: 804px;
+    padding: 0.01rem 0rem 0;
 }
 .outdoor-furniture__title{
     color:var(--text-color);
@@ -104,6 +112,8 @@ body{
     font-weight: 300;
     line-height: normal;
     letter-spacing: -0.204rem;
+    margin: 13rem 0rem 0rem 0;
+    padding: 0 0 0 4.5rem;
 }
 .outdoor-furniture__subtitle{
     color: var(--text-color);
@@ -112,6 +122,8 @@ body{
     font-style: italic;
     font-weight: 400;
     line-height: normal;
+    margin: 1.3rem 0 0 0;
+    padding: 0 0 0 4.3rem;
 }
 .outdoor-furniture__subsubtitle{
     color: var(--text-color);
@@ -121,6 +133,8 @@ body{
     font-weight: 300;
     line-height: normal;
     letter-spacing: -0.204rem;
+    margin: 0.3rem 0  6.5rem 0;
+    padding: 0 0 0 7.3rem;
 }
 .outdoor-furniture__link{
     color: var(--text-color);
@@ -129,17 +143,27 @@ body{
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.92rem;
+    line-height: 120%;
     letter-spacing: -0.032rem;
     border-radius: 1rem;
+    width: 149px;
+    height: 12px;
     background: var(--button-color);
-    width: 30rem;
-    height: 5.8rem;
     border: 0;
     text-decoration-line: none;
+    padding: 23px 87px;
+    margin: 0 45px 0 45px;
+}
+.outdoor-furniture__benefits{
+    margin: 79px 0px 0px 0px;
+    padding: 0;
+    
 }
 .benefits__item{
     list-style-type: none;
+    padding: 0 41px 0 0;
+    margin: 0 0 0 121px;
+    
 }
 .benefits__description{
     color: var(--text-color);
@@ -149,6 +173,34 @@ body{
     font-weight: 300;
     line-height: normal;
     letter-spacing: -0.108rem;
+    margin: 0 0 36px 0;
+}
+.benefits__img-truck{
+    background-image: url(/image/Ellipse\ 21.svg);
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display:inline-flex;
+    position: absolute;
+    left: 45px;
+}
+.benefits__img-cottage{
+    background-image: url(/image/Ellipse\ 21.svg);
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display:inline-flex;
+    position: absolute;
+    left: 45px;
+}
+.benefits__img-shield{
+    background-image: url(/image/Ellipse\ 21.svg);
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display:inline-flex;
+    position: absolute;
+    left: 45px;
 }
 .company__title{
     color: var(--title-color);
@@ -287,8 +339,6 @@ body{
 }
 .custom-order__wrapper{
     background-color: #444237B2;
-    width: 393px;
-    height: 786px;
     
 }
 .custom-order__title{
@@ -319,17 +369,16 @@ body{
 }
 .custom-order__label-name{
     display: flex;
-    width: 300px;
+    width: 130px;
     height: 48px;
     padding: 0px 206px 0px 21px;
     align-items: center;
-    
     border-radius: 60px;
     background: var(--form-color);
 }
 .custom-order__label-telephone{
     display: flex;
-    width: 300px;
+    width: 130px;
     height: 48px;
     padding: 0px 180px 0px 21px;
     align-items: center;
