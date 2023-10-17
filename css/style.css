@@ -80,7 +80,8 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 0px 0px 0px 45px;
+    margin: 0px 0px 0px 45px;
+    
 }
 .header__button-menu{
     border-radius: 60px;
@@ -96,7 +97,7 @@ body{
     margin: 0 0 0 167px;
 }
 .outdoor-furniture{
-    background-image: url(/photo_2023-06-26\ 15.34\ 1\ \(1\).png);
+    background-image: url(/Image/Background_1block.png);
     width: 390px;
     min-height: 804px;
     padding: 0.01rem 0rem 0;
@@ -159,7 +160,7 @@ body{
     margin: 0 auto;
 }
 .outdoor-furniture__benefits{
-    margin: 57px 0px 0px 0px;
+    margin: 49px 0px 0px 0px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -179,15 +180,16 @@ body{
     font-weight: 300;
     line-height: normal;
     letter-spacing: -0.108rem;
-    margin: 0 0 36px 0;
+    margin: 0 0 20px 0;
     display: flex;
     align-items: center;
 }
 .benefits__img{
     min-width: 60px;
     min-height: 60px;
-    background: #9EAF7C;
+    background: #9EAF7C;/*Заглушка*/
     border-radius: 100px;
+    margin: 0 0 15px 0;
 }
 .company__title{
     color: var(--title-color);
@@ -342,12 +344,10 @@ body{
     padding: 39px 45px 36px 49px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
 }
 .catalog__item{
     list-style-type: none;
     margin-bottom: 20px;
-
 }
 .product__image-big{
     min-width: 298.851px;
@@ -363,6 +363,8 @@ body{
     background: rgba(158, 175, 124, 0.20);
 }
 .product__link{
+    display: block;    
+    text-align: left;
     color: var(--title-color);
     font-family: 'Philosopher',serif;
     font-size: 1.6rem;
@@ -370,6 +372,7 @@ body{
     font-weight: 700;
     line-height: 1.6rem;
     text-decoration: none;
+    padding: 0 25px 0 0;
 }
 .catalog__link{
     color: var(--text-color);
@@ -392,7 +395,7 @@ body{
 
 }
 .custom-order{
-    background-image: url(/Слой\ 1\ 1.png);
+    background-image: url(/Image/background_form.png);
     margin: 46px 0 0 0;
 }
 .custom-order__wrapper{
@@ -419,7 +422,7 @@ body{
     font-weight: 300;
     line-height: normal;
     letter-spacing: -0.144rem;
-    padding: 0 0 0 45px ;
+    padding: 0 20px 0 45px ;
     margin: 0 0 8px 0;
 }
 .custom-order__subpara{
@@ -469,7 +472,7 @@ body{
 .custom-order__label-textarea{
     display: inline-flex;
     height: 110px;
-    padding-right:16px ;
+    padding-right:20px ;
     align-items: center;
     border-radius: 20px;
     background: var(--form-color);
@@ -550,7 +553,7 @@ body{
     margin: 48.5px 0 0 94.5px;
 }
 .order-process__image{
-    background-color: #9EAF7C;
+    background-color: #9EAF7C;/*Заглушка*/
     min-width: 83.654px;
     min-height: 102.894px;
     margin: 47.6px 0 0 112px;
@@ -634,7 +637,7 @@ body{
     width: 89px;
     height: 89px;
     border-radius: 89px;
-    background-color: #9EAF7C;
+    background-color: #9EAF7C;/*Заглушка*/
     margin: 18px 0 0px 18px;
 }
 .reviews__author{
@@ -696,31 +699,30 @@ body{
     border-radius: 20px;
     background: var(--form-color);
     width: 140px;
-    height: 140px;
+    min-height: 140px;
     list-style-type: none; 
     margin: 18.5px 0 0 0;
 }
 .clients-list__image{
     min-width: 84.107px;
     min-height: 84.107px;
-    background-color: #9EAF7C;
+    background-color: #9EAF7C; /*Заглушка*/
     margin: 8px 0 0 27px;
 }
 .clients-list__name{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: block;
     color: var(--title-color);
     font-family: 'Philosopher',serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.6rem;
-    padding-right: 10px;
+    padding: 0 5px 0 0;
+    margin: 10px 0 0 10px;
 }
 .footer{
     background-color: var(--backgroundfooter-color);
-    min-width: auto;
+    min-height: 513px;
 }
 .footer__title{
     color: var(--title-color);
@@ -743,8 +745,8 @@ body{
     margin: 34px 60px 0 45px;
 }
 .footer__contacts{
-    margin: 40px 0 76px 0;
-    padding: 0;
+    margin: 40px 0 0px 0;
+    padding: 0 0 72px 0;
 }
 .footer__telephone{
     text-decoration-line: none;
