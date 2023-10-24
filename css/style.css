@@ -1,115 +1,133 @@
 /* inter-300 - cyrillic */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/inter-v13-cyrillic-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/inter-v13-cyrillic-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* inter-regular - cyrillic */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/inter-v13-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/inter-v13-cyrillic-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* inter-600 - cyrillic */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/inter-v13-cyrillic-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/inter-v13-cyrillic-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* philosopher-regular - cyrillic */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Philosopher';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/philosopher-v19-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/philosopher-v19-cyrillic-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* philosopher-italic - cyrillic */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Philosopher';
     font-style: italic;
     font-weight: 400;
-    src: url('../fonts/philosopher-v19-cyrillic-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/philosopher-v19-cyrillic-italic.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* philosopher-700 - cyrillic */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Philosopher';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/philosopher-v19-cyrillic-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/philosopher-v19-cyrillic-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-
 :root {
-    --button-color:#9EAF7C;
+    --button-color: #9EAF7C;
     --background-color: #F3F1EC;
     --backgroundfooter-color: #9EAF7C;
     --text-color: #FFFFFF;
-    --subtext-color:#000;
-    --number-color:#9EAF7C;
+    --subtext-color: #000;
+    --number-color: #9EAF7C;
     --title-color: #4B4B4B;
     --border-color: #C3BEBE;
-    --form-color:#FFFFFF;
+    --form-color: #FFFFFF;
     font-size: 62.5%;
 }
-body{
+
+body {
     background-color: var(--background-color);
-    width: 39rem;
     margin: 0 auto;
 }
-.header{
-    max-width: 0 auto;
+
+.header {
     padding: 25px 0 0;
     margin-bottom: -77px;
     position: relative;
     z-index: 100;
 }
-.header__logo-link{
+
+.header__logo-link {
     text-decoration: none;
     color: var(--text-color);
-    font-family: 'Philosopher',serif;
+    font-family: 'Philosopher', serif;
     font-size: 4rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin: 0px 0px 0px 45px;
-    
 }
-.header__button-menu{
+
+.header__button-menu {
     border-radius: 60px;
     background: var(--button-color);
     min-width: 45px;
     min-height: 45px;
     padding: 16px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     border: 0;
-    margin: 0 0 0 167px;
+    margin: 0 0 0 0;
+    position: relative;
+    left: 163px;
 }
-.outdoor-furniture{
+
+.outdoor-furniture {
     background-image: url(/Image/Background_1block.png);
-    width: 390px;
+    min-width: 390px;
     min-height: 804px;
     padding: 0.01rem 0rem 0;
 }
-.outdoor-furniture__wrapper{
+
+.outdoor-furniture__wrapper {
     background: rgba(68, 66, 55, 0.70);
     min-width: 390px;
     min-height: 804px;
     padding: 0.01rem 0rem 0;
 }
-.outdoor-furniture__title{
-    color:var(--text-color);
+
+.outdoor-furniture__title {
+    color: var(--text-color);
     font-family: "Inter", sans-serif;
     font-size: 3.4rem;
     font-style: normal;
@@ -119,7 +137,8 @@ body{
     margin: 13rem 0rem 0rem 0;
     padding: 0 0 0 4.5rem;
 }
-.outdoor-furniture__subtitle{
+
+.outdoor-furniture__subtitle {
     color: var(--text-color);
     font-family: 'Philosopher', serif;
     font-size: 4.0rem;
@@ -129,21 +148,23 @@ body{
     margin: 1.3rem 0 0 0;
     padding: 0 0 0 4.3rem;
 }
-.outdoor-furniture__subsubtitle{
+
+.outdoor-furniture__subsubtitle {
     color: var(--text-color);
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 3.4rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: -0.204rem;
-    margin: 0.3rem 0  4.1rem 0;
+    margin: 0.3rem 0 4.1rem 0;
     padding: 0 0 0 7.3rem;
 }
-.outdoor-furniture__link{
+
+.outdoor-furniture__link {
     color: var(--text-color);
     text-align: center;
-    display:block;
+    display: block;
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
@@ -159,20 +180,23 @@ body{
     padding: 20px 87px;
     margin: 0 auto;
 }
-.outdoor-furniture__benefits{
+
+.outdoor-furniture__benefits {
     margin: 49px 0px 0px 0px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
-.benefits__item{
+
+.benefits__item {
     list-style-type: none;
     padding: 0 41px 0 45px;
     display: flex;
     align-items: center;
     gap: 16px;
 }
-.benefits__description{
+
+.benefits__description {
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
@@ -184,14 +208,21 @@ body{
     display: flex;
     align-items: center;
 }
-.benefits__img{
+
+.benefits__img {
     min-width: 60px;
     min-height: 60px;
-    background: #9EAF7C;/*Заглушка*/
+    background: #9EAF7C;
+    /*Заглушка*/
     border-radius: 100px;
     margin: 0 0 15px 0;
 }
-.company__title{
+
+.company {
+    min-width: 390px;
+}
+
+.company__title {
     color: var(--title-color);
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
@@ -201,17 +232,18 @@ body{
     padding: 0 0 0 45px;
     margin: 22px 0 0 0;
 }
-.company__image{
-    padding: 172px 111.5px;
-    margin: 35px 0 0 45px ;
-    border-radius: 20px;
-    border: 5px solid #9EAF7C;
-    background: lightgray 50% / cover no-repeat;
+
+.company__image {
+    padding: 0;
+    margin: 35px 0 0 45px;
+
 }
-.company__list{
+
+.company__list {
     padding: 0;
 }
-.company__item-number{
+
+.company__item-number {
     color: var(--number-color);
     text-align: center;
     font-family: 'Philosopher', sans-serif;
@@ -221,33 +253,43 @@ body{
     line-height: normal;
     margin: 53px 0 0 0;
 }
-.company__item-text{
+
+.image-ovals {
+    position: absolute;
+    left: 19px;
+
+}
+
+.company__item-text {
     color: var(--subtext-color);
     text-align: center;
-    font-family: 'Inter',serif;
+    font-family: 'Inter', serif;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     margin: 0 0 0px 0;
 }
-.company__item-production{
+
+.company__item-production {
     color: var(--number-color);
     text-align: center;
-    font-family: 'Philosopher',sans-serif;
+    font-family: 'Philosopher', sans-serif;
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.1rem;
     margin: 67px 58px 0 59px;
 }
-.company__list-item{
+
+.company__list-item {
     list-style-type: none;
 }
-.company__link{
+
+.company__link {
     color: var(--text-color);
     text-align: center;
-    display:block;
+    display: block;
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
@@ -261,9 +303,14 @@ body{
     border: 0;
     text-decoration-line: none;
     padding: 20px 87px;
-    margin: 73px 0 0 35px;
+    margin: 73px auto;
 }
-.products__title{
+
+.products {
+    min-width: 390px;
+}
+
+.products__title {
     color: var(--title-color);
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
@@ -273,16 +320,20 @@ body{
     padding: 0 0 0 43px;
     margin: 39px 0 39px 0;
 }
-.products__detail{
-    flex-wrap: wrap;
+
+.products__detail {
+    display: block;
     border-radius: 20px;
     border: 1px solid var(--border-color);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
     box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10.5px);
     margin: 0 46px 101px 49px;
+    min-width: 300px;
+    min-height: 180px;
 }
-.products__detail-textile{
+
+.products__detail-textile {
     flex-wrap: wrap;
     border-radius: 20px;
     border: 1px solid var(--border-color);
@@ -290,17 +341,50 @@ body{
     box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10.5px);
     margin: 0 46px 39px 49px;
+    min-width: 300px;
+    z-index: 100;
+    position: relative;
 }
-.information__toggle{
-    display:inline-flex;
+
+.information__toggle {
+    display: inline-flex;
     border-radius: 60px;
     background: var(--button-color);
     width: 33px;
     height: 33px;
     border: 0;
     margin: 10px 0 0 9px;
+    background-image: url(/Image/plus.svg);
 }
-.information__title{
+
+.products__sofa {
+    position: relative;
+    bottom: 120px;
+    left: -92px;
+    border: 0;
+    object-fit: cover;
+}
+
+.sofa__image {
+    position: absolute;
+    width: 482px;
+    object-fit: cover;
+    object-position: 165px 10px;
+}
+
+.products__sofa-two {
+    position: relative;
+    bottom: 130px;
+    left: -330px;
+}
+
+.sofa-two__image {
+    position: absolute;
+    z-index: 1;
+    width: 649px;
+}
+
+.information__title {
     display: inline-block;
     color: var(--title-color);
     font-family: 'Philosopher', serif;
@@ -309,9 +393,10 @@ body{
     font-weight: 700;
     line-height: 2.6rem;
     margin: -34px 0 0 0;
-    padding:0 0 0 66px;
+    padding: 0 0 0 66px;
 }
-.information__title-tree{
+
+.information__title-tree {
     display: inline-block;
     color: var(--title-color);
     font-family: 'Philosopher', serif;
@@ -320,53 +405,73 @@ body{
     font-weight: 700;
     line-height: 2.6rem;
     margin: 0 0 0 0;
-    padding:0 0 0 66px;
+    padding: 0 0 0 66px;
 }
-.information__description{
+
+.information__description {
     color: var(--title-color);
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 0 2px 0 66px;
+    padding: 0 5px 5px 66px;
+    min-width: 229px;
 }
-.catalog__title{
+
+.catalog {
+    min-width: 390px;
+}
+
+.catalog__title {
     color: var(--title-color);
-    font-family: 'Philosopher',serif;
+    font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
-    margin: 0 0 0 43px;
+    margin: 0 0 39px 43px;
 }
-.catalog__list{
-    padding: 39px 45px 36px 49px;
+
+.catalog__list {
+    padding: 0 45px 0 49px;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 0 20.5px;
 }
-.catalog__item{
+
+.catalog__item {
     list-style-type: none;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
-.product__image-big{
+
+.catalog__list-big {
+    padding: 0;
+    margin: 0 0 0px 46px;
+}
+
+.product__image-big {
     min-width: 298.851px;
     min-height: 254px;
     border-radius: 20px;
     background: rgba(158, 175, 124, 0.20);
+    margin: 0 0 21px 0;
 }
-.product__image{
+
+.product__image {
     margin-bottom: 10px;
     min-width: 139.464px;
     min-height: 131.762px;
     border-radius: 20px;
     background: rgba(158, 175, 124, 0.20);
 }
-.product__link{
-    display: block;    
+
+.product__link {
+    display: block;
     text-align: left;
     color: var(--title-color);
-    font-family: 'Philosopher',serif;
+    font-family: 'Philosopher', serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
@@ -374,10 +479,11 @@ body{
     text-decoration: none;
     padding: 0 25px 0 0;
 }
-.catalog__link{
+
+.catalog__link {
     color: var(--text-color);
     text-align: center;
-    display:block;
+    display: block;
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
@@ -394,16 +500,20 @@ body{
     margin: 0 auto;
 
 }
-.custom-order{
+
+.custom-order {
     background-image: url(/Image/background_form.png);
+    min-width: 390px;
     margin: 46px 0 0 0;
 }
-.custom-order__wrapper{
+
+.custom-order__wrapper {
     background: rgba(68, 66, 55, 0.70);
-    width: 390px;
-    height: 786px;
+    min-width: 390px;
+    min-height: 786px;
 }
-.custom-order__title{
+
+.custom-order__title {
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
     font-size: 3.2rem;
@@ -414,7 +524,8 @@ body{
     padding: 76px 0 0 45px;
     margin: 0 0 23px 0;
 }
-.custom-order__para{
+
+.custom-order__para {
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
     font-size: 2.4rem;
@@ -422,41 +533,45 @@ body{
     font-weight: 300;
     line-height: normal;
     letter-spacing: -0.144rem;
-    padding: 0 20px 0 45px ;
+    padding: 0 20px 0 45px;
     margin: 0 0 8px 0;
 }
-.custom-order__subpara{
+
+.custom-order__subpara {
     color: #FFF;
     font-family: 'Philosopher', serif;
     font-size: 3.2rem;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
-    padding: 0 0 0 45px ;
+    padding: 0 0 0 45px;
     margin: 0 0 50px 0;
 }
-.custom-order__label-name{
+
+.custom-order__label-name {
     display: flex;
     width: 130px;
     height: 48px;
-    padding-right:170px ;
+    padding-right: 170px;
     align-items: center;
     border-radius: 60px;
     background: var(--form-color);
     margin: 20px 0 0 44px;
 }
-.custom-order__label-telephone{
+
+.custom-order__label-telephone {
     display: flex;
     width: 130px;
     height: 48px;
-    padding-right:170px ;
+    padding-right: 170px;
     align-items: center;
     border-radius: 60px;
     background: var(--form-color);
     margin: 20px 0 0 44px;
 }
-.custom-order__input{
-    color:#101213;
+
+.custom-order__input {
+    color: #101213;
     text-align: left;
     font-family: sans-serif;
     font-size: 1.4rem;
@@ -469,24 +584,26 @@ body{
     min-width: 260px;
     margin: 0 0 0 20px;
 }
-.custom-order__label-textarea{
+
+.custom-order__label-textarea {
     display: inline-flex;
     height: 110px;
-    padding-right:20px ;
+    padding-right: 20px;
     align-items: center;
     border-radius: 20px;
     background: var(--form-color);
     margin: 20px 0 0 44px;
 }
-.custom-order__textarea{
-    color:#101213;
+
+.custom-order__textarea {
+    color: #101213;
     text-align: left;
     font-family: sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     opacity: 0.5;
     font-weight: 400;
-    line-height: 1.96rem; 
+    line-height: 1.96rem;
     resize: none;
     outline: none;
     border: none;
@@ -495,8 +612,9 @@ body{
     margin: 0 0 0 20px;
     padding: 10px 0 0 0;
 }
-.custom-order__agreement{
-    color:#FFF;
+
+.custom-order__agreement {
+    color: #FFF;
     font-family: sans-serif;
     font-size: 1rem;
     font-style: normal;
@@ -505,11 +623,13 @@ body{
     margin: 15px 0 0 45px;
     padding: 0 35px 0 0;
 }
-.custom-order__link{
+
+.custom-order__link {
     color: #9EAF7C;
     text-decoration-line: underline;
 }
-.custom-order__button{
+
+.custom-order__button {
     color: var(--text-color);
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -525,7 +645,12 @@ body{
     border: 0;
     margin: 23px 0 0 45px;
 }
-.order-process__title{
+
+.order-process {
+    min-width: 390px;
+}
+
+.order-process__title {
     color: var(--title-color);
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
@@ -534,31 +659,38 @@ body{
     line-height: normal;
     margin: 21px 0 0 44px;
 }
-.order-process__list{
+
+.order-process__list {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.order-process__item{
-    min-width: 301.154px;
+
+.order-process__item {
+    display: block;
+    max-width: 301.154px;
     min-height: 406.558px;
     border-radius: 20px;
     background: var(--form-color);
     list-style-type: none;
     margin: 35.7px 45px 35px 44px;
 }
-.order-process__image-pc{
-    background-color: #9EAF7C;
+
+.order-process__image-pc {
     min-width: 102.894px;
     min-height: 102.058px;
     margin: 48.5px 0 0 94.5px;
 }
-.order-process__image{
-    background-color: #9EAF7C;/*Заглушка*/
+
+.order-process__image {
     min-width: 83.654px;
     min-height: 102.894px;
     margin: 47.6px 0 0 112px;
 }
-.order-process__subtitle{
+
+.order-process__subtitle {
     color: var(--title-color);
     font-family: 'Philosopher', serif;
     font-size: 2.8rem;
@@ -567,8 +699,9 @@ body{
     line-height: 1.96rem;
     margin: 79.4px 0 0 24.3px;
 }
-.order-process__description{
-    color:var(--title-color);
+
+.order-process__description {
+    color: var(--title-color);
     font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
     font-style: normal;
@@ -577,7 +710,8 @@ body{
     margin: 17px 0 0 28px;
     padding: 0 15px 0 0;
 }
-.order-process__link{
+
+.order-process__link {
     color: var(--text-color);
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -594,77 +728,110 @@ body{
     text-decoration-line: none;
     margin: 0 auto;
 }
-.article__title{
+
+.article {
+    min-width: 390px;
+}
+
+.article__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.article__title {
     color: var(--title-color);
-    font-family: 'Philosopher',serif;
+    font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
     margin: 56px 0 44px 45px;
 }
-.article__reviews-Anna{
-    min-width: 300px;
-    min-height: 561px;
+
+.article__reviews-Anna {
     border-radius: 20px;
+    max-width: 300px;
+    background: var(--form-color);
+    margin: 18px 45px;
+    padding: 0 0 0px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.article__reviews-Kirill {
+    padding: 0 0 0px 0;
+    border-radius: 20px;
+    max-width: 300px;
     background: var(--form-color);
     margin: 18px 45px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
 }
-.article__reviews-Kirill{
-    min-width: 300px;
-    min-height: 492px;
+
+.article__reviews-Andrey {
+    padding: 0 0 0px 0;
     border-radius: 20px;
+    max-width: 300px;
     background: var(--form-color);
     margin: 18px 45px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
 }
-.article__reviews-Andrey{
-    min-width: 300px;
-    min-height: 402px;
-    border-radius: 20px;
-    background: var(--form-color);
-    margin: 18px 45px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
-.reviews__image{
+
+.reviews__image {
     width: 89px;
     height: 89px;
     border-radius: 89px;
-    background-color: #9EAF7C;/*Заглушка*/
+    background-color: #9EAF7C;
+    /*Заглушка*/
     margin: 18px 0 0px 18px;
 }
-.reviews__author{
+
+.reviews__author {
     color: var(--title-color);
     font-family: 'Philosopher', serif;
     font-size: 2.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.8rem;
-    max-height: 56px;
+    min-height: 56px;
     max-width: 140px;
     margin: 35px 0 0 24px;
 }
-.reviews__text{
+
+.reviews__text {
     color: var(--title-color);
     font-family: 'Inter', sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 0 3px 0 18px;
+    padding: 0 3px 40px 18px;
     margin: 57px 0 0 0;
 }
-.article__link{
+
+.reviews__text-br {
+    color: var(--title-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.article__link {
     color: var(--text-color);
     text-align: center;
-    display:block;
+    display: block;
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
@@ -680,7 +847,8 @@ body{
     padding: 20px 87px;
     margin: 0 auto;
 }
-.clients__title{
+
+.clients__title {
     color: var(--title-color);
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
@@ -689,30 +857,33 @@ body{
     line-height: normal;
     margin: 62px 0 0 45px;
 }
-.clients-list{
+
+.clients-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 45px 0 45px;
 }
-.clients-list__item{
+
+.clients-list__item {
     border-radius: 20px;
     background: var(--form-color);
     width: 140px;
     min-height: 140px;
-    list-style-type: none; 
+    list-style-type: none;
     margin: 18.5px 0 0 0;
 }
-.clients-list__image{
+
+.clients-list__image {
     min-width: 84.107px;
     min-height: 84.107px;
-    background-color: #9EAF7C; /*Заглушка*/
     margin: 8px 0 0 27px;
 }
-.clients-list__name{
+
+.clients-list__name {
     display: block;
     color: var(--title-color);
-    font-family: 'Philosopher',serif;
+    font-family: 'Philosopher', serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
@@ -720,11 +891,14 @@ body{
     padding: 0 5px 0 0;
     margin: 10px 0 0 10px;
 }
-.footer{
+
+.footer {
     background-color: var(--backgroundfooter-color);
     min-height: 513px;
+    min-width: 390px;
 }
-.footer__title{
+
+.footer__title {
     color: var(--title-color);
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
@@ -733,26 +907,34 @@ body{
     line-height: normal;
     margin: 91px 0 37px 45px;
 }
-.footer__address{
+
+.footer__address-wrapper {
+    margin: 34px 0 0 0;
+}
+
+.footer__address {
     color: var(--text-color);
     text-align: left;
-    font-family: 'Philosopher',serif;
+    font-family: 'Philosopher', serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: 179.182%;
     list-style-type: none;
-    margin: 34px 60px 0 45px;
+    margin: 0px 60px 0 45px;
 }
-.footer__contacts{
+
+.footer__contacts {
     margin: 40px 0 0px 0;
     padding: 0 0 72px 0;
 }
-.footer__telephone{
+
+.footer__telephone {
     text-decoration-line: none;
     color: var(--text-color);
 }
-.footer__email{
+
+.footer__email {
     text-decoration-line: none;
     color: var(--text-color);
 }
