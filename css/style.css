@@ -103,9 +103,9 @@ body {
 .header__button-menu {
     border-radius: 60px;
     background: var(--button-color);
-    min-width: 45px;
-    min-height: 45px;
-    padding: 16px;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 13px;
     border: 0;
     margin: 0 0 0 0;
     position: relative;
@@ -213,7 +213,6 @@ body {
     min-width: 60px;
     min-height: 60px;
     background: #9EAF7C;
-    /*Заглушка*/
     border-radius: 100px;
     margin: 0 0 15px 0;
 }
@@ -236,7 +235,6 @@ body {
 .company__image {
     padding: 0;
     margin: 35px 0 0 45px;
-
 }
 
 .company__list {
@@ -254,10 +252,47 @@ body {
     margin: 53px 0 0 0;
 }
 
-.image-ovals {
-    position: absolute;
-    left: 19px;
+.company__image-ovals {
+    position: relative;
+    object-fit: cover;
+    top: -24px;
+    left: 0px;
+    margin: 0 0 0 11px;
+}
 
+.image-ovals {
+    object-fit: cover;
+    position: absolute;
+    object-position: 6px 0px;
+    width: 350px;
+}
+
+.company__image-ovals-two {
+    position: relative;
+    top: 43px;
+    left: 0px;
+    margin: 0 0 0 11px;
+}
+
+.image-ovals-two {
+    object-fit: cover;
+    position: absolute;
+    object-position: 6px 0px;
+    width: 350px;
+}
+
+.company__image-ovals-three {
+    position: relative;
+    top: 27px;
+    left: 0px;
+    margin: 0 0 0 11px;
+}
+
+.image-ovals-three {
+    object-fit: cover;
+    position: absolute;
+    object-position: 6px 0px;
+    width: 350px;
 }
 
 .company__item-text {
@@ -268,7 +303,29 @@ body {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    margin: 0 0 0px 0;
+    margin: 0;
+}
+
+.company__item-text-years {
+    color: var(--subtext-color);
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: -17px 0 0 0;
+}
+
+.company__item-text-buyer {
+    color: var(--subtext-color);
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: -10px 0 0 0;
 }
 
 .company__item-production {
@@ -329,6 +386,7 @@ body {
     box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10.5px);
     margin: 0 46px 101px 49px;
+    max-width: 459px;
     min-width: 300px;
     min-height: 180px;
 }
@@ -341,6 +399,7 @@ body {
     box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10.5px);
     margin: 0 46px 39px 49px;
+    max-width: 459px;
     min-width: 300px;
     z-index: 100;
     position: relative;
@@ -477,7 +536,8 @@ body {
     font-weight: 700;
     line-height: 1.6rem;
     text-decoration: none;
-    padding: 0 25px 0 0;
+    padding: 0 0px 0 0;
+    max-width: 160px;
 }
 
 .catalog__link {
@@ -498,7 +558,6 @@ body {
     text-decoration-line: none;
     padding: 20px 87px;
     margin: 0 auto;
-
 }
 
 .custom-order {
