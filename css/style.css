@@ -113,10 +113,10 @@ body {
 }
 
 .outdoor-furniture {
-    background-image: url(/Image/Background_1block.png);
+    background-image: url(/Image/photo_2023-06-26\ 15.34\ 1.png);
+    object-position: 100px 100px;
     min-width: 390px;
     min-height: 804px;
-    padding: 0.01rem 0rem 0;
 }
 
 .outdoor-furniture__wrapper {
@@ -173,7 +173,6 @@ body {
     letter-spacing: -0.032rem;
     border-radius: 1rem;
     width: 130px;
-    min-height: 12px;
     background: var(--button-color);
     border: 0;
     text-decoration-line: none;
@@ -269,7 +268,7 @@ body {
 
 .company__image-ovals-two {
     position: relative;
-    top: 43px;
+    top: 34px;
     left: 0px;
     margin: 0 0 0 11px;
 }
@@ -355,7 +354,6 @@ body {
     letter-spacing: -0.032rem;
     border-radius: 1rem;
     width: 130px;
-    min-height: 12px;
     background: var(--button-color);
     border: 0;
     text-decoration-line: none;
@@ -552,7 +550,6 @@ body {
     letter-spacing: -0.032rem;
     border-radius: 1rem;
     width: 130px;
-    min-height: 12px;
     background: var(--button-color);
     border: 0;
     text-decoration-line: none;
@@ -773,18 +770,19 @@ body {
 .order-process__link {
     color: var(--text-color);
     text-align: center;
+    display: block;
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.92rem;
+    line-height: 120%;
     letter-spacing: -0.032rem;
     border-radius: 1rem;
+    width: 130px;
     background: var(--button-color);
-    min-width: 30rem;
-    min-height: 5.8rem;
     border: 0;
     text-decoration-line: none;
+    padding: 20px 87px;
     margin: 0 auto;
 }
 
