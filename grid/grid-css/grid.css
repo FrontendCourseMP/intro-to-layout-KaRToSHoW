@@ -81,7 +81,7 @@
 .dashboard{
   display: grid;
   justify-content: center;
-  margin-bottom:50px;
+  margin-bottom:100px;
 }
 .dashboard__wrapper{
   border: 1px solid black;
@@ -186,4 +186,46 @@
 .dashboard__graphs-6{
   max-width: 100%;
   height: 100%;
+}
+
+
+
+
+
+.gallery{
+  padding: 0 30px;
+  padding-bottom: 100px;
+}
+
+.gallery__wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 10px;
+}
+
+.gallery__item{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.gallery__link{
+  display: block;
+  padding: 20px 80px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-decoration: none;
+  grid-area: 1/1/-1/-1;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.004rem;
+}
+
+.gallery__image{
+  max-width: 100%;
+  height: auto;
+  grid-area: 1/1/-1/-1;
 }
