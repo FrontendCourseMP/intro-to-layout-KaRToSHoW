@@ -110,7 +110,6 @@ body {
     min-height: 30px;
     padding: 13px;
     border: 0;
-    margin: 0 0 0 0;
     position: relative;
     left: 163px;
 }
@@ -246,7 +245,11 @@ body {
 .company__list-item{
     position: relative;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .company__item-number {
     color: var(--number-color);
     text-align: center;
@@ -269,35 +272,21 @@ body {
 .image-ovals {
     object-fit: cover;
     position: absolute;
-    object-position: 6px 0px;
+    top: 27px;
     width: 350px;
-}
-
-.company__image-ovals-two {
-    position: relative;
-    top: 34px;
-    left: 0px;
-    margin: 0 0 0 11px;
 }
 
 .image-ovals-two {
     object-fit: cover;
     position: absolute;
-    object-position: 6px 0px;
+    top: 43px;
     width: 350px;
-}
-
-.company__image-ovals-three {
-    position: relative;
-    top: 27px;
-    left: 0px;
-    margin: 0 0 0 11px;
 }
 
 .image-ovals-three {
     object-fit: cover;
     position: absolute;
-    object-position: 6px 0px;
+    top: 26px;
     width: 350px;
 }
 
@@ -343,6 +332,7 @@ body {
     font-weight: 700;
     line-height: 2.1rem;
     margin: 67px 58px 0 59px;
+    max-width: min-content;
 }
 
 
@@ -464,7 +454,6 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 2.6rem;
-    margin: 0 0 0 0;
     padding: 0 0 0 66px;
 }
 
@@ -493,21 +482,21 @@ body {
 }
 
 .catalog__list {
-    padding: 0 45px 0 49px;
-    margin: 0;
+    padding: 43px 0 0 0;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0 20.5px;
+    grid-template-columns: 140px 140px;
+    gap: 50px 20.5px;
+    justify-content: center;
 }
 
 .catalog__item {
     list-style-type: none;
-    margin-bottom: 50px;
 }
 
 .catalog__list-big {
     padding: 0;
-    margin: 0 0 0px 46px;
+    margin: 0 0 0 46px;
 }
 
 .product__image-big {
@@ -537,7 +526,6 @@ body {
     line-height: 1.6rem;
     text-decoration: none;
     padding: 0 0px 0 0;
-    max-width: 160px;
 }
 
 .catalog__link {
@@ -809,14 +797,14 @@ body {
     max-width: 300px;
     background: var(--form-color);
     margin: 18px 45px;
-    padding: 0 0 0px 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
 }
 
 .article__reviews-Kirill {
-    padding: 0 0 0px 0;
+    padding: 0;
     border-radius: 20px;
     max-width: 300px;
     background: var(--form-color);
@@ -827,7 +815,7 @@ body {
 }
 
 .article__reviews-Andrey {
-    padding: 0 0 0px 0;
+    padding: 0;
     border-radius: 20px;
     max-width: 300px;
     background: var(--form-color);
