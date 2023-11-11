@@ -76,10 +76,15 @@
     --form-color: #FFFFFF;
     font-size: 62.5%;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--background-color);
     margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-weight:400;
 }
 
 .header {
@@ -144,7 +149,7 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 4.0rem;
     font-style: italic;
-    font-weight: 400;
+    ;
     line-height: normal;
     margin: 1.3rem 0 0 0;
     padding: 0 0 0 4.3rem;
@@ -169,11 +174,10 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.032rem;
     border-radius: 1rem;
-    width: 130px;
+    width: 13rem;
     background: var(--button-color);
     border: 0;
     text-decoration-line: none;
@@ -226,10 +230,9 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
-    font-weight: 400;
     line-height: normal;
-    padding: 0 0 0 45px;
-    margin: 22px 0 0 0;
+    padding: 22px 0 0 45px;
+    margin: 0px 0 35px 0;
 }
 
 .company__image {
@@ -351,7 +354,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.032rem;
     border-radius: 1rem;
@@ -360,7 +362,7 @@ body {
     border: 0;
     text-decoration-line: none;
     padding: 20px 87px;
-    margin: 73px auto;
+    margin: 73px auto 0 auto;
 }
 
 .products {
@@ -372,10 +374,9 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
-    font-weight: 400;
     line-height: normal;
-    padding: 0 0 0 43px;
-    margin: 39px 0 39px 0;
+    padding: 39px 0 0 43px;
+    margin: 0px 0 39px 0;
 }
 
 .products__detail {
@@ -398,7 +399,7 @@ body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
     box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10.5px);
-    margin: 0 46px 39px 49px;
+    margin: 0 46px 0px 49px;
     max-width: 459px;
     min-width: 300px;
     z-index: 100;
@@ -472,7 +473,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     padding: 0 5px 5px 66px;
     min-width: 229px;
@@ -487,9 +487,9 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
-    font-weight: 400;
     line-height: normal;
-    margin: 0 0 39px 43px;
+    margin: 0 0 39px 0;
+    padding: 39px 0 0 43px;
 }
 
 .catalog__list {
@@ -547,7 +547,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.032rem;
     border-radius: 1rem;
@@ -601,7 +600,6 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 3.2rem;
     font-style: italic;
-    font-weight: 400;
     line-height: normal;
     padding: 0 0 0 45px;
     margin: 0 0 50px 0;
@@ -634,8 +632,7 @@ body {
     text-align: left;
     font-family: sans-serif;
     font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
+    font-style: normal; 
     line-height: 1.96rem;
     opacity: 0.5;
     outline: none;
@@ -661,7 +658,6 @@ body {
     font-size: 1.4rem;
     font-style: normal;
     opacity: 0.5;
-    font-weight: 400;
     line-height: 1.96rem;
     resize: none;
     outline: none;
@@ -677,7 +673,6 @@ body {
     font-family: sans-serif;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
     margin: 15px 0 0 45px;
     padding: 0 35px 0 0;
@@ -694,7 +689,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
     line-height: 1.92rem;
     letter-spacing: -0.032rem;
     border-radius: 1rem;
@@ -714,9 +708,9 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
-    font-weight: 400;
     line-height: normal;
-    margin: 21px 0 0 44px;
+    margin: 0;
+    padding: 21px 0 0 44px;
 }
 
 .order-process__list {
@@ -764,7 +758,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     margin: 17px 0 0 28px;
     padding: 0 15px 0 0;
@@ -777,7 +770,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.032rem;
     border-radius: 1rem;
@@ -807,9 +799,9 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
-    font-weight: 400;
     line-height: normal;
-    margin: 56px 0 44px 45px;
+    margin: 0;
+    padding: 56px 0 44px 45px;
 }
 
 .article__reviews-Anna {
@@ -871,7 +863,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.4rem;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     padding: 0 3px 40px 18px;
     margin: 57px 0 0 0;
@@ -882,7 +873,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.4rem;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     padding: 0;
     margin: 0;
@@ -895,7 +885,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
     line-height: 120%;
     letter-spacing: -0.032rem;
     border-radius: 1rem;
@@ -913,9 +902,9 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
-    font-weight: 400;
     line-height: normal;
-    margin: 62px 0 0 45px;
+    margin: 0 0 0 45px;
+    padding: 62px 0 0 0;
 }
 
 .clients-list {
@@ -952,7 +941,7 @@ body {
     margin: 10px 0 0 10px;
 }
 
-.footer {
+.footer__wrapper {
     background-color: var(--backgroundfooter-color);
     min-height: 513px;
     min-width: 390px;
@@ -963,9 +952,9 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
-    font-weight: 400;
     line-height: normal;
-    margin: 91px 0 37px 45px;
+    margin: 0 0 0 45px;
+    padding: 91px 0 37px 0;
 }
 
 .footer__address-wrapper {
@@ -978,7 +967,6 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
     line-height: 179.182%;
     list-style-type: none;
     margin: 0px 60px 0 45px;
