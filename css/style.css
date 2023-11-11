@@ -89,9 +89,7 @@ body {
 
 .header {
     padding: 25px 0 0;
-    margin-bottom: -77px;
-    position: relative;
-    z-index: 100;
+    position: absolute;
 }
 
 .header__logo-link {
@@ -245,6 +243,10 @@ body {
     padding: 0;
 }
 
+.company__list-item{
+    position: relative;
+    list-style-type: none;
+}
 .company__item-number {
     color: var(--number-color);
     text-align: center;
@@ -257,7 +259,7 @@ body {
 }
 
 .company__image-ovals {
-    position: relative;
+    position: absolute;
     object-fit: cover;
     top: -24px;
     left: 0px;
@@ -343,9 +345,7 @@ body {
     margin: 67px 58px 0 59px;
 }
 
-.company__list-item {
-    list-style-type: none;
-}
+
 
 .company__link {
     color: var(--text-color);
