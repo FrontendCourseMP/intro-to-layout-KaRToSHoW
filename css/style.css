@@ -65,9 +65,9 @@
 }
 
 :root {
-    --button-color: #9EAF7C;
+    --button-color: #6c7754;
     --background-color: #F3F1EC;
-    --backgroundfooter-color: #9EAF7C;
+    --backgroundfooter-color: #6c7754;
     --text-color: #FFFFFF;
     --subtext-color: #000;
     --number-color: #9EAF7C;
@@ -461,6 +461,7 @@ body {
     font-weight: 700;
     line-height: 2.6rem;
     padding: 0 0 0 66px;
+    margin: 0;
 }
 
 .information__description {
@@ -635,7 +636,6 @@ body {
     font-size: 1.4rem;
     font-style: normal; 
     line-height: 1.96rem;
-    opacity: 0.5;
     outline: none;
     border: none;
     min-width: 260px;
@@ -658,7 +658,6 @@ body {
     font-family: sans-serif;
     font-size: 1.4rem;
     font-style: normal;
-    opacity: 0.5;
     line-height: 1.96rem;
     resize: none;
     outline: none;
