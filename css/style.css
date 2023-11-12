@@ -139,6 +139,7 @@ body {
     letter-spacing: -0.204rem;
     margin: 13rem 0rem 0rem 0;
     padding: 0 0 0 4.5rem;
+    font-weight: 400;
 }
 
 .outdoor-furniture__subtitle {
@@ -230,6 +231,7 @@ body {
     line-height: normal;
     padding: 22px 0 0 45px;
     margin: 0px 0 35px 0;
+    font-weight: 400;
 }
 
 .company__image {
@@ -367,6 +369,7 @@ body {
     line-height: normal;
     padding: 39px 0 0 43px;
     margin: 0px 0 39px 0;
+    font-weight: 400;
 }
 
 .products__detail {
@@ -410,9 +413,11 @@ body {
 .products__sofa {
     position: relative;
     bottom: 120px;
-    left: -92px;
     border: 0;
     object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .sofa__image {
@@ -444,6 +449,7 @@ body {
     line-height: 2.6rem;
     margin: -34px 0 0 0;
     padding: 0 0 0 66px;
+
 }
 
 .information__title-tree {
@@ -465,6 +471,7 @@ body {
     line-height: normal;
     padding: 0 5px 5px 66px;
     min-width: 229px;
+    font-weight: 400;
 }
 
 .catalog {
@@ -479,24 +486,30 @@ body {
     line-height: normal;
     margin: 0 0 39px 0;
     padding: 39px 0 0 43px;
+    font-weight: 400;
 }
 
 .catalog__list {
-    padding: 43px 0 0 0;
+    padding: 43px 44px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 140px 140px;
-    gap: 50px 20.5px;
-    justify-content: center;
+    gap: 30px 14.5px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    justify-items: center;
 }
 
 .catalog__item {
     list-style-type: none;
+    max-width: min-content;
 }
 
 .catalog__list-big {
     padding: 0;
-    margin: 0 0 0 46px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
 }
 
 .product__image-big {
@@ -699,6 +712,7 @@ body {
     line-height: normal;
     margin: 0;
     padding: 21px 0 0 44px;
+    font-weight: 400;
 }
 
 .order-process__list {
@@ -749,6 +763,7 @@ body {
     line-height: normal;
     margin: 17px 0 0 28px;
     padding: 0 15px 0 0;
+    font-weight: 400;
 }
 
 .order-process__link {
@@ -790,6 +805,7 @@ body {
     line-height: normal;
     margin: 0;
     padding: 56px 0 44px 45px;
+    font-weight: 400;
 }
 
 .article__reviews-Anna {
@@ -854,6 +870,7 @@ body {
     line-height: normal;
     padding: 0 3px 40px 18px;
     margin: 57px 0 0 0;
+    
 }
 
 .reviews__text-br {
@@ -893,6 +910,7 @@ body {
     line-height: normal;
     margin: 0 0 0 45px;
     padding: 62px 0 0 0;
+    font-weight: 400;
 }
 
 .clients-list {
@@ -943,6 +961,7 @@ body {
     line-height: normal;
     margin: 0 0 0 45px;
     padding: 91px 0 37px 0;
+    font-weight: 400;
 }
 
 .footer__address-wrapper {
