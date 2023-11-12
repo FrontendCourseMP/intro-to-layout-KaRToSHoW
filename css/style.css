@@ -1,0 +1,995 @@
+/* inter-300 - cyrillic */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/inter-v13-cyrillic-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - cyrillic */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v13-cyrillic-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - cyrillic */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v13-cyrillic-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* philosopher-regular - cyrillic */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/philosopher-v19-cyrillic-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* philosopher-italic - cyrillic */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/philosopher-v19-cyrillic-italic.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* philosopher-700 - cyrillic */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/philosopher-v19-cyrillic-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --button-color: #9EAF7C;
+    --background-color: #F3F1EC;
+    --backgroundfooter-color: #9EAF7C;
+    --text-color: #FFFFFF;
+    --subtext-color: #000;
+    --number-color: #9EAF7C;
+    --title-color: #4B4B4B;
+    --border-color: #C3BEBE;
+    --form-color: #FFFFFF;
+    font-size: 62.5%;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-weight:400;
+}
+
+.header {
+    padding: 25px 0 0;
+    position: absolute;
+}
+
+.header__logo-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Philosopher', serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px 0px 0px 45px;
+}
+
+.header__button-menu {
+    border-radius: 60px;
+    background: var(--button-color);
+    min-width: 30px;
+    min-height: 30px;
+    padding: 13px;
+    border: 0;
+    position: relative;
+    left: 163px;
+}
+
+.outdoor-furniture {
+    background-image: url(/Image/Background-first-block.png);
+    background-position: -476px 0px;
+    background-size:cover;
+    min-width: 390px;
+    min-height: 804px;
+}
+
+.outdoor-furniture__wrapper {
+    background: rgba(68, 66, 55, 0.70);
+    min-width: 390px;
+    min-height: 804px;
+    padding: 0.01rem 0rem 0;
+}
+
+.outdoor-furniture__title {
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.204rem;
+    margin: 13rem 0rem 0rem 0;
+    padding: 0 0 0 4.5rem;
+    font-weight: 400;
+}
+
+.outdoor-furniture__subtitle {
+    color: var(--text-color);
+    font-family: 'Philosopher', serif;
+    font-size: 4.0rem;
+    font-style: italic;
+    ;
+    line-height: normal;
+    margin: 1.3rem 0 0 0;
+    padding: 0 0 0 4.3rem;
+}
+
+.outdoor-furniture__subsubtitle {
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.204rem;
+    margin: 0.3rem 0 4.1rem 0;
+    padding: 0 0 0 7.3rem;
+}
+
+.outdoor-furniture__link {
+    color: var(--text-color);
+    text-align: center;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    width: 13rem;
+    background: var(--button-color);
+    border: 0;
+    text-decoration-line: none;
+    padding: 20px 87px;
+    margin: 0 auto;
+}
+
+.outdoor-furniture__benefits {
+    margin: 49px 0px 0px 0px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits__item {
+    list-style-type: none;
+    padding: 0 41px 0 45px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.benefits__description {
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.108rem;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.benefits__img {
+    min-width: 60px;
+    min-height: 60px;
+    background: #9EAF7C;
+    border-radius: 100px;
+    margin: 0 0 15px 0;
+}
+
+.company {
+    min-width: 390px;
+}
+
+.company__title {
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    line-height: normal;
+    padding: 22px 0 0 45px;
+    margin: 0px 0 35px 0;
+    font-weight: 400;
+}
+
+.company__image {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.company__list {
+    padding: 0;
+}
+
+.company__list-item{
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company__item-number {
+    color: var(--number-color);
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 53px 0 0 0;
+}
+
+.company__image-ovals {
+    position: absolute;
+    object-fit: cover;
+    top: -24px;
+    left: 0px;
+    margin: 0 0 0 11px;
+}
+
+.image-ovals {
+    object-fit: cover;
+    position: absolute;
+    top: 27px;
+    width: 350px;
+}
+
+.image-ovals-two {
+    object-fit: cover;
+    position: absolute;
+    top: 43px;
+    width: 350px;
+}
+
+.image-ovals-three {
+    object-fit: cover;
+    position: absolute;
+    top: 26px;
+    width: 350px;
+}
+
+.company__item-text {
+    color: var(--subtext-color);
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+}
+
+.company__item-text-years {
+    color: var(--subtext-color);
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: -17px 0 0 0;
+}
+
+.company__item-text-buyer {
+    color: var(--subtext-color);
+    text-align: center;
+    font-family: 'Inter', serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: -10px 0 0 0;
+}
+
+.company__item-production {
+    color: var(--number-color);
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.1rem;
+    margin: 67px 58px 0 59px;
+    max-width: min-content;
+}
+
+
+
+.company__link {
+    color: var(--text-color);
+    text-align: center;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    width: 130px;
+    background: var(--button-color);
+    border: 0;
+    text-decoration-line: none;
+    padding: 20px 87px;
+    margin: 73px auto 0 auto;
+}
+
+.products {
+    min-width: 390px;
+}
+
+.products__title {
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    line-height: normal;
+    padding: 39px 0 0 43px;
+    margin: 0px 0 39px 0;
+    font-weight: 400;
+}
+
+.products__detail {
+    display: block;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
+    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(10.5px);
+    margin: 0 46px 101px 49px;
+    max-width: 459px;
+    min-width: 300px;
+    min-height: 180px;
+}
+
+.products__detail-textile {
+    flex-wrap: wrap;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
+    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(10.5px);
+    margin: 0 46px 0px 49px;
+    max-width: 459px;
+    min-width: 300px;
+    z-index: 100;
+    position: relative;
+}
+
+.information__toggle {
+    display: inline-flex;
+    border-radius: 60px;
+    background: var(--button-color);
+    width: 33px;
+    height: 33px;
+    border: 0;
+    margin: 10px 0 0 9px;
+    background-image: url(/Image/plus.svg);
+}
+
+.products__sofa {
+    position: relative;
+    bottom: 120px;
+    border: 0;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sofa__image {
+    position: absolute;
+    width: 482px;
+    object-fit: cover;
+    object-position: 165px 10px;
+}
+
+.products__sofa-two {
+    position: relative;
+    bottom: 130px;
+    left: -330px;
+}
+
+.sofa-two__image {
+    position: absolute;
+    z-index: 1;
+    width: 649px;
+}
+
+.information__title {
+    display: inline-block;
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin: -34px 0 0 0;
+    padding: 0 0 0 66px;
+
+}
+
+.information__title-tree {
+    display: inline-block;
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.6rem;
+    padding: 0 0 0 66px;
+}
+
+.information__description {
+    color: var(--title-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: normal;
+    padding: 0 5px 5px 66px;
+    min-width: 229px;
+    font-weight: 400;
+}
+
+.catalog {
+    min-width: 390px;
+}
+
+.catalog__title {
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    line-height: normal;
+    margin: 0 0 39px 0;
+    padding: 39px 0 0 43px;
+    font-weight: 400;
+}
+
+.catalog__list {
+    padding: 43px 44px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px 14.5px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    justify-items: center;
+}
+
+.catalog__item {
+    list-style-type: none;
+    max-width: min-content;
+}
+
+.catalog__list-big {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.product__image-big {
+    min-width: 298.851px;
+    min-height: 254px;
+    border-radius: 20px;
+    background: rgba(158, 175, 124, 0.20);
+    margin: 0 0 21px 0;
+}
+
+.product__image {
+    margin-bottom: 10px;
+    min-width: 139.464px;
+    min-height: 131.762px;
+    border-radius: 20px;
+    background: rgba(158, 175, 124, 0.20);
+}
+
+.product__link {
+    display: block;
+    text-align: left;
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6rem;
+    text-decoration: none;
+    padding: 0 0px 0 0;
+}
+
+.catalog__link {
+    color: var(--text-color);
+    text-align: center;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    width: 130px;
+    background: var(--button-color);
+    border: 0;
+    text-decoration-line: none;
+    padding: 20px 87px;
+    margin: 0 auto;
+}
+
+.custom-order {
+    background-image: url(/Image/background_form.png);
+    background-position: -723px -21px;
+    min-width: 390px;
+    margin: 46px 0 0 0;
+}
+
+.custom-order__wrapper {
+    background: rgba(68, 66, 55, 0.70);
+    min-width: 390px;
+    min-height: 770px;
+}
+
+.custom-order__title {
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.192rem;
+    padding: 76px 0 0 45px;
+    margin: 0 0 23px 0;
+}
+
+.custom-order__para {
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.144rem;
+    padding: 0 20px 0 45px;
+    margin: 0 0 8px 0;
+}
+
+.custom-order__subpara {
+    color: #FFF;
+    font-family: 'Philosopher', serif;
+    font-size: 3.2rem;
+    font-style: italic;
+    line-height: normal;
+    padding: 0 0 0 45px;
+    margin: 0 0 50px 0;
+}
+
+.custom-order__label-name {
+    display: flex;
+    width: 130px;
+    height: 48px;
+    padding-right: 170px;
+    align-items: center;
+    border-radius: 60px;
+    background: var(--form-color);
+    margin: 20px 0 0 44px;
+}
+
+.custom-order__label-telephone {
+    display: flex;
+    width: 130px;
+    height: 48px;
+    padding-right: 170px;
+    align-items: center;
+    border-radius: 60px;
+    background: var(--form-color);
+    margin: 20px 0 0 44px;
+}
+
+.custom-order__input {
+    color: #101213;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-style: normal; 
+    line-height: 1.96rem;
+    opacity: 0.5;
+    outline: none;
+    border: none;
+    min-width: 260px;
+    margin: 0 0 0 20px;
+}
+
+.custom-order__label-textarea {
+    display: inline-flex;
+    height: 110px;
+    padding-right: 20px;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--form-color);
+    margin: 20px 0 0 44px;
+}
+
+.custom-order__textarea {
+    color: #101213;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    opacity: 0.5;
+    line-height: 1.96rem;
+    resize: none;
+    outline: none;
+    border: none;
+    min-height: 81px;
+    min-width: 260px;
+    margin: 0 0 0 20px;
+    padding: 10px 0 0 0;
+}
+
+.custom-order__agreement {
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.5rem;
+    margin: 15px 0 0 45px;
+    padding: 0 35px 0 0;
+}
+
+.custom-order__link {
+    color: #9EAF7C;
+    text-decoration-line: underline;
+}
+
+.custom-order__button {
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 1.92rem;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    background: var(--button-color);
+    width: 30rem;
+    height: 5.8rem;
+    border: 0;
+    margin: 23px 0 0 45px;
+}
+
+.order-process {
+    min-width: 390px;
+}
+
+.order-process__title {
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    line-height: normal;
+    margin: 0;
+    padding: 21px 0 0 44px;
+    font-weight: 400;
+}
+
+.order-process__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.order-process__item {
+    display: block;
+    max-width: 301.154px;
+    min-height: 406.558px;
+    border-radius: 20px;
+    background: var(--form-color);
+    list-style-type: none;
+    margin: 35.7px 45px 35px 44px;
+}
+
+.order-process__image-pc {
+    min-width: 102.894px;
+    min-height: 102.058px;
+    margin: 48.5px 0 0 94.5px;
+}
+
+.order-process__image {
+    min-width: 83.654px;
+    min-height: 102.894px;
+    margin: 47.6px 0 0 112px;
+}
+
+.order-process__subtitle {
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.96rem;
+    margin: 79.4px 0 0 24.3px;
+}
+
+.order-process__description {
+    color: var(--title-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: normal;
+    margin: 17px 0 0 28px;
+    padding: 0 15px 0 0;
+    font-weight: 400;
+}
+
+.order-process__link {
+    color: var(--text-color);
+    text-align: center;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    width: 130px;
+    background: var(--button-color);
+    border: 0;
+    text-decoration-line: none;
+    padding: 20px 87px;
+    margin: 0 auto;
+}
+
+.article {
+    min-width: 390px;
+}
+
+.article__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.article__title {
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    line-height: normal;
+    margin: 0;
+    padding: 56px 0 44px 45px;
+    font-weight: 400;
+}
+
+.article__reviews-Anna {
+    border-radius: 20px;
+    max-width: 300px;
+    background: var(--form-color);
+    margin: 18px 45px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.article__reviews-Kirill {
+    padding: 0;
+    border-radius: 20px;
+    max-width: 300px;
+    background: var(--form-color);
+    margin: 18px 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.article__reviews-Andrey {
+    padding: 0;
+    border-radius: 20px;
+    max-width: 300px;
+    background: var(--form-color);
+    margin: 18px 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.reviews__image {
+    width: 89px;
+    height: 89px;
+    border-radius: 89px;
+    background-color: #9EAF7C;
+    /*Заглушка*/
+    margin: 18px 0 0px 18px;
+}
+
+.reviews__author {
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.8rem;
+    min-height: 56px;
+    max-width: 140px;
+    margin: 35px 0 0 24px;
+}
+
+.reviews__text {
+    color: var(--title-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: normal;
+    padding: 0 3px 40px 18px;
+    margin: 57px 0 0 0;
+    
+}
+
+.reviews__text-br {
+    color: var(--title-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.article__link {
+    color: var(--text-color);
+    text-align: center;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    width: 130px;
+    min-height: 12px;
+    background: var(--button-color);
+    border: 0;
+    text-decoration-line: none;
+    padding: 20px 87px;
+    margin: 0 auto;
+}
+
+.clients__title {
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    line-height: normal;
+    margin: 0 0 0 45px;
+    padding: 62px 0 0 0;
+    font-weight: 400;
+}
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 45px 0 45px;
+}
+
+.clients-list__item {
+    border-radius: 20px;
+    background: var(--form-color);
+    width: 140px;
+    min-height: 140px;
+    list-style-type: none;
+    margin: 18.5px 0 0 0;
+}
+
+.clients-list__image {
+    min-width: 84.107px;
+    min-height: 84.107px;
+    margin: 8px 0 0 27px;
+}
+
+.clients-list__name {
+    display: block;
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6rem;
+    padding: 0 5px 0 0;
+    margin: 10px 0 0 10px;
+}
+
+.footer__wrapper {
+    background-color: var(--backgroundfooter-color);
+    min-height: 513px;
+    min-width: 390px;
+}
+
+.footer__title {
+    color: var(--title-color);
+    font-family: 'Philosopher', serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    line-height: normal;
+    margin: 0 0 0 45px;
+    padding: 91px 0 37px 0;
+    font-weight: 400;
+}
+
+.footer__address-wrapper {
+    margin: 34px 0 0 0;
+}
+
+.footer__address {
+    color: var(--text-color);
+    text-align: left;
+    font-family: 'Philosopher', serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 179.182%;
+    list-style-type: none;
+    margin: 0px 60px 0 45px;
+}
+
+.footer__contacts {
+    margin: 40px 0 0px 0;
+    padding: 0 0 72px 0;
+}
+
+.footer__telephone {
+    text-decoration-line: none;
+    color: var(--text-color);
+}
+
+.footer__email {
+    text-decoration-line: none;
+    color: var(--text-color);
+}
