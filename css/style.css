@@ -90,6 +90,9 @@ body {
 .header {
     padding: 25px 0 0;
     position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__logo-link {
@@ -110,8 +113,7 @@ body {
     min-height: 30px;
     padding: 13px;
     border: 0;
-    position: relative;
-    left: 163px;
+    margin-right: 45px;
 }
 
 .outdoor-furniture {
@@ -188,6 +190,7 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .benefits__item {
