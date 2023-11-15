@@ -12,8 +12,45 @@
 
 <body>
   <header class="header">
+    <div class="header__address-wrapper">
+      <p class="header__address">г. Алматы, ул. Абая д.68</p>
+      <p class="header__work-time">Звоните, Пн-Пт с 10:00-18:00</p>
+      <a class="header__telephone" href="tel:79009001010">+7 (900) 900-10-10</a>
+    </div>
     <a href="#" class="header__logo-link">Logo</a>
     <button type="button" name="menu" class="header__button-menu"><img src="/Image/menu.svg" alt="menu"></button>
+    <nav class="header__nav navigation">
+      <ul class="header__navigation-list navigation">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">О компании</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Об изделиях</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Отзывы</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Сотрудничество</a>
+        </li>
+      </ul>
+      <ul class="header__messenger messenger">
+        <li class="messenger__item">
+          <a href="#"><img class="messenger__image" src="/Image/instagram.svg" alt="Инстаграмм"></a>
+        </li>
+        <li class="messenger__item">
+          <a href="#"><img class="messenger__image" src="/Image/telegram.svg" alt="Телеграмм"></a>
+        </li>
+        <li class="messenger__item">
+          <a href="#"><img class="messenger__image" src="/Image/whatsapp.svg" alt="Ватсапп"></a>
+        </li>
+      </ul>        
+    </nav>
+
+    
   </header>
 
   <main>
@@ -22,7 +59,7 @@
         <h1 class="outdoor-furniture__title">Уличная мебель</h1>
         <p class="outdoor-furniture__subtitle">из натурального дерева</p>
         <p class="outdoor-furniture__subsubtitle">от Казахстанского производителя</p>
-        <a href="#" class="outdoor-furniture__link">Оставить заявку</a>
+        <a href="#форма" class="outdoor-furniture__link">Оставить заявку</a>
         <ul class="outdoor-furniture__benefits benefits">
           <li class="benefits__item">
             <img src="/Image/Truck.svg" alt="Грузовик" class="benefits__img">
@@ -46,34 +83,23 @@
         <img class="company__image" src="/Image/Шлейфовка.jpg" alt="Шлифование">
         <ul class="company__list">
           <li class="company__list-item">
-            <div class="company__image-ovals">
-              <img class="image-ovals" src="/Image/Ovals.svg" alt="">
-            </div>
-          </li>
-          <li class="company__list-item">
+            <img class="image-ovals" src="/Image/Ovals.svg" alt="">            
             <p class="company__item-number">12</p>
             <p class="company__item-text-years">Лет на рынке</p>
           </li>
           <li class="company__list-item">
-            <div class="company__image-ovals-two">
-              <img class="image-ovals-two" src="/Image/Ovals-two.svg" alt="">
-            </div>
-          </li>
-          <li class="company__list-item">
+            <img class="image-ovals-two" src="/Image/Ovals-two.svg" alt="">            
             <p class="company__item-number">2000+</p>
             <p class="company__item-text-buyer">Довольных покупателей</p>
           </li>
           <li class="company__list-item">
-            <div class="company__image-ovals-three">
-              <img class="image-ovals-three" src="/Image/Ovals.svg" alt="">
-            </div>
-          </li>
-          <li class="company__list-item">
+            <img class="image-ovals-three" src="/Image/Ovals.svg" alt="">            
             <p class="company__item-production">Собственное производство</p>
             <p class="company__item-text">в г. Алматы</p>
           </li>
         </ul>
-        <a href="#" class="company__link">Оставить заявку</a>
+        
+        <a href="#форма" class="company__link">Оставить заявку</a>
       </div>
     </section>
 
@@ -81,7 +107,7 @@
       <div class="products__wrapper">
         <h2 class="products__title">Об изделиях</h2>
         <div class="products__detail information">
-          <button type="button" name="details" class="information__toggle"></button>
+          <button type="button" name="details" class="information__toggle" aria-label="Подробнее об обработки"></button>
           <h3 class="information__title">Обработанное дерево</h3>
           <p class="information__description">
             Сохраняет <strong>первоначальный внешний вид</strong> даже под воздействием
@@ -92,7 +118,7 @@
           <img class="sofa__image" src="/Image/Диваны.png" alt="Диваны">
         </div>
         <div class="products__detail information">
-          <button type="button" name="details" class="information__toggle"></button>
+          <button type="button" name="details" class="information__toggle" aria-label="Подробнее о древесине"></button>
           <h3 class="information__title-tree">Натуральное дерево</h3>
           <p class="information__description">Лиственница, ангарская сосна, дуб, карагач</p>
         </div>
@@ -100,7 +126,7 @@
           <img class="sofa-two__image" src="/Image/Диваны.png" alt="Диваны">
         </div>
         <div class="products__detail-textile information">
-          <button type="button" name="details" class="information__toggle"></button>
+          <button type="button" name="details" class="information__toggle" aria-label="Подробнее о ткани"></button>
           <h3 class="information__title">Акриловая ткань</h3>
           <p class="information__description">
             Обладает <strong>водо- и грязеоталкивающими свойствами,</strong> ткань
@@ -160,27 +186,26 @@
           </li>
         </ul>
       </div>
-      <a href="#" class="catalog__link">Оставить заявку</a>
+      <a href="#форма" class="catalog__link">Оставить заявку</a>
     </section>
 
     <section class="custom-order">
-      <div class="custom-order__wrapper">
+      <div class="custom-order__wrapper" id="форма">
         <h2 class="custom-order__title">Ничего не подошло?</h2>
         <p class="custom-order__para">Тогда мы можем изготовить для вас мебель</p>
         <p class="custom-order__subpara">по индивидуальному дизайну</p>
-        <form class="custom-order__form">
+        <form class="custom-order__form" method="post">
           <label class="custom-order__label-name">
-            <input class="custom-order__input" type="text" placeholder="Ваше имя*" required>
+            <input class="custom-order__input" name="username" type="text" placeholder="Ваше имя*" required>
           </label>
           <label class="custom-order__label-telephone">
-            <input class="custom-order__input" type="text" placeholder="Ваш телефон*" required>
+            <input class="custom-order__input" name="telephone" type="text" placeholder="Ваш телефон*" required>
           </label>
           <label class="custom-order__label-textarea">
             <textarea class="custom-order__textarea" name="comment" placeholder="Ваш комментарий"></textarea>
           </label>
           <p class="custom-order__agreement">Нажимая на кнопку, вы даете согласие на
-            <a href="#" class="custom-order__link">обработку персональных данных</a>
-          </p>
+            <a href="#" class="custom-order__link">обработку персональных данных</a></p>
           <button type="submit" class="custom-order__button">Оставить заявку</button>
         </form>
       </div>
@@ -208,7 +233,7 @@
             <p class="order-process__description">Срок доставки зависит от вашего региона и занимает от 3-7 дней</p>
           </li>
         </ol>
-        <a href="#" class="order-process__link">Оставить заявку</a>
+        <a href="#форма" class="order-process__link">Оставить заявку</a>
       </div>
     </section>
 
@@ -267,7 +292,7 @@
             </div>
           </li>
         </ol>
-        <a href="#" class="article__link">Оставить заявку</a>
+        <a href="#форма" class="article__link">Оставить заявку</a>
       </div>
     </article>
 
@@ -300,29 +325,31 @@
             <p class="clients-list__name">ГК Шымбулак</p>
           </li>
         </ul>
-        <h2 class="footer__title">Контакты</h2>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <img class="footer__image" src="/Image/карта.png" alt="Карта">
-    <div class="footer__address-wrapper">
-      <p class="footer__address"> Адрес - Москва, Степана Разина 119</p>
-      <p class="footer__address"> Телефон - 7 982 658 25 85 </p>
-      <p class="footer__address"> ТОО «Консалтинговая Компания Financial-Tax Analytics» </p>
-      <p class="footer__address"> БИН 181 040 010 133</p>
-      <p class="footer__address"> Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304 </p>
-      <p class="footer__address"> Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60 </p>
-      <p class="footer__address"> ИИК KZ76 9650 3F00 0817 5335 </p>
-      <p class="footer__address"> БИК IRTYKZKA в АО "ForteBank"</p>
-      <a href="/grid/grid.html" class="footer__address">Гриды Лаб_7</a>
-    </div>
-    <div class="footer__contacts">
-      <span class="footer__address">мобильный/ватсап<a class="footer__telephone" href="tel:77787757768"> +7 (778)
-          775-7768</a></span>
-      <span class="footer__address"><a class="footer__email" href="mailto:info@fintax.kz">info@fintax.kz</a></span>
-    </div>
+    <h2 class="footer__title">Контакты</h2>
+    <div class="footer__wrapper">
+      <img class="footer__image" src="/Image/карта_1.png" alt="Карта">
+      <div class="footer__address-wrapper">
+        <p class="footer__address">Адрес - Москва, Степана Разина 119</p>
+        <p class="footer__address"> Телефон - 7 982 658 25 85 </p>
+        <p class="footer__address"> ТОО «Консалтинговая Компания Financial-Tax Analytics» </p>
+        <p class="footer__address"> БИН 181 040 010 133</p>
+        <p class="footer__address"> Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304 </p>
+        <p class="footer__address"> Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60 </p>
+        <p class="footer__address"> ИИК KZ76 9650 3F00 0817 5335 </p>
+        <p class="footer__address"> БИК IRTYKZKA в АО "ForteBank"</p>
+        <a href="/grid/grid.html" class="footer__address">Гриды Лаб_7</a>
+      </div>
+      <div class="footer__contacts">
+        <span class="footer__address">мобильный/ватсап<a class="footer__telephone" href="tel:77787757768"> +7 (778)
+            775-7768</a></span>
+        <span class="footer__address"><a class="footer__email" href="mailto:info@fintax.kz">info@fintax.kz</a></span>
+      </div>
+  </div>
   </footer>
 </body>
 
