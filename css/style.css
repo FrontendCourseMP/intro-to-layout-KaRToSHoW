@@ -190,9 +190,11 @@ body {
 .navigation__item {
     list-style-type: none;
 }
-.messenger__item{
+
+.messenger__item {
     list-style-type: none;
 }
+
 .outdoor-furniture {
     background-image: url(/Image/Background-first-block.png);
     background-position: -476px 0px;
@@ -450,7 +452,8 @@ body {
 }
 
 .products__detail {
-    display: block;
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     border: 1px solid var(--border-color);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
@@ -459,11 +462,24 @@ body {
     margin: 0 46px 101px 49px;
     max-width: 459px;
     min-width: 300px;
-    min-height: 180px;
+}
+
+.products__detail-tree {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
+    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(10.5px);
+    margin: 0 46px 101px 49px;
+    max-width: 459px;
+    min-width: 300px;
 }
 
 .products__detail-textile {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     border: 1px solid var(--border-color);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
@@ -485,6 +501,7 @@ body {
     border: 0;
     margin: 10px 0 0 9px;
     background-image: url(/Image/plus.svg);
+    background-repeat: no-repeat;
 }
 
 .products__sofa {
@@ -524,9 +541,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 2.6rem;
-    margin: -34px 0 0 0;
-    padding: 0 0 0 66px;
-
+    margin: -15px 0 0 66px;
+    padding-right: 35px
 }
 
 .information__title-tree {
@@ -537,8 +553,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 2.6rem;
-    padding: 0 0 0 66px;
-    margin: 0;
+    padding: 0 0 0 68px;
+    margin: -20px 0 0 0;
 }
 
 .information__description {
@@ -550,6 +566,24 @@ body {
     padding: 0 5px 5px 66px;
     min-width: 229px;
     font-weight: 400;
+}
+
+.products__link {
+    display: none;
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    width: 13rem;
+    background: var(--button-color);
+    border: 0;
+    text-decoration-line: none;
+    padding: 20px 87px;
+    margin: 0 auto;
 }
 
 .catalog {
@@ -591,7 +625,7 @@ body {
 }
 
 .product__image-big {
-    min-width: 298.851px;
+    min-width: 299px;
     min-height: 254px;
     border-radius: 20px;
     background: rgba(158, 175, 124, 0.20);
@@ -600,8 +634,8 @@ body {
 
 .product__image {
     margin-bottom: 10px;
-    min-width: 139.464px;
-    min-height: 131.762px;
+    min-width: 140px;
+    min-height: 132px;
     border-radius: 20px;
     background: rgba(158, 175, 124, 0.20);
 }
@@ -1108,9 +1142,11 @@ body {
     .header__button-menu {
         display: none;
     }
-    .header__address-wrapper{
+
+    .header__address-wrapper {
         display: flex;
     }
+
     .header__address {
         display: block;
     }
@@ -1118,9 +1154,11 @@ body {
     .header__work-time {
         display: block;
     }
+
     .header__telephone {
         display: block;
     }
+
     .header__nav {
         display: flex;
         justify-content: center;
@@ -1128,17 +1166,19 @@ body {
         top: -50px;
         z-index: 100;
     }
-    .header__navigation-list{
+
+    .header__navigation-list {
         display: flex;
         gap: 65px;
     }
+
     .header__messenger {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         gap: 20px;
         margin: 0;
-        margin-right:140px ;
+        margin-right: 140px;
         position: relative;
         top: -90px;
         z-index: 100;
@@ -1171,18 +1211,153 @@ body {
 
     .outdoor-furniture__benefits {
         flex-direction: row;
-        margin-left: 90px;
-        margin-top: 130px;
+        margin-left: 98px;
+        margin-top: 98px;
     }
-    .benefits__description{
+
+    .benefits__description {
         font-size: 2.6rem;
         max-width: 320px;
     }
-    .benefits__item{
+
+    .benefits__item {
         padding: 0 0px 0 30px;
     }
-    .benefits__img{
+
+    .benefits__img {
         min-width: 80px;
         min-height: 80px;
     }
+}
+
+@media (min-width: 1440px) {
+    .company__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .company__title {
+        font-size: 8rem;
+        padding-left: 0px;
+    }
+
+    .company__-wrapper-desctop {
+        display: grid;
+        grid-template-columns: 496px 64px 561px;
+    }
+
+    .company__image {
+        margin: 0;
+        grid-column: 3/4;
+        height: 683px;
+    }
+
+    .company__list {
+        grid-area: 1/1;
+    }
+
+    .company__link {
+        grid-column: 1/3;
+        padding: 20px 200px;
+    }
+
+    .company__item-number {
+        font-size: 10rem;
+    }
+
+    .company__item-production {
+        font-size: 5rem;
+        line-height: 3.5rem;
+    }
+
+    .company__item-text-years,
+    .company__item-text-buyer,
+    .company__item-text {
+        font-size: 2.4rem;
+    }
+
+    .image-ovals {
+        width: 500px;
+    }
+
+    .image-ovals-two {
+        top: 33px;
+        width: 500px;
+    }
+
+    .image-ovals-three {
+        top: 10px;
+        width: 500px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .products__title {
+        font-size: 8rem;
+        padding-left: 137px;
+        padding-top: 61px;
+    }
+
+    .information__toggle {
+        width: 42px;
+        height: 42px;
+        background-position: 5px 5px;
+    }
+
+    .information__title,
+    .information__title-tree {
+        font-size: 3.4rem;
+    }
+
+    .information__description {
+        font-size: 2rem;
+    }
+
+    .products__detail {
+        position: relative;
+        margin-left: 141px;
+        z-index: 100;
+    }
+
+    .products__detail-tree {
+        min-height: 180px;
+        position: relative;
+        left: 766px;
+        bottom: 236px;
+    }
+
+    .products__detail-textile {
+        max-width: 490px;
+        position: relative;
+        left: 663px;
+        bottom: 79px;
+    }
+
+    .products__sofa {
+        display: none;
+    }
+
+    .products__sofa-two {
+        bottom: 405px;
+        z-index: 1;
+    }
+
+    .sofa-two__image {
+        width: 1186px;
+        left: 434px;
+    }
+
+    .products__link {
+        display: block;
+        padding: 20px 200px;
+        position: relative;
+        left: -333px;
+        bottom: 168px;
+        z-index: 100;
+    }
+}
+@media (min-width: 1440px){
+
 }
