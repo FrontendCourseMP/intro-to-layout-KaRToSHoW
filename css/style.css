@@ -834,25 +834,28 @@ body {
 }
 
 .order-process__item {
-    display: block;
-    max-width: 301.154px;
-    min-height: 406.558px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    max-width: 302px;
+    min-height: 407px;
     border-radius: 20px;
     background: var(--form-color);
     list-style-type: none;
-    margin: 35.7px 45px 35px 44px;
+    margin: 36px 45px 35px 44px;
 }
 
 .order-process__image-pc {
-    min-width: 102.894px;
-    min-height: 102.058px;
-    margin: 48.5px 0 0 94.5px;
+    min-width: 103px;
+    min-height: 102px;
+    margin: 49px 0 0 0;
 }
 
 .order-process__image {
-    min-width: 83.654px;
-    min-height: 102.894px;
-    margin: 47.6px 0 0 112px;
+    min-width: 84px;
+    min-height: 103px;
+    margin: 48px 0 0 0;
 }
 
 .order-process__subtitle {
@@ -954,10 +957,9 @@ body {
 .reviews__image {
     width: 89px;
     height: 89px;
-    border-radius: 89px;
-    background-color: #9EAF7C;
-    /*Заглушка*/
-    margin: 18px 0 0px 18px;
+    border-radius: 100px;
+    background-color: #9EAF7C;    /*Заглушка*/
+    margin: 18px 0 0 18px;
 }
 
 .reviews__author {
@@ -1061,7 +1063,6 @@ body {
     padding: 0 5px 0 0;
     margin: 10px 0 0 10px;
 }
-
 .footer__wrapper {
     background-color: var(--backgroundfooter-color);
     min-height: 513px;
@@ -1356,8 +1357,60 @@ body {
         left: -333px;
         bottom: 168px;
         z-index: 100;
+        margin: 0 0 0 450px;
     }
 }
 @media (min-width: 1440px){
 
+}
+@media (min-width: 1440px){
+    .order-process__title{
+        font-size: 8rem;
+        padding-left: 137px;
+    }
+    .order-process__subtitle{
+        font-size: 3.4rem;
+        margin-left: 29px;
+    }
+    .order-process__description{
+        font-size: 2rem;
+        margin-left: 33px;
+        padding-right: 40px;
+    }
+    .order-process__item{
+        min-width: 360px;
+        min-height: 486px;
+    }
+    .order-process__image,.order-process__image-pc{
+        min-width: 100px;
+    }
+    .order-process__link{
+        margin-top: 55px;
+        padding: 20px 260px;
+    }
+}
+@media (min-width: 1440px){
+    .article__reviews-Anna, .article__reviews-Andrey, .article__reviews-Kirill{
+        max-width: 360px;
+        min-height: 593px;
+    }
+    .article__title{
+        padding-left: 137px;
+        font-size: 8rem;
+    }
+    .reviews__text{
+        font-size: 1.6rem;
+        padding-right: 19px;
+        padding-bottom: 0px;
+    }
+    .reviews__text-br{
+        font-size: 1.6rem;
+    }
+    .reviews__author{
+        font-size: 3.4rem;
+    }
+    .article__link{
+        margin-top: 60px;
+        padding: 20px 260px;
+    }
 }
