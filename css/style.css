@@ -338,8 +338,10 @@ body {
     font-size: 7rem;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 50px;
     margin: 53px 0 0 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .company__image-ovals {
@@ -353,14 +355,14 @@ body {
 .image-ovals {
     object-fit: cover;
     position: absolute;
-    top: 27px;
+    top: 20px;
     width: 350px;
 }
 
 .image-ovals-two {
     object-fit: cover;
     position: absolute;
-    top: 43px;
+    top: 28px;
     width: 350px;
 }
 
@@ -390,7 +392,7 @@ body {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    margin: -17px 0 0 0;
+    margin: 0;
 }
 
 .company__item-text-buyer {
@@ -401,7 +403,7 @@ body {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    margin: -10px 0 0 0;
+    margin: 0;
 }
 
 .company__item-production {
@@ -414,6 +416,8 @@ body {
     line-height: 2.1rem;
     margin: 67px 58px 0 59px;
     max-width: min-content;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -541,7 +545,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 2.6rem;
-    margin: -15px 0 0 66px;
+    margin: 0 0 0 66px;
     padding-right: 35px
 }
 
@@ -554,7 +558,7 @@ body {
     font-weight: 700;
     line-height: 2.6rem;
     padding: 0 0 0 68px;
-    margin: -20px 0 0 0;
+    margin: 0;
 }
 
 .information__description {
@@ -1117,7 +1121,7 @@ body {
     color: var(--text-color);
 }
 
-@media (min-width:735px) {
+@media (min-width:390px) {
     .clients-list {
         justify-content: space-around;
     }
@@ -1168,6 +1172,7 @@ body {
         position: relative;
         top: -50px;
         z-index: 80;
+        margin-left: 250px;
     }
 
     .header__navigation-list {
@@ -1181,7 +1186,6 @@ body {
         justify-content: flex-end;
         gap: 20px;
         margin: 0;
-        margin-right: -230px;
         position: relative;
         z-index: 80;
     }
