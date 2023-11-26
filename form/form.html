@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/form/form-css/form.css">
+    <link rel="shortcut icon" href="/Image/favicon.png" type="image/png">
+    <title>Logo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__address-wrapper">
+            <p class="header__address">г. Алматы, ул. Абая д.68</p>
+            <p class="header__work-time">Звоните, Пн-Пт с 10:00-18:00</p>
+            <a class="header__telephone" href="tel:79009001010">+7 (900) 900-10-10</a>
+        </div>
+        <a href="#" class="header__logo-link">Logo</a>
+        <button type="button" name="menu" class="header__button-menu"><img src="/Image/menu.svg" alt="menu"></button>
+        <nav class="header__nav navigation">
+            <ul class="header__navigation-list navigation">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Главная</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">О компании</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Об изделиях</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Отзывы</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Сотрудничество</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="/form/form.html" class="navigation__link">Форма</a>
+                </li>
+            </ul>
+            <ul class="header__messenger messenger">
+                <li class="messenger__item">
+                    <a href="#"><img class="messenger__image" src="/Image/instagram.svg" alt="Инстаграмм"></a>
+                </li>
+                <li class="messenger__item">
+                    <a href="#"><img class="messenger__image" src="/Image/telegram.svg" alt="Телеграмм"></a>
+                </li>
+                <li class="messenger__item">
+                    <a href="#"><img class="messenger__image" src="/Image/whatsapp.svg" alt="Ватсапп"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <form class="form" method="post" action="//httpbin.org/post">
+            <fieldset class="form__information info">
+                <legend class="info__contacts-title">Личная информация</legend>
+                <label class="info__label">Имя<input class="info__input" type="name" name="name" placeholder="Григорий Иван Васильевич" required></label>
+                <label class="info__label">Дата рождения<input class="info__input" type="date" name="date" required></label>
+                <p class="info__title">Пол</p>
+                <div class="info__gender-wrapper">
+                    <label class="info__label-gender"><input class="info__input-gender" type="radio" value="Мужской" name="user_gender">Мужской</label>
+                    <label class="info__label-gender"><input class="info__input-gender" type="radio" value="Женский" name="user_gender">Женский</label>
+                </div>
+                <label class="info__label">Пароль<input class="info__input" type="password" name="password" required></label>
+            </fieldset>
+
+            <fieldset class="form__contacts contact">
+                <legend class="contact__title">Контактные данные</legend>
+                <label class="contact__label">Email<input class="contact__input" type="email" name="email" required></label>
+                <label class="contact__label">Телефон<input class="contact__input" type="tel" name="phone" required></label>
+                <p class="contact__text">Удобный интервал для связи</p>
+                <div class="contact__interval-wrapper">
+                    <label class="contact__label-time"><input class="contact__input-time" type="checkbox" name="time" value="Утро">Утро</label>
+                    <label class="contact__label-time"><input class="contact__input-time" type="checkbox" name="time" value="День">День</label>
+                    <label class="contact__label-time"><input class="contact__input-time" type="checkbox" name="time" value="Вечер">Вечер</label>
+                    <label class="contact__label-time"><input class="contact__input-time" type="checkbox" name="time" value="Ночь">Ночь</label>
+                </div>
+            </fieldset>
+            <div class="form__button-wrapper">
+                <button class="form__button-send" type="submit">Отправить</button>
+                <button class="form__button-reset" type="reset">Сбросить</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer__title">Контакты</h2>
+        <div class="footer__wrapper">
+            <img class="footer__image" src="/Image/карта_1.png" alt="Карта">
+            <div class="footer__address-wrapper">
+                <p class="footer__address">Адрес - Москва, Степана Разина 119</p>
+                <p class="footer__address"> Телефон - 7 982 658 25 85 </p>
+                <p class="footer__address"> ТОО «Консалтинговая Компания Financial-Tax Analytics» </p>
+                <p class="footer__address"> БИН 181 040 010 133</p>
+                <p class="footer__address"> Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304 </p>
+                <p class="footer__address"> Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60 </p>
+                <p class="footer__address"> ИИК KZ76 9650 3F00 0817 5335 </p>
+                <p class="footer__address"> БИК IRTYKZKA в АО "ForteBank"</p>
+                <a href="/grid/grid.html" class="footer__address">Гриды Лаб_7</a>
+            </div>
+            <div class="footer__contacts">
+                <span class="footer__address">мобильный/ватсап<a class="footer__telephone" href="tel:77787757768"> +7
+                        (778)
+                        775-7768</a></span>
+                <span class="footer__address"><a class="footer__email"
+                        href="mailto:info@fintax.kz">info@fintax.kz</a></span>
+            </div>
+        </div>
+    </footer>

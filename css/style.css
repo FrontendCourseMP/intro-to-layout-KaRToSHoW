@@ -339,7 +339,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 50px;
-    margin: 53px 0 0 0;
+    margin: 40px 0 0 0;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -967,7 +967,8 @@ body {
     width: 89px;
     height: 89px;
     border-radius: 100px;
-    background-color: #9EAF7C;    /*Заглушка*/
+    background-color: #9EAF7C;
+    /*Заглушка*/
     margin: 18px 0 0 18px;
 }
 
@@ -1072,6 +1073,7 @@ body {
     padding: 0 5px 0 0;
     margin: 10px 0 0 10px;
 }
+
 .footer__wrapper {
     background-color: var(--backgroundfooter-color);
     min-height: 513px;
@@ -1276,6 +1278,7 @@ body {
 
     .company__item-number {
         font-size: 10rem;
+        line-height: 65px;
     }
 
     .company__item-production {
@@ -1283,18 +1286,28 @@ body {
         line-height: 3.5rem;
     }
 
-    .company__item-text-years,
-    .company__item-text-buyer,
+    .company__item-text-years {
+        font-size: 2.4rem;
+        margin-bottom: 65px;
+    }
+
+    .company__item-text-buyer {
+        font-size: 2.4rem;
+        margin-bottom: 22px;
+    }
+
     .company__item-text {
         font-size: 2.4rem;
+        margin-bottom: 22px;
     }
 
     .image-ovals {
         width: 500px;
+        top: -20px;
     }
 
     .image-ovals-two {
-        top: 33px;
+        top: -6px;
         width: 500px;
     }
 
@@ -1370,56 +1383,71 @@ body {
         margin: 0 0 0 450px;
     }
 }
-@media (min-width: 1440px){
 
-}
-@media (min-width: 1440px){
-    .order-process__title{
+@media (min-width: 1440px) {}
+
+@media (min-width: 1440px) {
+    .order-process__title {
         font-size: 8rem;
         padding-left: 137px;
     }
-    .order-process__subtitle{
+
+    .order-process__subtitle {
         font-size: 3.4rem;
         margin-left: 29px;
     }
-    .order-process__description{
+
+    .order-process__description {
         font-size: 2rem;
         margin-left: 33px;
         padding-right: 40px;
     }
-    .order-process__item{
+
+    .order-process__item {
         min-width: 360px;
         min-height: 486px;
     }
-    .order-process__image,.order-process__image-pc{
+
+    .order-process__image,
+    .order-process__image-pc {
         min-width: 100px;
     }
-    .order-process__link{
+
+    .order-process__link {
         margin-top: 55px;
         padding: 20px 260px;
     }
 }
-@media (min-width: 1440px){
-    .article__reviews-Anna, .article__reviews-Andrey, .article__reviews-Kirill{
+
+@media (min-width: 1440px) {
+
+    .article__reviews-Anna,
+    .article__reviews-Andrey,
+    .article__reviews-Kirill {
         max-width: 360px;
         min-height: 593px;
     }
-    .article__title{
+
+    .article__title {
         padding-left: 137px;
         font-size: 8rem;
     }
-    .reviews__text{
+
+    .reviews__text {
         font-size: 1.6rem;
         padding-right: 19px;
         padding-bottom: 0px;
     }
-    .reviews__text-br{
+
+    .reviews__text-br {
         font-size: 1.6rem;
     }
-    .reviews__author{
+
+    .reviews__author {
         font-size: 3.4rem;
     }
-    .article__link{
+
+    .article__link {
         margin-top: 60px;
         padding: 20px 260px;
     }
