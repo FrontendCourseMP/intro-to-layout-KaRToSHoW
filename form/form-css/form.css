@@ -1,3 +1,12 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    flex-grow: 1;
+}
+
 .header {
     background-color: #6c7754;
     position: relative;
@@ -127,4 +136,41 @@
 
 .form__button-reset:focus {
     background-color: grey;
+}
+@media (min-width:1440px){
+    .info__contacts-title, .contact__title {
+        font-size: 4rem;
+    }
+    .form{
+        font-size: 2.5rem;
+    }
+    .info__input, .contact__input {
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 388px;
+        height: 40px;
+    }
+    .info__input-gender{
+        width: 28px;
+        margin-right: 10px;
+    }
+    .contact__input-time{
+        width: 28px;
+    }
+    .contact__label-time{
+        margin-right: 24px;
+        min-width: 102px;
+        margin-left: 42px;
+        margin-top: 8px;
+        margin-bottom: 3px;
+    }
+    .contact__interval-wrapper{
+        width: 338px;
+    }
+    .form__button-send{
+        padding: 13px 30px;
+    }
+    .form__button-reset{
+        padding: 13px 30px;
+    }
 }
