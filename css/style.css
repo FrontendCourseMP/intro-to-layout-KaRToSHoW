@@ -314,9 +314,12 @@ body {
 }
 
 .company__image {
+    height: 335px;
     display: block;
     padding: 0;
     margin: 0 auto;
+    border-radius: 20px;
+    border: 5px solid #9EAF7C;
 }
 
 .company__list {
@@ -357,7 +360,6 @@ body {
 .image-ovals {
     object-fit: cover;
     position: absolute;
-    top: 20px;
     width: 350px;
     z-index: 1;
 }
@@ -365,7 +367,7 @@ body {
 .image-ovals-two {
     object-fit: cover;
     position: absolute;
-    top: 28px;
+    top: 13px;
     width: 350px;
     z-index: 1;
 }
@@ -1264,7 +1266,7 @@ body {
     .company__image {
         margin: 0;
         grid-column: 3/4;
-        height: 683px;
+        height: 661px;
     }
 
     .company__list {
