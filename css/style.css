@@ -1042,7 +1042,11 @@ body {
     min-height: 84px;
     margin: 8px 0 0 27px;
 }
-
+.clients-list__image-Hawai{
+    width: 107px;
+    height: 73px;
+    margin: 20px 0 0 21px;
+}
 .clients-list__name {
     display: block;
     color: var(--title-color);
@@ -1054,7 +1058,27 @@ body {
     padding: 0 5px 0 0;
     margin: 10px 0 0 10px;
 }
-
+.clients__buttons{
+    display: none;
+}
+.clienst__link{
+    color: var(--text-color);
+    text-align: center;
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.032rem;
+    border-radius: 1rem;
+    width: 130px;
+    min-height: 12px;
+    background: var(--button-color);
+    border: 0;
+    text-decoration-line: none;
+    padding: 20px 87px;
+    margin: 0 auto;
+}
 .footer__wrapper {
     background-color: var(--backgroundfooter-color);
     min-height: 513px;
@@ -1081,6 +1105,8 @@ body {
 
 .footer__address-wrapper {
     margin: 34px 0 0 0;
+    background-color: var(--backgroundfooter-color);
+    padding-left: 45px;
 }
 
 .footer__address {
@@ -1091,7 +1117,7 @@ body {
     font-style: normal;
     line-height: 179.182%;
     list-style-type: none;
-    margin: 0px 60px 0 45px;
+    margin: 0 60px 0 0;
 }
 
 .footer__contacts {
@@ -1359,7 +1385,7 @@ body {
         padding: 20px 200px;
         position: relative;
         left: -333px;
-        bottom: 168px;
+        bottom: 144px;
         z-index: 100;
         margin: 0 0 0 450px;
     }
@@ -1409,6 +1435,12 @@ body {
 }
 
 @media (min-width: 1440px) {
+    .order-process__list{
+        gap: 40px;
+    }
+    .order-process__item{
+        margin: 0;
+    }
     .order-process__title {
         font-size: 8rem;
         padding-left: 137px;
@@ -1442,12 +1474,16 @@ body {
 }
 
 @media (min-width: 1440px) {
+    .article__list{
+        gap: 40px;
+    }
 
     .article__reviews-Anna,
     .article__reviews-Andrey,
     .article__reviews-Kirill {
         max-width: 360px;
         min-height: 593px;
+        margin: 0;
     }
 
     .article__title {
@@ -1470,6 +1506,103 @@ body {
     }
 
     .article__link {
+        margin-top: 60px;
+        padding: 20px 260px;
+    }
+}
+@media (min-width: 1440px){
+    .footer__title{
+        margin-left: 137px;
+        font-size: 8rem;
+        padding-top: 48px;
+    }
+    .footer__image{
+        object-position: -58px 0px;
+        height: 828px;
+    }
+    .footer__wrapper{
+        position: absolute;
+        height: 0;
+        background-color: var(--background-color);
+    }
+    .footer__address-wrapper{
+        position: relative;
+        bottom: 680px;
+        max-width: 573px;
+        left: 100px;
+        margin: 0;
+        padding: 60px 50px 20px 50px;
+    }
+    .footer__address{
+        padding: 0;
+        font-size: 2rem
+    }
+}
+@media (min-width:1440px){
+    .clients-list__item:nth-last-child(-n+2) {
+        display: none;
+    }
+    .clients-list{
+        justify-content: center;
+        gap: 40px;
+    }
+    .clients-list__item{
+        width: 260px;
+        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .clients-list__name{
+        font-size: 2.4rem;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .clients-list__image{
+        min-height: 148px;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .clients-list__image-Hawai{
+        width: 170px;
+        height: 111px;
+        margin: 36px 0 20px 14px;
+    }
+    .clients__title{
+        font-size: 8rem;
+        margin-left: 137px;
+        padding-top: 48px;
+    }
+    .clients__buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .clients__button-1{
+        background-color: #9EAF7C80;
+        border: 0;
+        border-radius: 100px;
+        padding: 8px;
+    }
+    .clients__button-2{
+        background-color: #9EAF7C;
+        border: 0;
+        border-radius: 100px;
+        padding: 8px;
+        margin: 0 12px;
+    }
+    .clients__button-3{
+        background-color: #9EAF7C80;
+        border: 0;
+        border-radius: 100px;
+        padding: 8px;
+    }
+    .clienst__link{
+        display: block;
         margin-top: 60px;
         padding: 20px 260px;
     }
