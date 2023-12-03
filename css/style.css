@@ -729,54 +729,33 @@ body {
     margin: 0 0 50px 0;
 }
 
-.custom-order__label-name {
-    display: flex;
-    width: 130px;
-    height: 48px;
-    padding-right: 170px;
-    align-items: center;
-    border-radius: 60px;
-    background: var(--form-color);
-    margin: 20px 0 0 44px;
-}
-
-.custom-order__label-telephone {
-    display: flex;
-    width: 130px;
-    height: 48px;
-    padding-right: 170px;
-    align-items: center;
-    border-radius: 60px;
-    background: var(--form-color);
-    margin: 20px 0 0 44px;
+.custom-order__label-name, .custom-order__label-telephone {
+    display: block;
+    margin-left: 44px;
+    margin-bottom: 20px;
 }
 
 .custom-order__input {
     color: #101213;
-    text-align: left;
     font-family: sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     line-height: 1.96rem;
     outline: none;
     border: none;
-    min-width: 260px;
-    margin: 0 0 0 20px;
+    width: 290px;
+    height: 48px;
+    border-radius: 50px;
+    padding-left: 21px;
 }
 
 .custom-order__label-textarea {
-    display: inline-flex;
-    height: 110px;
-    padding-right: 20px;
-    align-items: center;
-    border-radius: 20px;
-    background: var(--form-color);
-    margin: 20px 0 0 44px;
+    display: block;
+    margin: 0 0 0 44px;
 }
 
 .custom-order__textarea {
     color: #101213;
-    text-align: left;
     font-family: sans-serif;
     font-size: 1.4rem;
     font-style: normal;
@@ -784,10 +763,10 @@ body {
     resize: none;
     outline: none;
     border: none;
-    min-height: 81px;
-    min-width: 260px;
-    margin: 0 0 0 20px;
-    padding: 10px 0 0 0;
+    width: 280px;
+    height: 110px;
+    border-radius: 20px;
+    padding: 20px 10px 0 20px;
 }
 
 .custom-order__agreement {
@@ -1059,8 +1038,8 @@ body {
 }
 
 .clients-list__image {
-    min-width: 84.107px;
-    min-height: 84.107px;
+    min-width: 84px;
+    min-height: 84px;
     margin: 8px 0 0 27px;
 }
 
@@ -1386,7 +1365,48 @@ body {
     }
 }
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+    .custom-order{
+        background-position: 0px 30px;
+    }
+    .custom-order__title{
+        padding-top: 50px;
+        font-size: 5rem;
+        padding-left: 140px;
+    }
+    .custom-order__para{
+        font-size: 4.2rem;
+        padding-left: 140px;
+    }
+    .custom-order__subpara{
+        font-size: 8rem;
+        padding-left: 234px;
+    }
+    .custom-order__label-name, .custom-order__label-telephone{
+        margin-left: 140px;
+    }
+    .custom-order__input{
+        width: 435px;
+    }
+    .custom-order__label-textarea{
+        margin-left: 140px;
+    }
+    .custom-order__textarea{
+        width: 425px;
+    }
+    .custom-order__agreement{
+        margin-left: 140px;
+        font-size: 1.2rem;
+    }
+    .custom-order__link{
+        font-size: 1.2rem;
+    }
+    .custom-order__button{
+        margin-left: 140px;
+        min-width: 450px;
+        min-height: 63px;
+    }
+}
 
 @media (min-width: 1440px) {
     .order-process__title {
