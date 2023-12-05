@@ -143,23 +143,41 @@
     <section class="catalog">
       <div class="catalog__wrapper">
         <h2 class="catalog__title">Каталог</h2>
-        <ul class="catalog__list-big">
-          <li class="catalog__item product">
-            <img class="product__image-big" src="/Image/Классический-лежак.jpg" alt="Классический лежак">
-            <a href="#" class="product__link">Классический лежак</a>
-          </li>
-          <li class="catalog__item product">
-            <img class="product__image-big" src="/Image/Кресло-шезлонг.jpg" alt="Кресло шезлонг">
-            <a href="#" class="product__link">Кресло шезлонг</a>
-          </li>
-        </ul>
         <ul class="catalog__list">
+          <li class="catalog__item">
+            <ul class="catalog__list-big">
+              <li class="catalog__item product">
+                <picture>
+                  <source srcset="/Image/Классический-лежак-2.jpg" media="(min-width: 1440px)">
+                  <source srcset="/Image/Классический-лежак.jpg">
+                  <img class="product__image-big" src="/Image/Классический-лежак.jpg" alt="Классический лежак">
+                </picture>
+                <a href="#" class="product__link">Классический лежак</a>
+              </li>
+              <li class="catalog__item product">
+                <picture>
+                  <source srcset="/Image/Шезлонг.jpg" media="(min-width: 1440px)">
+                  <source srcset="/Image/Кресло-шезлонг.jpg">
+                  <img class="product__image-big" src="/Image/Кресло-шезлонг.jpg" alt="Кресло шезлонг">
+                </picture>
+                <a href="#" class="product__link">Кресло шезлонг</a>
+              </li>
+            </ul>
+          </li>
           <li class="catalog__item product">
-            <img class="product__image" src="/Image/Топчан.jpg" alt="Топчан">
+            <picture>
+              <source srcset="/Image/Топчан-2.jpg" media="(min-width: 1440px)">
+              <source srcset="/Image/Топчан.jpg">
+              <img class="product__image" src="/Image/Топчан.jpg" alt="Топчан">
+            </picture>
             <a href="#" class="product__link">Топчан</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="/Image/Комплект-уличной-мебели.jpg" alt="Комплект уличной мебели">
+            <picture>
+              <source srcset="/Image/Комплект-уличной-мебели-2.jpg" media="(min-width: 1440px)">
+              <source srcset="/Image/Комплект-уличной-мебели.jpg">
+              <img class="product__image" src="/Image/Комплект-уличной-мебели.jpg" alt="Комплект уличной мебели">
+            </picture>
             <a href="#" class="product__link">Комплект уличной мебели</a>
           </li>
           <li class="catalog__item product">
@@ -167,23 +185,43 @@
             <a href="#" class="product__link">Скамейка со спинкой</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="/Image/Обеденный-стол-со-стульями.jpg" alt="Обеденный стол со стульями">
+            <picture>
+              <source srcset="/Image/Обеденный-стол.jpg" media="(min-width: 1440px)">
+              <source srcset="/Image/Обеденный-стол-со-стульями.jpg">
+              <img class="product__image" src="/Image/Обеденный-стол-со-стульями.jpg" alt="Обеденный стол со стульями">
+            </picture>
             <a href="#" class="product__link">Обеденный стол со стульями</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="/Image/Складной-стульчик.jpg" alt="Складной стульчик">
+            <picture>
+              <source srcset="/Image/Складной-стульчик-2.jpg" media="(min-width: 1440px)">
+              <source srcset="/Image/Складной-стульчик.jpg">
+              <img class="product__image" src="/Image/Складной-стульчик.jpg" alt="Складной стульчик">              
+            </picture>
             <a href="#" class="product__link">Складной стульчик</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="/Image/Столик-бар.jpg" alt="Столик-бар">
+            <picture>
+              <source srcset="/Image/Столик-бар-2.jpg" media="(min-width: 1440px)">
+              <source srcset="/Image/Столик-бар.jpg">
+              <img class="product__image" src="/Image/Столик-бар.jpg" alt="Столик-бар">
+            </picture>
             <a href="#" class="product__link">Столик-бар</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="/Image/Кофейный-столик.jpg" alt="Кофейный столик">
+            <picture>
+              <source srcset="/Image/Стол-кофейный.jpg" media="(min-width: 1440px)">
+              <source srcset="/Image/Кофейный-столик.jpg">
+              <img class="product__image" src="/Image/Кофейный-столик.jpg" alt="Кофейный столик">
+            </picture>
             <a href="#" class="product__link">Кофейный столик</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="/Image/Матрас-для-лежака.jpg" alt="Матрас для лежака">
+            <picture>
+              <source srcset="/Image/Матрасы.jpg" media="(min-width: 1440px)">
+              <source srcset="/Image/Матрас-для-лежака.jpg">
+              <img class="product__image" src="/Image/Матрас-для-лежака.jpg" alt="Матрас для лежака">
+            </picture>  
             <a href="#" class="product__link">Матрас для лежака</a>
           </li>
         </ul>
@@ -351,8 +389,8 @@
         <p class="footer__address"> Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60 </p>
         <p class="footer__address"> ИИК KZ76 9650 3F00 0817 5335 </p>
         <p class="footer__address"> БИК IRTYKZKA в АО "ForteBank"</p>
-        <a href="/grid/grid.html" class="footer__address">Гриды Лаб_7</a>
-        <a href="/form/form.html" class="footer__address">Форма</a>
+        <a href="/grid.html" class="footer__address">Гриды Лаб_7</a>
+        <a href="/form.html" class="footer__address">Форма</a>
         <div class="footer__contacts">
           <span class="footer__address">мобильный/ватсап<a class="footer__telephone" href="tel:77787757768"> +7(778) 775-77-68</a></span>
           <span class="footer__address"><a class="footer__email" href="mailto:info@fintax.kz">info@fintax.kz</a></span>

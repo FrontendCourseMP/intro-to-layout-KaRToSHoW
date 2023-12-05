@@ -196,7 +196,7 @@ body {
 }
 
 .outdoor-furniture {
-    background-image: url(/Image/Background-first-block.png);
+    background-image: url(/Image/Background-first-block.jpg);
     background-position: -476px 0px;
     background-size: cover;
     min-width: 390px;
@@ -625,7 +625,9 @@ body {
     list-style-type: none;
     max-width: min-content;
 }
-
+.catalog__item:first-child{
+    grid-column: 1/-1;
+}
 .catalog__list-big {
     padding: 0;
     margin: 0;
@@ -683,7 +685,7 @@ body {
 }
 
 .custom-order {
-    background-image: url(/Image/background_form.png);
+    background-image: url(/Image/background_form.jpg);
     background-position: -705px -21px;
     min-width: 390px;
     margin: 46px 0 0 0;
@@ -1605,5 +1607,26 @@ body {
         display: block;
         margin-top: 60px;
         padding: 20px 260px;
+    }
+}
+@media (min-width:1440px){
+    .catalog__title{
+        padding-left: 137px;
+        font-size: 8rem;
+    }
+    .catalog__item:nth-child(4) {
+        display: none;
+    }
+    .catalog__list {
+        padding: 43px 130px;
+        gap: 30px 0;
+        grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+    }
+    .catalog__item:first-child{
+        grid-column: auto;
+    }
+    .product__link{
+        font-size: 2.8rem;
+        line-height: 100%; /* 28px */
     }
 }
