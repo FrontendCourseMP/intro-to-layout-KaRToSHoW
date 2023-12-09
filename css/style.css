@@ -197,7 +197,7 @@ body {
 
 .outdoor-furniture {
     background-image: url(/Image/Background-first-block.jpg);
-    background-position: -476px 0px;
+    background-position: -529px 0px;
     background-size: cover;
     min-width: 390px;
     min-height: 804px;
@@ -205,9 +205,9 @@ body {
 
 .outdoor-furniture__wrapper {
     background: rgba(68, 66, 55, 0.70);
-    min-width: 390px;
     min-height: 804px;
     padding: 0.01rem 0rem 0;
+    padding-left: 45px;
 }
 
 .outdoor-furniture__title {
@@ -219,7 +219,6 @@ body {
     line-height: normal;
     letter-spacing: -0.204rem;
     margin: 13rem 0rem 0rem 0;
-    padding: 0 0 0 4.5rem;
 }
 
 .outdoor-furniture__subtitle {
@@ -227,10 +226,8 @@ body {
     font-family: 'Philosopher', serif;
     font-size: 4.0rem;
     font-style: italic;
-    ;
     line-height: normal;
     margin: 1.3rem 0 0 0;
-    padding: 0 0 0 4.3rem;
 }
 
 .outdoor-furniture__subsubtitle {
@@ -242,7 +239,7 @@ body {
     line-height: normal;
     letter-spacing: -0.204rem;
     margin: 0.3rem 0 4.1rem 0;
-    padding: 0 0 0 7.3rem;
+    padding: 0 0 0 3rem;
 }
 
 .outdoor-furniture__link {
@@ -259,8 +256,8 @@ body {
     background: var(--button-color);
     border: 0;
     text-decoration-line: none;
-    padding: 20px 87px;
-    margin: 0 auto;
+    padding: 20px 81px;
+    margin: 0 0 0 8px;
 }
 
 .outdoor-furniture__benefits {
@@ -273,7 +270,7 @@ body {
 
 .benefits__item {
     list-style-type: none;
-    padding: 0 41px 0 45px;
+    padding: 0 50px 0 0px;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -302,13 +299,16 @@ body {
     min-width: 390px;
 }
 
+.company__wrapper{
+    padding: 22px 35px 0 35px;
+}
+
 .company__title {
     color: var(--title-color);
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
     line-height: normal;
-    padding: 22px 0 0 45px;
     margin: 0px 0 35px 0;
     font-weight: 400;
 }
@@ -451,13 +451,16 @@ body {
     min-width: 390px;
 }
 
+.products__wrapper{
+    padding: 39px 0px 0 43px;
+}
+
 .products__title {
     color: var(--title-color);
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
     line-height: normal;
-    padding: 39px 0 0 43px;
     margin: 0px 0 39px 0;
     font-weight: 400;
 }
@@ -470,9 +473,10 @@ body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
     box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10.5px);
-    margin: 0 46px 101px 49px;
+    margin: 0 46px 101px 0px;
     max-width: 459px;
-    min-width: 300px;
+    min-width: 238px;
+    padding-left: 65px;
 }
 
 .products__detail-tree {
@@ -483,9 +487,10 @@ body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
     box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10.5px);
-    margin: 0 46px 101px 49px;
+    margin: 0 46px 101px 0px;
     max-width: 459px;
-    min-width: 300px;
+    min-width: 238px;
+    padding-left: 65px;
 }
 
 .products__detail-textile {
@@ -496,11 +501,12 @@ body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
     box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10.5px);
-    margin: 0 46px 0px 49px;
+    margin: 0 46px 0px 0px;
     max-width: 459px;
-    min-width: 300px;
+    min-width: 238px;
     z-index: 100;
     position: relative;
+    padding-left: 65px;
 }
 
 .information__toggle {
@@ -510,7 +516,7 @@ body {
     width: 33px;
     height: 33px;
     border: 0;
-    margin: 10px 0 0 9px;
+    margin: 10px 0 0 -54px;
     background-image: url(/Image/plus.svg);
     background-repeat: no-repeat;
 }
@@ -552,8 +558,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 2.6rem;
-    margin: 0 0 0 66px;
-    padding-right: 35px
+    margin: 0 0 0 0px;
+    padding-right: 43px;
 }
 
 .information__title-tree {
@@ -564,7 +570,6 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 2.6rem;
-    padding: 0 0 0 68px;
     margin: 0;
 }
 
@@ -574,8 +579,7 @@ body {
     font-size: 1.6rem;
     font-style: normal;
     line-height: normal;
-    padding: 0 5px 5px 66px;
-    min-width: 229px;
+    padding: 0px 11px 0px 0px;
     font-weight: 400;
 }
 
@@ -597,8 +601,13 @@ body {
     margin: 0 auto;
 }
 
+
 .catalog {
     min-width: 390px;
+}
+
+.catalog__wrapper{
+    padding: 39px 43px 0 43px;
 }
 
 .catalog__title {
@@ -607,13 +616,12 @@ body {
     font-size: 3.8rem;
     font-style: italic;
     line-height: normal;
-    margin: 0 0 39px 0;
-    padding: 39px 0 0 43px;
+    margin: 0 0 0px 0;
     font-weight: 400;
 }
 
 .catalog__list {
-    padding: 43px 44px;
+    padding: 43px 0px;
     margin: 0 auto;
     display: grid;
     gap: 30px 14.5px;
@@ -687,14 +695,13 @@ body {
 .custom-order {
     background-image: url(/Image/background_form.jpg);
     background-position: -705px -21px;
-    min-width: 390px;
     margin: 46px 0 0 0;
 }
 
 .custom-order__wrapper {
     background: rgba(68, 66, 55, 0.70);
-    min-width: 390px;
     min-height: 770px;
+    padding-left: 45px;
 }
 
 .custom-order__title {
@@ -705,7 +712,7 @@ body {
     font-weight: 300;
     line-height: normal;
     letter-spacing: -0.192rem;
-    padding: 76px 0 0 45px;
+    padding: 76px 0 0 0px;
     margin: 0 0 23px 0;
 }
 
@@ -717,7 +724,7 @@ body {
     font-weight: 300;
     line-height: normal;
     letter-spacing: -0.144rem;
-    padding: 0 20px 0 45px;
+    padding: 0 20px 0 0px;
     margin: 0 0 8px 0;
 }
 
@@ -727,13 +734,11 @@ body {
     font-size: 3.2rem;
     font-style: italic;
     line-height: normal;
-    padding: 0 0 0 45px;
     margin: 0 0 50px 0;
 }
 
 .custom-order__label-name, .custom-order__label-telephone {
     display: block;
-    margin-left: 44px;
     margin-bottom: 20px;
 }
 
@@ -753,7 +758,6 @@ body {
 
 .custom-order__label-textarea {
     display: block;
-    margin: 0 0 0 44px;
 }
 
 .custom-order__textarea {
@@ -777,7 +781,7 @@ body {
     font-size: 1rem;
     font-style: normal;
     line-height: 1.5rem;
-    margin: 15px 0 0 45px;
+    margin: 15px 0 0 0px;
     padding: 0 35px 0 0;
 }
 
@@ -799,11 +803,15 @@ body {
     width: 30rem;
     height: 5.8rem;
     border: 0;
-    margin: 23px 0 0 45px;
+    margin: 23px 0 0 0px;
 }
 
 .order-process {
     min-width: 390px;
+}
+
+.order-process__wrapper{
+    padding: 22px 43px 0 43px;
 }
 
 .order-process__title {
@@ -812,8 +820,8 @@ body {
     font-size: 3.8rem;
     font-style: italic;
     line-height: normal;
-    margin: 0;
-    padding: 21px 0 0 44px;
+    margin: 0 0 35px 0;
+    padding: 0px 0 0 0px;
     font-weight: 400;
 }
 
@@ -835,19 +843,8 @@ body {
     border-radius: 20px;
     background: var(--form-color);
     list-style-type: none;
-    margin: 36px 45px 35px 44px;
-}
-
-.order-process__image-pc {
-    min-width: 103px;
-    min-height: 102px;
-    margin: 49px 0 0 0;
-}
-
-.order-process__image {
-    min-width: 84px;
-    min-height: 103px;
-    margin: 48px 0 0 0;
+    margin: 0 0 35px 0;
+    padding: 48px 15px 0 28px;
 }
 
 .order-process__subtitle {
@@ -857,7 +854,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 1.96rem;
-    margin: 79.4px 0 0 24.3px;
+    margin: 79.4px 0 0 0;
 }
 
 .order-process__description {
@@ -866,8 +863,7 @@ body {
     font-size: 1.8rem;
     font-style: normal;
     line-height: normal;
-    margin: 17px 0 0 28px;
-    padding: 0 15px 0 0;
+    margin: 17px 0 0 0px;
     font-weight: 400;
 }
 
@@ -893,6 +889,10 @@ body {
     min-width: 390px;
 }
 
+.article__wrapper{
+    padding: 56px 45px 0 45px;
+}
+
 .article__list {
     display: flex;
     flex-wrap: wrap;
@@ -902,14 +902,17 @@ body {
     margin: 0;
 }
 
+.article__item{
+    margin-bottom: 18px;
+}
+
 .article__title {
     color: var(--title-color);
     font-family: 'Philosopher', serif;
     font-size: 3.8rem;
     font-style: italic;
     line-height: normal;
-    margin: 0;
-    padding: 56px 0 44px 45px;
+    margin: 0 0 44px 0;
     font-weight: 400;
 }
 
@@ -917,8 +920,7 @@ body {
     border-radius: 20px;
     max-width: 300px;
     background: var(--form-color);
-    margin: 18px 45px;
-    padding: 0;
+    padding: 18px 3px 40px 18px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -929,21 +931,20 @@ body {
     border-radius: 20px;
     max-width: 300px;
     background: var(--form-color);
-    margin: 18px 45px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    padding: 18px 18px 37px 18px;
 }
 
 .article__reviews-Andrey {
-    padding: 0;
     border-radius: 20px;
     max-width: 300px;
     background: var(--form-color);
-    margin: 18px 45px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    padding: 23px 45px 42px 18px;
 }
 
 .reviews__image {
@@ -951,8 +952,7 @@ body {
     height: 89px;
     border-radius: 100px;
     background-color: #9EAF7C;
-    /*Заглушка*/
-    margin: 18px 0 0 18px;
+    /* margin: 18px 0 0 18px; */
 }
 
 .reviews__author {
@@ -963,8 +963,8 @@ body {
     font-weight: 700;
     line-height: 2.8rem;
     min-height: 56px;
-    max-width: 140px;
-    margin: 35px 0 0 24px;
+    max-width: 120px;
+    margin: 18px 0 0 24px;
 }
 
 .reviews__text {
@@ -973,9 +973,8 @@ body {
     font-size: 1.4rem;
     font-style: normal;
     line-height: normal;
-    padding: 0 3px 40px 18px;
+    /* padding: 0 3px 40px 18px; */
     margin: 57px 0 0 0;
-
 }
 
 .reviews__text-br {
@@ -1003,12 +1002,16 @@ body {
     background: var(--button-color);
     border: 0;
     text-decoration-line: none;
-    padding: 20px 87px;
-    margin: 0 auto;
+    padding: 20px 85px;
+    margin: 44px 0 0 0;
 }
 
 .clients {
     min-width: 390px;
+}
+
+.clients__wrapper{
+    padding: 62px 45px 0 45px;
 }
 
 .clients__title {
@@ -1017,16 +1020,17 @@ body {
     font-size: 3.8rem;
     font-style: italic;
     line-height: normal;
-    margin: 0 0 0 45px;
-    padding: 62px 0 0 0;
+    /* margin: 0 0 0 45px; */
+    /* padding: 62px 0 0 0; */
     font-weight: 400;
+    margin: 0;
 }
 
 .clients-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 45px 0 45px;
+    padding: 0 0px 0 0px;
     gap: 20px;
 }
 
@@ -1094,8 +1098,10 @@ body {
     font-style: italic;
     line-height: normal;
     margin: 0 0 0 45px;
-    padding: 91px 0 37px 0;
+    /* padding: 91px 0 37px 0; */
     font-weight: 400;
+    padding-left: 45px;
+    margin: 91px 0 37px 0;
 }
 
 .footer__image {
@@ -1106,9 +1112,10 @@ body {
 }
 
 .footer__address-wrapper {
-    margin: 34px 0 0 0;
+    /* margin: 34px 0 0 0; */
     background-color: var(--backgroundfooter-color);
     padding-left: 45px;
+    padding: 34px 60px 72px 45px;
 }
 
 .footer__address {
@@ -1119,12 +1126,13 @@ body {
     font-style: normal;
     line-height: 179.182%;
     list-style-type: none;
-    margin: 0 60px 0 0;
+    /* margin: 0 60px 0 0; */
+    margin: 0;
 }
 
 .footer__contacts {
     margin: 40px 0 0px 0;
-    padding: 0 0 72px 0;
+    /* padding: 0 0 72px 0; */
 }
 
 .footer__telephone {
@@ -1639,4 +1647,7 @@ body {
         margin-top: 60px;
         padding: 20px 260px;
     }
+}
+@media (min-width:390px){
+    
 }
