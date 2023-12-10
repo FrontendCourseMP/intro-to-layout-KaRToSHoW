@@ -77,13 +77,27 @@
     font-size: 62.5%;
 }
 
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+blockquote::selection,
+img::selection,
+a::selection,
+input::selection,
+strong::selection,
+span::selection,
+button::selection,
+textarea::selection {
+    background: #a1bb68;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--background-color);
-    margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
 
@@ -186,18 +200,22 @@ body {
     letter-spacing: -0.108rem;
     text-decoration: none;
 }
-.navigation__link:active{
+
+.navigation__link:active {
     color: var(--number-color);
-    text-decoration:underline;
+    text-decoration: underline;
 }
-.navigation__link:hover{
+
+.navigation__link:hover {
     color: var(--number-color);
-    text-decoration:underline;
+    text-decoration: underline;
 }
-.navigation__link:focus{
+
+.navigation__link:focus {
     color: var(--number-color);
-    text-decoration:underline;
+    text-decoration: underline;
 }
+
 .navigation__item {
     list-style-type: none;
 }
@@ -322,7 +340,7 @@ body {
     position: relative;
 }
 
-.company::before{
+.company::before {
     content: '';
     position: absolute;
     top: -32px;
@@ -639,7 +657,7 @@ body {
     position: relative;
 }
 
-.catalog::after{
+.catalog::after {
     content: '';
     position: absolute;
     background-image: url(/Image/hearts_1.svg);
@@ -719,6 +737,17 @@ body {
     text-decoration: none;
     padding: 0 18px 0 0;
 }
+.product__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--background-color);
+    transition: width 0.5s ease-in;
+}
 
 .product__link:hover:after {
     content: '';
@@ -726,7 +755,7 @@ body {
     left: 0px;
     top: 20px;
     background-image: url(/Image/wave_2.svg);
-    width: 117px;
+    width: 106px;
     height: 7px;
 }
 
@@ -776,6 +805,7 @@ body {
 .catalog__item:nth-child(1)>.product__link:focus:after {
     width: 150px;
 }
+
 .catalog__item:nth-child(2)>.product__link:hover:after {
     width: 124px;
 }
@@ -799,15 +829,19 @@ body {
 .catalog__item:nth-child(6)>.product__link:focus:after {
     width: 73px;
 }
-.catalog__item:nth-child(n+8):nth-child(-n+9):active:after{
+
+.catalog__item:nth-child(n+8):nth-child(-n+9):active:after {
     width: 73px;
 }
-.catalog__item:nth-child(n+8):nth-child(-n+9):hover:after{
+
+.catalog__item:nth-child(n+8):nth-child(-n+9):hover:after {
     width: 73px;
 }
-.catalog__item:nth-child(n+8):nth-child(-n+9):focus:after{
+
+.catalog__item:nth-child(n+8):nth-child(-n+9):focus:after {
     width: 73px;
 }
+
 .catalog__link {
     color: var(--text-color);
     text-align: center;
@@ -851,7 +885,7 @@ body {
     margin: 0 0 23px 0;
 }
 
-.custom-order__title::after{
+.custom-order__title::after {
     content: '';
     position: absolute;
     left: 0px;
@@ -957,7 +991,7 @@ body {
     position: relative;
 }
 
-.order-process::before{
+.order-process::before {
     content: '';
     position: absolute;
     top: -20px;
@@ -1143,7 +1177,7 @@ body {
     margin: 57px 0 0 0;
 }
 
-.reviews__text::before{
+.reviews__text::before {
     content: '';
     background-image: url('/Image/wave.svg');
     height: 7px;
@@ -1427,7 +1461,7 @@ body {
         max-width: 320px;
     }
 
-    .benefits__item:nth-child(3)>.benefits__description{
+    .benefits__item:nth-child(3)>.benefits__description {
         max-width: 180px;
     }
 
@@ -1449,7 +1483,7 @@ body {
         align-content: center;
     }
 
-    .company::before{
+    .company::before {
         top: -40px;
         background-image: url(/Image/hearts_2.svg);
         height: 78px;
@@ -1643,11 +1677,12 @@ body {
 }
 
 @media (min-width: 1440px) {
-    .order-process::before{
+    .order-process::before {
         top: -40px;
         background-image: url(/Image/hearts_2.svg);
         height: 78px;
     }
+
     .order-process__list {
         gap: 40px;
     }
@@ -1841,11 +1876,12 @@ body {
 }
 
 @media (min-width:1440px) {
-    .catalog::after{
+    .catalog::after {
         background-image: url(/Image/hearts_2.svg);
         height: 76px;
         bottom: -82px;
     }
+
     .catalog__title {
         padding-left: 137px;
         font-size: 8rem;
