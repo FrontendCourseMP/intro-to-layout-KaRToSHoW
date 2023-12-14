@@ -314,6 +314,7 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-bottom: 20px;
 }
 
 .benefits__description {
@@ -324,7 +325,7 @@ body {
     font-weight: 300;
     line-height: normal;
     letter-spacing: -0.108rem;
-    margin: 0 0 20px 0;
+    margin: 0;
 }
 
 .benefits__img {
@@ -332,7 +333,7 @@ body {
     min-height: 60px;
     background: var(--button-color);
     border-radius: 100px;
-    margin: 0 0 15px 0;
+    margin: 0;
 }
 
 .company {
@@ -1028,7 +1029,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    max-width: 302px;
+    max-width: 260px;
     min-height: 407px;
     border-radius: 20px;
     background: var(--form-color);
@@ -1119,18 +1120,17 @@ body {
 
 .article__reviews-Anna {
     border-radius: 20px;
-    max-width: 300px;
+    max-width: 265px;
     background: var(--form-color);
-    padding: 18px 3px 40px 18px;
+    padding: 18px 20px 40px 18px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
 }
 
 .article__reviews-Kirill {
-    padding: 0;
     border-radius: 20px;
-    max-width: 300px;
+    max-width: 265px;
     background: var(--form-color);
     display: flex;
     flex-wrap: wrap;
@@ -1140,12 +1140,12 @@ body {
 
 .article__reviews-Andrey {
     border-radius: 20px;
-    max-width: 300px;
+    max-width: 265px;
     background: var(--form-color);
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    padding: 23px 45px 42px 18px;
+    padding: 23px 20px 42px 18px
 }
 
 .reviews__image {
@@ -1213,7 +1213,7 @@ body {
     border: 0;
     text-decoration-line: none;
     padding: 20px 85px;
-    margin: 44px 0 0 0;
+    margin: 44px auto 0 auto;
 }
 
 .clients {
@@ -1237,7 +1237,7 @@ body {
 .clients-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 0px 0 0px;
     gap: 20px;
 }
@@ -1319,7 +1319,6 @@ body {
 .footer__image {
     width: 100%;
     object-fit: cover;
-    object-position: -280px 0px;
     height: 424px;
 }
 
@@ -1338,6 +1337,7 @@ body {
     line-height: 179.182%;
     list-style-type: none;
     margin: 0;
+    display: block;
 }
 
 .footer__contacts {
@@ -1354,14 +1354,66 @@ body {
     color: var(--text-color);
 }
 
-@media (min-width:390px) {
-    .clients-list {
-        justify-content: space-around;
+@media (min-width:535px){
+    .product__image-big{
+        min-height: 320px;
     }
+    .catalog__item:nth-child(8){
+        display: none;
+    }
+    .catalog__item:nth-child(9){
+        display: none;
+    }
+    .clients-list{
+        gap: 12px;
+    }
+    .sofa__image{
+        width: 566px;
+        object-position: 82px 10px;
+    }
+    .order-process__list{
+        gap: 9px;
+    }
+    .article__reviews-Kirill{
+        padding: 18px 18px 142px 18px;
+    }
+    .article__list{
+        gap: 9px;
+    }
+}
 
+@media (min-width:680px) {
+    .product__image-big{
+        min-width: 0;
+        min-height: 0;
+        height: 179px;
+        width: 271px;
+    }
+    .catalog__list-big{
+        flex-wrap: nowrap;
+    }
+    .catalog__item:nth-child(8) {
+        display: block;
+    }
+    .catalog__item:nth-child(9) {
+        display: block;
+    }
+    .catalog__list{
+        gap: 30px 11px;
+    }
+    .outdoor-furniture{
+        background-position: 0;
+    }
+    .custom-order{
+        background-position: 0;
+    }
+}
+
+
+@media (min-width:390px) {
     .footer__image {
-        object-position: -158px 0px;
-        height: 478px;
+        object-position:0;
+        height: auto;
     }
 }
 
@@ -1769,8 +1821,7 @@ body {
     }
 
     .footer__image {
-        object-position: -58px 0px;
-        height: 828px;
+
     }
 
     .footer__wrapper {
@@ -1793,6 +1844,7 @@ body {
         font-size: 2rem
     }
 }
+
 
 @media (min-width:1440px) {
     .clients-list__item:nth-last-child(-n+2) {
