@@ -824,15 +824,7 @@ body {
     width: 73px;
 }
 
-.catalog__item:nth-child(6)>.product__link:active:after {
-    width: 73px;
-}
-
 .catalog__item:nth-child(6)>.product__link:focus:after {
-    width: 73px;
-}
-
-.catalog__item:nth-child(n+8):nth-child(-n+9):active:after {
     width: 73px;
 }
 
@@ -1314,7 +1306,6 @@ body {
     line-height: normal;
     margin: 0 0 0 45px;
     font-weight: 400;
-    padding-left: 45px;
     margin: 91px 0 37px 0;
 }
 
@@ -1573,7 +1564,7 @@ body {
         left: 426px;
     }
     .article__reviews-Andrey {
-        padding: 23px 20px 240px 18px;
+        padding: 23px 20px 253px 18px;
     }
     .company__item-number {
         line-height: 65px;
@@ -1608,8 +1599,6 @@ body {
 
 @media (min-width: 1440px) {
     .header {
-        /* display: block; */
-        /* padding-top: 5px; */
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1806,7 +1795,6 @@ body {
 @media (min-width: 1440px) {
     .products__title {
         font-size: 8rem;
-        /* padding-left: 137px; */
         padding-top: 61px;
     }
 
@@ -1827,7 +1815,6 @@ body {
 
     .products__detail {
         position: relative;
-        /* margin-left: 141px; */
         z-index: 100;
     }
 
@@ -1881,15 +1868,12 @@ body {
     }
 
     .custom-order__title {
-        /* padding-top: 50px; */
         font-size: 5rem;
-        /* padding-left: 140px; */
         padding: 0;
     }
 
     .custom-order__para {
         font-size: 4.2rem;
-        /* padding-left: 140px; */
     }
 
     .custom-order__subpara {
@@ -1915,7 +1899,6 @@ body {
     }
 
     .custom-order__agreement {
-        /* margin-left: 139px; */
         font-size: 1.2rem;
     }
 
@@ -1924,7 +1907,6 @@ body {
     }
 
     .custom-order__button {
-        /* margin-left: 140px; */
         min-width: 450px;
         min-height: 63px;
     }
@@ -1951,19 +1933,14 @@ body {
 
     .order-process__title {
         font-size: 8rem;
-        /* padding-left: 137px; */
     }
 
     .order-process__subtitle {
         font-size: 3.4rem;
-        /* margin-left: 29px; */
     }
 
     .order-process__description {
         font-size: 2rem;
-        /* margin-left: 33px; */
-        /* padding-right: 40px; */
-        /* width: 335px; */
     }
 
     .order-process__item {
@@ -1971,7 +1948,6 @@ body {
         min-height: 486px;
         padding-left: 29px;
         padding-top: 58px;
-        /* padding-right: -19px; */
         padding-right: 29px;
     }
 
@@ -2150,7 +2126,6 @@ body {
     }
 
     .catalog__title {
-        /* padding-left: 137px; */
         font-size: 8rem;
     }
 
@@ -2159,7 +2134,6 @@ body {
     }
 
     .catalog__list {
-        /* padding: 43px 75px; */
         gap: 77px 0;
         grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
     }
@@ -2177,6 +2151,7 @@ body {
     .product__link {
         font-size: 2.8rem;
         line-height: 100%;
+        width: 280px;
     }
 
     .catalog__link {
@@ -2207,5 +2182,35 @@ body {
     footer{
         max-width: 1440px;
         margin: auto;
+    }
+    .outdoor-furniture__title::after {
+        top: 55px;
+        width: 371px;
+    }
+    .catalog__item:nth-child(1)>.product__link:hover:after {
+        width: 268px;
+    }
+    .product__link:hover:after {
+        top: 31px;
+    }
+    .catalog__item:nth-child(2)>.product__link:hover:after {
+        width: 99px;
+    }
+    .catalog__item:nth-child(3)>.product__link:hover:after {
+        width: 211px;
+    }
+    .catalog__item:nth-child(n+3):not(:nth-child(7)):nth-child(-n+9)>.product__link:hover:after {
+        top: 66px;
+        width: 200px;
+    }
+    .custom-order__title::after {
+        top: 63px;
+        width: 472px;
+    }
+    .order-process__subtitle::before {
+        width: 296px;
+    }
+    .reviews__text::before {
+        width: 336px;
     }
 }
