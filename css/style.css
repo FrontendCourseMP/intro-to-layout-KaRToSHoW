@@ -501,9 +501,8 @@ body {
 .products {
     min-width: 390px;
 }
-
 .products__wrapper {
-    padding: 24px 0px 0 45px;
+    padding: 24px 0px 0 34px;
 }
 
 .products__title {
@@ -669,7 +668,7 @@ body {
 }
 
 .catalog__wrapper {
-    padding: 39px 43px 0 43px;
+    padding: 62px 43px 0 43px;
 }
 
 .catalog__title {
@@ -1265,8 +1264,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 1.6rem;
-    padding: 0 5px 0 0;
-    margin: 10px 0 0 10px;
+    padding: 0 0px 0 0;
+    margin: 1px 0 0 10px;
 }
 
 .clients__buttons {
@@ -1296,6 +1295,7 @@ body {
     background-color: var(--backgroundfooter-color);
     min-height: 513px;
     min-width: 390px;
+    position: absolute;
 }
 
 .footer__title {
@@ -1304,9 +1304,8 @@ body {
     font-size: 3.8rem;
     font-style: italic;
     line-height: normal;
-    margin: 0 0 0 45px;
     font-weight: 400;
-    margin: 91px 0 37px 0;
+    margin: 91px 0 37px 45px;
 }
 
 .footer__image {
@@ -1552,19 +1551,41 @@ body {
     }
 }
 
+@media (min-width: 940px){
+    .catalog__list {
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        padding: 43px;
+    }
+    .catalog__list-big {
+        gap: 84px;
+    }
+}
+
 @media (min-width:1024px) {
     .catalog__list-big{
-        gap: 160px;
+        gap: 94px;
     }
     .catalog__list {
-        grid-template-columns: repeat(auto-fill, minmax(234px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
         gap: 20px 0px;
+        padding: 0 20px;
+        padding-top: 42px;
+        padding-bottom: 50px;
     }
     .products__detail-tree {
-        left: 426px;
+        left: 571px;
+        max-width: 320px;
+    }
+    .sofa__image {
+        object-position: 0px;
+        left: 23px;
+        width: 938px;
+    }
+    .sofa-two__image {
+        display: none;
     }
     .article__reviews-Andrey {
-        padding: 23px 20px 253px 18px;
+        padding: 23px 20px 239px 18px;
     }
     .company__item-number {
         line-height: 65px;
@@ -1580,20 +1601,106 @@ body {
         width: 320px;
         height: 409px;
     }
+    .custom-order__title {
+        font-size: 4.2rem;
+        padding: 64px 0 0 0px;
+    }
+    .custom-order__para {
+        font-size: 3.4rem;
+    }
+    .custom-order__subpara {
+        font-size: 5.2rem;
+        margin: 0 0 50px 50px;
+    }
+    .custom-order__input {
+        margin-left: 50px;
+    }
+    .custom-order__textarea {
+        margin-left: 50px;
+    }
+    .custom-order__agreement {
+        margin-left: 50px;
+    }
+    .custom-order__button {
+        margin-left: 50px;
+    }
+    .header__address-wrapper {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 14px;
+        left: 89px;
+        margin: 0;
+    }
+    .header__address, .header__work-time, .header__telephone {
+        display: block;
+    }
+    .header__wrapper {
+        padding: 56px 0 0;
+    }
+    .outdoor-furniture__wrapper {
+        padding-left: 83px;
+    }
+    .header__logo-link {
+        font-size: 5rem;
+        margin-left: 83px;
+    }
+    .header__button-menu {
+        padding: 19px;
+    }
+    .outdoor-furniture__title {
+        margin: 16rem 0rem 0rem 0;
+    }
+}
+@media (min-width: 1086px){
+    .catalog__list {
+        grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+        gap: 20px 0px;
+        padding: 0 87px;
+        padding-top: 42px;
+        padding-bottom: 50px;
+    }
 }
 
 @media (min-width:1275px) {
     .catalog__list {
-        grid-template-columns: repeat(auto-fill, minmax(297px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(247px, 1fr));
+        padding: 0 100px;
+        padding-top: 42px;
+        padding-bottom: 50px;
     }
     .catalog__list-big {
-        gap: 250px;
+        gap: 215px;
     }
     .order-process__list {
         gap: 37px;
     }
     .article__list {
         gap: 46px;
+    }
+    .products__detail {
+        max-width: 310px;
+        min-width: 238px;
+        position: relative;
+        left: 75px;
+        top: 20px;
+    }
+    .products__detail-tree {
+        left: 762px;
+    }
+    .products__detail-textile {
+        max-width: 352px;
+        min-width: 238px;
+        left: 160px;
+        bottom: 53px;
+    }
+    .sofa__image {
+        object-position: 0px;
+        left: 44px;
+        width: 1148px;
+    }
+    .catalog__wrapper {
+        padding: 10px 43px 0 43px;
     }
 }
 
@@ -1618,6 +1725,8 @@ body {
 
     .header__address-wrapper {
         display: flex;
+        top: 8px;
+        left: 549px;
     }
 
     .header__address {
@@ -1857,7 +1966,7 @@ body {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1440px){
     .custom-order {
         background-position: 0px 30px;
     }
@@ -1888,6 +1997,7 @@ body {
 
     .custom-order__input {
         width: 435px;
+        margin: 0;
     }
 
     .custom-order__label-textarea {
@@ -1896,10 +2006,12 @@ body {
 
     .custom-order__textarea {
         width: 425px;
+        margin: 0;
     }
 
     .custom-order__agreement {
         font-size: 1.2rem;
+        margin: 0;
     }
 
     .custom-order__link {
@@ -1909,9 +2021,12 @@ body {
     .custom-order__button {
         min-width: 450px;
         min-height: 63px;
+        margin: 23px 0;
+    }
+    .sofa-two__image {
+        display: block;
     }
 }
-
 @media (min-width: 1440px) {
     .order-process__wrapper{
         padding-left: 137px;
@@ -1924,7 +2039,8 @@ body {
     }
 
     .order-process__list {
-        gap: 105px;
+        gap: 67px;
+        justify-content: normal;
     }
 
     .order-process__item {
@@ -1967,7 +2083,8 @@ body {
         padding-left: 137px;
     }
     .article__list {
-        gap: 77px;
+        gap: 41px;
+        justify-content: normal;
     }
 
     .article__reviews-Anna,
@@ -2114,6 +2231,9 @@ body {
 }
 
 @media (min-width:1440px) {
+    .products__wrapper {
+        padding: 24px 0px 0 137px;
+    }
     .catalog::after {
         background-image: url(/Image/hearts_2.svg);
         height: 76px;
@@ -2136,6 +2256,8 @@ body {
     .catalog__list {
         gap: 77px 0;
         grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+        padding: 42px 20px;
+        justify-items: normal;
     }
 
     .catalog__item:first-child {
@@ -2145,7 +2267,7 @@ body {
     .catalog__list-big {
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 90px;
+        gap: 52px;
     }
 
     .product__link {
@@ -2158,11 +2280,12 @@ body {
         display: block;
         margin-top: 60px;
         padding: 20px 260px;
-        margin-bottom: 63px;
+        margin-bottom: 51px;
     }
     .rwd-wrapper{
         max-width: 1440px;
         margin: auto;
+        /* padding: 72px 43px 0 137px; */
     }
     .header__wrapper {
         padding: 25px 0 0;
