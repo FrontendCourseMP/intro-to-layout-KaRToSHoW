@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="shortcut icon" href="/Image/favicon.png" type="image/png">
+    <title>Logo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper rwd-wrapper">
+            <div class="header__address-wrapper">
+                <p class="header__address">г. Алматы, ул. Абая д.68</p>
+                <p class="header__work-time">Звоните, Пн-Пт с 10:00-18:00</p>
+                <a class="header__telephone" href="tel:79009001010">+7 (900) 900-10-10</a>
+            </div>
+            <a href="#" class="header__logo-link">Logo</a>
+            <button type="button" name="menu" class="header__button-menu">
+                <svg class="menu menuRotate ham1" viewBox="0 0 100 100" width="40"
+                    onclick="this.classList.toggle('active')">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+            </button>
+            <nav class="header__nav navigation">
+                <ul class="header__navigation-list navigation">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Главная</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">О компании</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Об изделиях</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Отзывы</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Сотрудничество</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/form.html" class="navigation__link">Форма</a>
+                    </li>
+                </ul>
+                <ul class="header__messenger messenger">
+                    <li class="messenger__item">
+                        <a href="#"><img class="messenger__image" src="/Image/instagram.svg" alt="Инстаграмм"></a>
+                    </li>
+                    <li class="messenger__item">
+                        <a href="#"><img class="messenger__image" src="/Image/telegram.svg" alt="Телеграмм"></a>
+                    </li>
+                    <li class="messenger__item">
+                        <a href="#"><img class="messenger__image" src="/Image/whatsapp.svg" alt="Ватсапп"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cards">
+            <div class="cards__wrapper">
+            <div class="card center">
+                <div class="front">
+                    <img class="card-img" src="/Image/big-Ben.jpg" alt="Биг Бен">
+                </div>
+                <div class="back">
+                    <div class="back-content center">
+                        <h2>Биг-Бен (англ. Big Ben) — популярное туристическое название часовой башни Вестминстерского
+                            дворца.</h2>
+                        <span>Изначально «Биг-Бен» являлось названием самого большого из пяти колоколов, однако часто это
+                            название расширительно относят и к часам, и к часовой башне в целом[3]. На момент отливки
+                            Биг-Бен, масса которого составляла 13,7 тонны, был самым большим и тяжёлым колоколом
+                            Соединённого Королевства. В 1881 году уступил первенство колоколу Большой Пол (17 тонн).</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="scroll-img">
+            <div class="scroll-img__wrapper">
+                <marquee class="marquee"><img class="ben-1" src="/Image/Ben-1.jpg"><img class="ben-2" src="/Image/ben-2.jpg"><img class="ben-3" src="/Image/Ben-3.jpg"></marquee>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer__title">Контакты</h2>
+        <div class="footer__wrapper rwd-wrapper">
+            <img class="footer__image" src="/Image/карта_1.jpg" alt="Карта">
+            <div class="footer__address-wrapper">
+                <p class="footer__address">Адрес - Москва, Степана Разина 119</p>
+                <p class="footer__address"> Телефон - 7 982 658 25 85 </p>
+                <p class="footer__address"> ТОО «Консалтинговая Компания Financial-Tax Analytics» </p>
+                <p class="footer__address"> БИН 181 040 010 133</p>
+                <p class="footer__address"> Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304 </p>
+                <p class="footer__address"> Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60 </p>
+                <p class="footer__address"> ИИК KZ76 9650 3F00 0817 5335 </p>
+                <p class="footer__address"> БИК IRTYKZKA в АО "ForteBank"</p>
+                <a href="/grid.html" class="footer__address">Гриды Лаб_7</a>
+                <a href="/form.html" class="footer__address">Форма</a>
+                <div class="footer__contacts">
+                    <span class="footer__address">мобильный/ватсап<a class="footer__telephone" href="tel:77787757768">
+                            +7(778)
+                            775-77-68</a></span>
+                    <span class="footer__address"><a class="footer__email"
+                            href="mailto:info@fintax.kz">info@fintax.kz</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
