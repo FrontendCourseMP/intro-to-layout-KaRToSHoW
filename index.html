@@ -19,7 +19,15 @@
         <a class="header__telephone" href="tel:79009001010">+7 (900) 900-10-10</a>
       </div>
       <a href="#" class="header__logo-link">Logo</a>
-      <button type="button" name="menu" class="header__button-menu"><img src="/Image/menu.svg" alt="menu"></button>
+      <button type="button" name="menu" class="header__button-menu">
+        <svg class="menu menuRotate ham1" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
+          <path class="line top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path class="line bottom"
+            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
+      </button>
       <nav class="header__nav navigation">
         <ul class="header__navigation-list navigation">
           <li class="navigation__item">
@@ -87,16 +95,18 @@
           <img class="company__image" src="/Image/Шлейфовка.jpg" alt="Шлифование">
           <ul class="company__list">
             <li class="company__list-item">
-              <img class="image-ovals" src="/Image/Ovals.svg" alt="">            
+              <img class="image-ovals" src="/Image/Ovals.svg" alt="">
               <p class="company__item-number">12<span class="company__item-text-years">Лет на рынке</span></p>
             </li>
             <li class="company__list-item">
-              <img class="image-ovals-two" src="/Image/Ovals-two.svg" alt="">            
-              <p class="company__item-number">2000+<span class="company__item-text-buyer">Довольных покупателей</span></p>
+              <img class="image-ovals-two" src="/Image/Ovals-two.svg" alt="">
+              <p class="company__item-number">2000+<span class="company__item-text-buyer">Довольных покупателей</span>
+              </p>
             </li>
             <li class="company__list-item">
-              <img class="image-ovals-three" src="/Image/Ovals.svg" alt="">            
-              <p class="company__item-production">Собственное производство<span class="company__item-text">в г. Алматы</span></p>
+              <img class="image-ovals-three" src="/Image/Ovals.svg" alt="">
+              <p class="company__item-production">Собственное производство<span class="company__item-text">в г.
+                  Алматы</span></p>
             </li>
             <li class="company__list-item">
               <a href="#форма" class="company__link">Оставить заявку</a>
@@ -197,7 +207,7 @@
             <picture>
               <source srcset="/Image/Складной-стульчик-2.jpg" media="(min-width: 1440px)">
               <source srcset="/Image/Складной-стульчик.jpg">
-              <img class="product__image" src="/Image/Складной-стульчик.jpg" alt="Складной стульчик">              
+              <img class="product__image" src="/Image/Складной-стульчик.jpg" alt="Складной стульчик">
             </picture>
             <a href="#" class="product__link">Складной стульчик</a>
           </li>
@@ -222,7 +232,7 @@
               <source srcset="/Image/Матрасы.jpg" media="(min-width: 1440px)">
               <source srcset="/Image/Матрас-для-лежака.jpg">
               <img class="product__image" src="/Image/Матрас-для-лежака.jpg" alt="Матрас для лежака">
-            </picture>  
+            </picture>
             <a href="#" class="product__link">Матрас для лежака</a>
           </li>
         </ul>
@@ -236,7 +246,7 @@
         <h2 class="custom-order__title" id="форма">Ничего не подошло?</h2>
         <p class="custom-order__para">Тогда мы можем изготовить для вас мебель</p>
         <p class="custom-order__subpara">по индивидуальному дизайну</p>
-        <form class="custom-order__form" action="//httpbin.org/post" method="post" >
+        <form class="custom-order__form" action="//httpbin.org/post" method="post">
           <label class="custom-order__label-name">
             <input class="custom-order__input" type="text" placeholder="Ваше имя*" required>
           </label>
@@ -394,7 +404,8 @@
         <a href="/grid.html" class="footer__address">Гриды Лаб_7</a>
         <a href="/form.html" class="footer__address">Форма</a>
         <div class="footer__contacts">
-          <span class="footer__address">мобильный/ватсап<a class="footer__telephone" href="tel:77787757768"> +7(778) 775-77-68</a></span>
+          <span class="footer__address">мобильный/ватсап<a class="footer__telephone" href="tel:77787757768"> +7(778)
+              775-77-68</a></span>
           <span class="footer__address"><a class="footer__email" href="mailto:info@fintax.kz">info@fintax.kz</a></span>
         </div>
       </div>
