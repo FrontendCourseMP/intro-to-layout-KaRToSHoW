@@ -1,35 +1,37 @@
-
-
-.header__wrapper{
-    background-color:#6c7754 ;
+.header__wrapper {
+    background-color: #6c7754;
     position: relative;
 }
-.card{
+
+.card {
     margin-top: 400px;
 }
+
 .card-img {
     object-fit: cover;
     object-position: -310px 0px;
     width: 722px;
 }
 
-.center{
+.center {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.card{
+.card {
     cursor: pointer;
     width: 340px;
     height: 480px;
 }
-.front{
+
+.front {
     background-color: #fff;
 }
+
 .front,
-.back{
+.back {
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -39,43 +41,68 @@
     transition: transform .6s ease-in-out;
 }
 
-.front{
+.front {
     transform: perspective(600px) rotateY(0deg);
 }
 
-.back{
+.back {
     transform: perspective(600px) rotateY(180deg);
     background-color: #fff;
 }
 
-.back-content{
+.back-content {
     width: 100%;
     text-align: center;
     color: #333333;
 }
 
-h2{
+h2 {
     margin-bottom: 20px;
 }
 
-span{
+span {
     display: block;
     font-size: 20px;
 }
 
-.scroll-img__wrapper{
-    width: 100%;
-}
-.ben-1,.ben-2,.ben-3{
-    height: 400px;
-    margin: 0 30px;
-}
-.card:hover > .front{
+.card:hover>.front {
     transform: perspective(600px) rotateY(-180deg);
 }
-.card:hover > .back{
+
+.card:hover>.back {
     transform: perspective(600px) rotateY(0deg);
 }
+
+.scroll__wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee {
+    display: flex;
+    animation: marqueeAnimation 10s linear infinite;
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+.ben-1,
+.ben-2,
+.ben-3 {
+    height: 400px;
+}
+
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 .footer__title {
     margin-left: 137px;
     font-size: 8rem;
