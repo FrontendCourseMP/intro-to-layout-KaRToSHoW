@@ -1529,11 +1529,11 @@ button:focus {
     }
 
     .order-process__list {
-        gap: 9px;
+        gap: 30px;
     }
 
     .article__list {
-        gap: 9px;
+        gap: 30px;
     }
 }
 
@@ -2504,7 +2504,7 @@ button:focus {
         justify-content: space-between;
     }
 
-    section {
+    section,.article {
         max-width: 1440px;
         margin: auto;
     }

@@ -360,7 +360,30 @@
 .checkmark{
     font-size: 2rem;
 }
-
+.footer__logo-link {
+    position: relative;;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Philosopher', serif;
+    font-size: 10rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+    margin-left: 137px;
+    left: 200px;
+}
+.footer__logo-link {
+    transform: rotate(30deg) scale(1.5) skewX(20deg) skewY(20deg);
+    width: 427px;
+}
+.footer__title {
+    margin-left: 137px;
+    font-size: 8rem;
+    padding-top: 48px;
+    margin-bottom: 300px;
+}
 @media (min-width: 390px){
     .term{
         font-size: 2rem;
