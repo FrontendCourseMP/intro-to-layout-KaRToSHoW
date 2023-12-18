@@ -1,13 +1,4 @@
-body{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer{
-    flex-grow: 1;
-}
-
-.header {
+.header__wrapper {
     background-color: #6c7754;
     position: relative;
 }
@@ -145,6 +136,10 @@ body{
     margin-top: 3px;
 }
 
+.info__input:hover::placeholder{
+    color: black;
+}
+
 .contact__label-time {
     margin-right: 12px;
     min-width: 58px;
@@ -154,7 +149,7 @@ body{
 }
 
 .form__button-wrapper {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .form__button-send {
@@ -221,4 +216,166 @@ body{
         transform: translate(-50%, -50%) scale(2);
     }
     
+}
+.custom-section{
+    margin: 100px auto 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container{
+    background-color: #fff;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    width: 534px;
+    padding-right: 20px;
+}
+.term{
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+.term::first-letter{
+    font-size: 4rem;
+    color: #04971d;
+}
+.description{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    position: relative;
+}
+.description::before {
+    content: "🛈";
+    position: absolute;
+    left: -20px;
+}
+.Pseudo-classes,.Pseudo-elements{
+    font-size: 2rem;
+    border: 0;
+    padding: 0;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+.Pseudo-classes__label{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.Pseudo-classes__label input {
+    display: none
+}
+.Pseudo-elements__label{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.Pseudo-elements__label input {
+    display: none;
+}
+.checkmark{
+    margin-left: 30px;
+}
+.checkmark::before {
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.Pseudo-classes__label:hover .Pseudo-classes__input + .checkmark::before {
+    background-color: #93a893;
+    box-shadow: 0 0 5px 1px #179b17
+}
+.Pseudo-elements__label:hover .Pseudo-elements__input + .checkmark::before {
+    background-color: #93a893;
+    box-shadow: 0 0 5px 1px #179b17
+}
+.Pseudo-classes__input:checked + .checkmark::before {
+    background-color: #88c090;
+}
+.Pseudo-elements__input:checked + .checkmark::before {
+    background-color: #88c090;
+}
+.Pseudo-classes__input:checked + .checkmark:after {
+    display: block;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+}
+.Pseudo-elements__input:checked + .checkmark:after {
+    display: block;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+}
+.Pseudo-classes__input:checked + .checkmark {
+    text-decoration: line-through
+}
+.Pseudo-elements__input:checked + .checkmark {
+    text-decoration: line-through
+}
+.Pseudo-classes__label:nth-child(even) {
+    color: #ff0000;
+}
+
+.Pseudo-classes__label:nth-child(odd) {
+    color: #1900ff;
+}
+.Pseudo-elements__label:nth-child(even) {
+    color: #ff0000;
+}
+
+.Pseudo-elements__label:nth-child(odd) {
+    color: #1900ff;
+}
+.form__send{
+    width: 170px;
+    height: 30px;
+    color: white;
+    background-color: #689c68;
+    border: 0;
+}
+.checkmark{
+    font-size: 2rem;
+}
+
+@media (min-width: 390px){
+    .term{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1.7rem;
+    }
+    .checkmark{
+        font-size: 1.7rem;
+    }
+    .form__send{
+        font-size: 2rem;
+        width: 300px;
+    }
+    .form-container {
+        width: 311px;
+    }
 }

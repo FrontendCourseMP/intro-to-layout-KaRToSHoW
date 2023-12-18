@@ -823,14 +823,16 @@ body {
 
 .product__link::after {
     content: "";
-    display: block;
     position: absolute;
     right: 0;
     bottom: -3px;
+    background-color: var(--background-color);
     width: 0;
     height: 2px;
-    background-color: var(--background-color);
-    transition: width 0.6s 0.3s ease-in;
+    left: 0;
+    transition: width 0.5s ease-out;
+    transform: scale3d(0,1,1);
+    transform-origin: 0 50%;
 }
 
 .product__link:hover:after {
@@ -839,18 +841,17 @@ body {
     left: 0px;
     top: 20px;
     background-image: url(/Image/wave_2.svg);
-    width: 106px;
     height: 7px;
+    transform: scale3d(1,1,1);
 }
 
-.product__link:active:after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 20px;
-    background-image: url(/Image/wave_2.svg);
-    width: 122px;
-    height: 7px;
+.product__link::after {
+    background: var(--background-color);
+    transform-origin: 100% 50%;
+}
+
+.product__link:hover:after {
+    transform-origin: 0% 50%;
 }
 
 .product__link:focus:after {

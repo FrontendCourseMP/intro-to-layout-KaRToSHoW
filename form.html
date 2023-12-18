@@ -13,103 +13,208 @@
 
 <body>
     <header class="header">
-        <div class="header__address-wrapper">
-            <p class="header__address">г. Алматы, ул. Абая д.68</p>
-            <p class="header__work-time">Звоните, Пн-Пт с 10:00-18:00</p>
-            <a class="header__telephone" href="tel:79009001010">+7 (900) 900-10-10</a>
-        </div>
-        <a href="/index.html" class="header__logo-link">Logo</a>
-        <button type="button" name="menu" class="header__button-menu"><img src="/Image/menu.svg" alt="menu"></button>
-        <nav class="header__nav navigation">
-            <ul class="header__navigation-list navigation">
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Главная</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">О компании</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Об изделиях</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Отзывы</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Сотрудничество</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="/form.html" class="navigation__link">Форма</a>
-                </li>
-            </ul>
-            <ul class="header__messenger messenger">
-                <li class="messenger__item">
-                    <a href="#"><img class="messenger__image" src="/Image/instagram.svg" alt="Инстаграмм"></a>
-                </li>
-                <li class="messenger__item">
-                    <a href="#"><img class="messenger__image" src="/Image/telegram.svg" alt="Телеграмм"></a>
-                </li>
-                <li class="messenger__item">
-                    <a href="#"><img class="messenger__image" src="/Image/whatsapp.svg" alt="Ватсапп"></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-
-        <form class="form" method="post" action="//httpbin.org/post">
-            <fieldset class="form__information info">
-                <legend class="info__contacts-title">Личная информация</legend>
-                <label class="info__label">Имя<input class="info__input" type="name" name="name" placeholder="Григорий Иван Васильевич" required></label>
-                <label class="info__label">Дата рождения<input class="info__input" type="date" name="date" required></label>
-                <p class="info__title">Пол</p>
-                <div class="info__gender-wrapper">
-                    <label class="info__label-gender"><input class="info__input-gender" type="radio" value="Мужской" name="user_gender"> <span class="custom-radio-btn"></span>Мужской</label>
-                    <label class="info__label-gender"><input class="info__input-gender" type="radio" value="Женский" name="user_gender"> <span class="custom-radio-btn"></span>Женский</label>
-                </div>
-                <label class="info__label">Пароль<input class="info__input" type="password" name="password" required></label>
-            </fieldset>
-
-            <fieldset class="form__contacts contact">
-                <legend class="contact__title">Контактные данные</legend>
-                <label class="contact__label">Email<input class="contact__input" type="email" name="email" required></label>
-                <label class="contact__label">Телефон<input class="contact__input" type="tel" name="phone" required></label>
-                <p class="contact__text">Удобный интервал для связи</p>
-                <div class="contact__interval-wrapper">
-                    <label class="contact__label-time"><input class="contact__input-time" type="checkbox" name="time" value="Утро">Утро</label>
-                    <label class="contact__label-time"><input class="contact__input-time" type="checkbox" name="time" value="День">День</label>
-                    <label class="contact__label-time"><input class="contact__input-time" type="checkbox" name="time" value="Вечер">Вечер</label>
-                    <label class="contact__label-time"><input class="contact__input-time" type="checkbox" name="time" value="Ночь">Ночь</label>
-                </div>
-            </fieldset>
-            <div class="form__button-wrapper">
-                <button class="form__button-send" type="submit">Отправить</button>
-                <button class="form__button-reset" type="reset">Сбросить</button>
+        <div class="header__wrapper rwd-wrapper">
+            <div class="header__address-wrapper">
+                <p class="header__address">г. Алматы, ул. Абая д.68</p>
+                <p class="header__work-time">Звоните, Пн-Пт с 10:00-18:00</p>
+                <a class="header__telephone" href="tel:79009001010">+7 (900) 900-10-10</a>
             </div>
-        </form>
-
+            <a href="/index.html" class="header__logo-link">Logo</a>
+            <button type="button" name="menu" class="header__button-menu">
+                <svg class="menu menuRotate ham1" viewBox="0 0 100 100" width="40"
+                    onclick="this.classList.toggle('active')">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+            </button>
+            <nav class="header__nav navigation">
+                <ul class="header__navigation-list navigation">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Главная</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">О компании</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Об изделиях</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Отзывы</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Сотрудничество</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/form.html" class="navigation__link">Форма</a>
+                    </li>
+                </ul>
+                <ul class="header__messenger messenger">
+                    <li class="messenger__item">
+                        <a href="#"><img class="messenger__image" src="/Image/instagram.svg" alt="Инстаграмм"></a>
+                    </li>
+                    <li class="messenger__item">
+                        <a href="#"><img class="messenger__image" src="/Image/telegram.svg" alt="Телеграмм"></a>
+                    </li>
+                    <li class="messenger__item">
+                        <a href="#"><img class="messenger__image" src="/Image/whatsapp.svg" alt="Ватсапп"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <form class="form" method="post" action="//httpbin.org/post">
+                    <fieldset class="form__information info">
+                        <legend class="info__contacts-title">Личная информация</legend>
+                        <label class="info__label">Имя
+                            <input class="info__input" type="name" name="name" placeholder="Григорий Иван Васильевич" required>
+                        </label>
+                        <label class="info__label">Дата рождения
+                            <input class="info__input" type="date" name="date" required>
+                            </label>
+                        <p class="info__title">Пол</p>
+                        <div class="info__gender-wrapper">
+                            <label class="info__label-gender">Мужской<input class="info__input-gender" type="radio" value="Мужской" name="user_gender">
+                                <span class="custom-radio-btn"></span>
+                            </label>
+                            <label class="info__label-gender">
+                                <input class="info__input-gender" type="radio" value="Женский" name="user_gender">Женский 
+                                <span class="custom-radio-btn"></span>
+                            </label>
+                        </div>
+                        <label class="info__label">Пароль
+                            <input class="info__input" type="password" name="password" required>
+                        </label>
+                    </fieldset>
+                    <fieldset class="form__contacts contact">
+                        <legend class="contact__title">Контактные данные</legend>
+                        <label class="contact__label">Email<input class="contact__input" type="email" name="email"
+                                required></label>
+                        <label class="contact__label">Телефон<input class="contact__input" type="tel" name="phone"
+                                required></label>
+                        <p class="contact__text">Удобный интервал для связи</p>
+                        <div class="contact__interval-wrapper">
+                            <label class="contact__label-time"><input class="contact__input-time" type="checkbox"
+                                    name="time" value="Утро">Утро</label>
+                            <label class="contact__label-time"><input class="contact__input-time" type="checkbox"
+                                    name="time" value="День">День</label>
+                            <label class="contact__label-time"><input class="contact__input-time" type="checkbox"
+                                    name="time" value="Вечер">Вечер</label>
+                            <label class="contact__label-time"><input class="contact__input-time" type="checkbox"
+                                    name="time" value="Ночь">Ночь</label>
+                        </div>
+                    </fieldset>
+                    <div class="form__button-wrapper">
+                        <button class="form__button-send" type="submit">Отправить</button>
+                        <button class="form__button-reset" type="reset">Сбросить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="custom-section">
+            <div class="form-container">
+                <form method="post" action="//httpbin.org/post" class="form-2">
+                    <dl class="definition-list">
+                        <dt class="term">Псевдодокласс</dt>
+                        <dd class="description">Особый вид селектора, который уточняет тип или состояние. Обычно это
+                            какой-то качественный признак: реакция на наведение курсора, порядок следования и другие.
+                        </dd>
+                        <dt class="term">Псевдоэлемент</dt>
+                        <dd class="description">Элементы, которых не существует в HTML-разметке. Они создаются и
+                            позиционируются исключительно при помощи CSS. Чаще всего используются для создания различных
+                            декоративных элементов (которые не несут содержательного смысла).</dd>
+                    </dl>
+                    <fieldset class="Pseudo-classes">
+                        <legend class="Pseudo-classes__title">Псевдоклассы</legend>
+                        <label class="Pseudo-classes__label">
+                            <input class="Pseudo-classes__input" type="checkbox" name="class" checked>
+                            <span class="checkmark">:hover</span>
+                        </label>
+                        <label class="Pseudo-classes__label">
+                            <input class="Pseudo-classes__input" type="checkbox" name="class">
+                            <span class="checkmark">:active</span>
+                        </label>
+                        <label class="Pseudo-classes__label">
+                            <input class="Pseudo-classes__input" type="checkbox" name="class" checked>
+                            <span class="checkmark">:focus</span>
+                        </label>
+                        <label class="Pseudo-classes__label">
+                            <input class="Pseudo-classes__input" type="checkbox" name="class">
+                            <span class="checkmark">:nth-of-type(x)</span>
+                        </label>
+                        <label class="Pseudo-classes__label">
+                            <input class="Pseudo-classes__input" type="checkbox" name="class" checked>
+                            <span class="checkmark">:nth-child(x)</span>
+                        </label>
+                        <label class="Pseudo-classes__label">
+                            <input class="Pseudo-classes__input" type="checkbox" name="class">
+                            <span class="checkmark">:disable</span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="Pseudo-elements">
+                        <legend class="Pseudo-elements__title">Псевдоэлементы</legend>
+                        <label class="Pseudo-elements__label">
+                            <input class="Pseudo-elements__input" type="checkbox" name="element">
+                            <span class="checkmark">::selection</span>
+                        </label>
+                        <label class="Pseudo-elements__label">
+                            <input class="Pseudo-elements__input" type="checkbox" name="element" checked>
+                            <span class="checkmark"> ::first-letter</span>
+                        </label>
+                        <label class="Pseudo-elements__label">
+                            <input class="Pseudo-elements__input" type="checkbox" name="element">
+                            <span class="checkmark">::first-line</span>
+                        </label>
+                        <label class="Pseudo-elements__label">
+                            <input class="Pseudo-elements__input" type="checkbox" name="element">
+                            <span class="checkmark">::marker</span>
+                        </label>
+                        <label class="Pseudo-elements__label">
+                            <input class="Pseudo-elements__input" type="checkbox" name="element" checked>
+                            <span class="checkmark">::before</span>
+                        </label>
+                        <label class="Pseudo-elements__label">
+                            <input class="Pseudo-elements__input" type="checkbox" name="element" checked>
+                            <span class="checkmark">::after</span>
+                        </label>
+                        <label class="Pseudo-elements__label">
+                            <input class="Pseudo-elements__input" type="checkbox" name="element" checked>
+                            <span class="checkmark">::placeholder</span>
+                        </label>
+                    </fieldset>
+                    <button class="form__send" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <h2 class="footer__title">Контакты</h2>
         <div class="footer__wrapper">
-          <img class="footer__image" src="/Image/карта_1.jpg" alt="Карта">
-          <div class="footer__address-wrapper">
-            <p class="footer__address">Адрес - Москва, Степана Разина 119</p>
-            <p class="footer__address"> Телефон - 7 982 658 25 85 </p>
-            <p class="footer__address"> ТОО «Консалтинговая Компания Financial-Tax Analytics» </p>
-            <p class="footer__address"> БИН 181 040 010 133</p>
-            <p class="footer__address"> Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304 </p>
-            <p class="footer__address"> Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60 </p>
-            <p class="footer__address"> ИИК KZ76 9650 3F00 0817 5335 </p>
-            <p class="footer__address"> БИК IRTYKZKA в АО "ForteBank"</p>
-            <a href="/grid.html" class="footer__address">Гриды Лаб_7</a>
-            <a href="/form.html" class="footer__address">Форма</a>
-            <div class="footer__contacts">
-              <span class="footer__address">мобильный/ватсап<a class="footer__telephone" href="tel:77787757768"> +7(778) 775-77-68</a></span>
-              <span class="footer__address"><a class="footer__email" href="mailto:info@fintax.kz">info@fintax.kz</a></span>
+            <img class="footer__image" src="/Image/карта_1.jpg" alt="Карта">
+            <div class="footer__address-wrapper">
+                <p class="footer__address">Адрес - Москва, Степана Разина 119</p>
+                <p class="footer__address"> Телефон - 7 982 658 25 85 </p>
+                <p class="footer__address"> ТОО «Консалтинговая Компания Financial-Tax Analytics» </p>
+                <p class="footer__address"> БИН 181 040 010 133</p>
+                <p class="footer__address"> Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304 </p>
+                <p class="footer__address"> Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60 </p>
+                <p class="footer__address"> ИИК KZ76 9650 3F00 0817 5335 </p>
+                <p class="footer__address"> БИК IRTYKZKA в АО "ForteBank"</p>
+                <a href="/grid.html" class="footer__address">Гриды Лаб_7</a>
+                <a href="/form.html" class="footer__address">Форма</a>
+                <div class="footer__contacts">
+                    <span class="footer__address">мобильный/ватсап<a class="footer__telephone" href="tel:77787757768">
+                            +7(778) 775-77-68</a></span>
+                    <span class="footer__address"><a class="footer__email"
+                            href="mailto:info@fintax.kz">info@fintax.kz</a></span>
+                </div>
             </div>
-          </div>
         </div>
-      </footer>
+    </footer>
     </footer>
