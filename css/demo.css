@@ -107,3 +107,9 @@ span {
     margin-left: 137px;
     font-size: 8rem;
 }
+@media (min-width: 390px){
+    .footer__title {
+        margin: 91px 0 37px 45px;
+        font-size: 3.8rem;
+    }
+}
