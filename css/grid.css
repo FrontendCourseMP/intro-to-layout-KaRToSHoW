@@ -1,9 +1,9 @@
-.header{
-  background-color:#9EAF7C ;
+.header__wrapper{
+  background-color:#6c7754 ;
 }
 .container{
   display: grid;
-  margin: 0 0 50px 0;
+  margin: 138px 0 50px 0;
   justify-content: center;
 }
 .container__picture{

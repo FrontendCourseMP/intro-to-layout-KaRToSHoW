@@ -10,9 +10,58 @@
     <title>Grid</title>
 </head>
 <body>
+    <a class="skip-link" href="#main">skip-link</a>
     <header class="header">
+        <div class="header__wrapper rwd-wrapper">
+        <div class="header__address-wrapper">
+            <p class="header__address">г. Алматы, ул. Абая д.68</p>
+            <p class="header__work-time">Звоните, Пн-Пт с 10:00-18:00</p>
+            <a class="header__telephone" href="tel:79009001010">+7 (900) 900-10-10</a>
+        </div>
         <a href="/index.html" class="header__logo-link">Logo</a>
-        <button type="button" name="menu" class="header__button-menu"><img src="/Image/menu.svg" alt=""></button>
+        <button type="button" name="menu" class="header__button-menu">
+            <svg class="menu menuRotate ham1" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
+            <path class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+            </svg>
+        </button>
+        <nav class="header__nav navigation">
+            <ul class="header__navigation-list navigation">
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">О компании</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Об изделиях</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Отзывы</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Сотрудничество</a>
+            </li>
+            <li class="navigation__item">
+                <a href="/form.html" class="navigation__link">Форма</a>
+            </li>
+            </ul>
+            <ul class="header__messenger messenger">
+            <li class="messenger__item">
+                <a href="#"><img class="messenger__image" src="/Image/instagram.svg" alt="Инстаграмм"></a>
+            </li>
+            <li class="messenger__item">
+                <a href="#"><img class="messenger__image" src="/Image/telegram.svg" alt="Телеграмм"></a>
+            </li>
+            <li class="messenger__item">
+                <a href="#"><img class="messenger__image" src="/Image/whatsapp.svg" alt="Ватсапп"></a>
+            </li>
+            </ul>
+        </nav>
+        </div>
     </header>
 
     <main>
