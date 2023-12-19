@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">skip-link</a>
   <header class="header">
     <div class="header__wrapper rwd-wrapper">
       <div class="header__address-wrapper">
@@ -64,7 +65,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="outdoor-furniture">
       <div class="outdoor-furniture__wrapper rwd-wrapper">
         <h1 class="outdoor-furniture__title">Уличная мебель</h1>
@@ -92,7 +93,17 @@
       <div class="company__wrapper rwd-wrapper">
         <h2 class="company__title">О компании</h2>
         <div class="company__-wrapper-desctop">
-          <img class="company__image" src="/Image/Шлейфовка.jpg" alt="Шлифование">
+          <picture>
+            <source srcset="/Image/Шлейфовка-440.jpg 440w,
+                      /Image/Шлейфовка440-2x.jpg 880w,
+                      /Image/Шлейфовка440-3x.jpg 1320w" sizes="(min-width: 440px) 440px, 100vw"
+              media="(min-width: 440px)">
+            <source srcset="/Image/Шлейфовка1440.jpg 1440w,
+                      /Image/Шлейфовка1440-2x.jpg 2880w,
+                      /Image/Шлейфовка1440-3x.jpg 4320w" sizes="(min-width: 1440px) 1440px, 100vw"
+              media="(min-width: 1440px)">
+            <img class="company__image" src="/Image/Шлейфовка.jpg" alt="Шлейфовка">
+          </picture>
           <ul class="company__list">
             <li class="company__list-item">
               <img class="image-ovals" src="/Image/Ovals.svg" alt="">
@@ -128,7 +139,13 @@
           </p>
         </div>
         <div class="products__sofa sofa">
-          <img class="sofa__image" src="/Image/Диваны.png" alt="Диваны">
+          <picture class="sofa__image">
+            <source srcset="/Image/Диваны.png 440w,
+                      /Image/Диваны440-2x.png 880w,
+                      /Image/Диваны440-3x.png 1320w" sizes="(min-width: 440px) 440px, 100vw"
+              media="(min-width: 440px)">
+            <img class="sofa__image" src="/Image/Диваны.png" alt="Диваны">
+          </picture>
         </div>
         <div class="products__detail-tree information">
           <button type="button" name="details" class="information__toggle" aria-label="Подробнее о древесине"></button>
@@ -136,7 +153,14 @@
           <p class="information__description">Лиственница, ангарская сосна, дуб, карагач</p>
         </div>
         <div class="products__sofa-two sofa-two">
-          <img class="sofa-two__image" src="/Image/Диваны.png" alt="Диваны">
+          <picture class="sofa-two__image">
+            <source srcset="/Image/Диваны.png 440w,
+                      /Image/Диваны440-2x.png 880w,
+                      /Image/Диваны440-3x.png 1320w" sizes="(min-width: 440px) 440px, 100vw"
+              media="(min-width: 440px)">
+            <img class="sofa-two__image" src="/Image/Диваны.png" alt="Диваны">
+          </picture>
+
         </div>
         <div class="products__detail-textile information">
           <button type="button" name="details" class="information__toggle" aria-label="Подробнее о ткани"></button>
@@ -159,8 +183,11 @@
             <ul class="catalog__list-big">
               <li class="catalog__item product">
                 <picture>
-                  <source srcset="/Image/Классический-лежак-2.jpg" media="(min-width:535px)">
-                  <source srcset="/Image/Классический-лежак.jpg">
+                  <source srcset="/Image/Классический-лежак-2.jpg" media="(min-width: 535px)">
+                  <source srcset="/Image/Классический-лежак.jpg 440w, 
+                                  /Image/Классический-лежак2x.jpg 880w, 
+                                  /Image/Классический-лежак3x.jpg 1320w" media="(min-width: 440px)"
+                    sizes="(min-width: 440px) 440px, 100vw">
                   <img class="product__image-big" src="/Image/Классический-лежак.jpg" alt="Классический лежак">
                 </picture>
                 <a href="#" class="product__link">Классический лежак</a>
@@ -168,7 +195,9 @@
               <li class="catalog__item product">
                 <picture>
                   <source srcset="/Image/Шезлонг.jpg" media="(min-width:535px)">
-                  <source srcset="/Image/Кресло-шезлонг.jpg">
+                  <source srcset="/Image/Кресло-шезлонг.jpg 440w, 
+                                  /Image/Кресло-шезлонг2x.jpg 880w, 
+                                  /Image/Кресло-шезлонг3x.jpg 1320w" media="(min-width:440px)" sizes="(min-width: 440px) 440px, 100vw">
                   <img class="product__image-big" src="/Image/Кресло-шезлонг.jpg" alt="Кресло шезлонг">
                 </picture>
                 <a href="#" class="product__link">Кресло шезлонг</a>
@@ -178,7 +207,9 @@
           <li class="catalog__item product">
             <picture>
               <source srcset="/Image/Топчан-2.jpg" media="(min-width: 1440px)">
-              <source srcset="/Image/Топчан.jpg">
+              <source srcset="/Image/Топчан.jpg 440w, 
+                              /Image/Топчан2x.jpg 880w, 
+                              /Image/Топчан3x.jpg 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
               <img class="product__image" src="/Image/Топчан.jpg" alt="Топчан">
             </picture>
             <a href="#" class="product__link">Топчан</a>
@@ -186,19 +217,31 @@
           <li class="catalog__item product">
             <picture>
               <source srcset="/Image/Комплект-уличной-мебели-2.jpg" media="(min-width: 1440px)">
-              <source srcset="/Image/Комплект-уличной-мебели.jpg">
+              <source srcset="/Image/Комплект-уличной-мебели.jpg 440w, 
+                              /Image/Комплект-уличной-мебели2x.jpg 880w, 
+                              /Image/Комплект-уличной-мебели3x.jpg 1320w" media="(min-width: 440px)"
+                sizes="(min-width: 440px) 440px, 100vw">
               <img class="product__image" src="/Image/Комплект-уличной-мебели.jpg" alt="Комплект уличной мебели">
             </picture>
             <a href="#" class="product__link">Комплект уличной мебели</a>
           </li>
           <li class="catalog__item product">
-            <img class="product__image" src="/Image/Скамейка-со-спинкой.jpg" alt="Скамейка со спинкой">
+            <picture>
+              <source srcset="/Image/Скамейка-со-спинкой.jpg 440w, 
+                              /Image/Скамейка-со-спинкой2x.jpg 880w, 
+                              /Image/Скамейка-со-спинкой3x.jpg 1320w" media="(min-width: 440px)"
+                sizes="(min-width: 440px) 440px, 100vw">
+              <img class="product__image" src="/Image/Скамейка-со-спинкой.jpg" alt="Скамейка со спинкой">
+            </picture>
             <a href="#" class="product__link">Скамейка со спинкой</a>
           </li>
           <li class="catalog__item product">
             <picture>
               <source srcset="/Image/Обеденный-стол.jpg" media="(min-width: 1440px)">
-              <source srcset="/Image/Обеденный-стол-со-стульями.jpg">
+              <source srcset="/Image/Обеденный-стол-со-стульями.jpg 440w, 
+                              /Image/Обеденный-стол-со-стульями2x.jpg 880w, 
+                              /Image/Обеденный-стол-со-стульями3x.jpg 1320w" media="(min-width: 440px)"
+                sizes="(min-width: 440px) 440px, 100vw">
               <img class="product__image" src="/Image/Обеденный-стол-со-стульями.jpg" alt="Обеденный стол со стульями">
             </picture>
             <a href="#" class="product__link">Обеденный стол со стульями</a>
@@ -206,7 +249,10 @@
           <li class="catalog__item product">
             <picture>
               <source srcset="/Image/Складной-стульчик-2.jpg" media="(min-width: 1440px)">
-              <source srcset="/Image/Складной-стульчик.jpg">
+              <source srcset="/Image/Складной-стульчик.jpg 440w, 
+                              /Image/Складной-стульчик2x.jpg 880w, 
+                              /Image/Складной-стульчик3x.jpg 1320w" media="(min-width: 440px)"
+                sizes="(min-width: 440px) 440px, 100vw">
               <img class="product__image" src="/Image/Складной-стульчик.jpg" alt="Складной стульчик">
             </picture>
             <a href="#" class="product__link">Складной стульчик</a>
@@ -214,7 +260,10 @@
           <li class="catalog__item product">
             <picture>
               <source srcset="/Image/Столик-бар-2.jpg" media="(min-width: 1440px)">
-              <source srcset="/Image/Столик-бар.jpg">
+              <source srcset="/Image/Столик-бар.jpg 440w, 
+                              /Image/Столик-бар2x.jpg 880w, 
+                              /Image/Столик-бар3x.jpg 1320w" media="(min-width: 440px)"
+                sizes="(min-width: 440px) 440px, 100vw">
               <img class="product__image" src="/Image/Столик-бар.jpg" alt="Столик-бар">
             </picture>
             <a href="#" class="product__link">Столик-бар</a>
@@ -222,7 +271,10 @@
           <li class="catalog__item product">
             <picture>
               <source srcset="/Image/Стол-кофейный.jpg" media="(min-width: 1440px)">
-              <source srcset="/Image/Кофейный-столик.jpg">
+              <source srcset="/Image/Кофейный-столик.jpg 440w, 
+                              /Image/Кофейный-столик2x.jpg 880w, 
+                              /Image/Кофейный-столик3x.jpg 1320w" media="(min-width: 440px)"
+                sizes="(min-width: 440px) 440px, 100vw">
               <img class="product__image" src="/Image/Кофейный-столик.jpg" alt="Кофейный столик">
             </picture>
             <a href="#" class="product__link">Кофейный столик</a>
@@ -230,7 +282,10 @@
           <li class="catalog__item product">
             <picture>
               <source srcset="/Image/Матрасы.jpg" media="(min-width: 1440px)">
-              <source srcset="/Image/Матрас-для-лежака.jpg">
+              <source srcset="/Image/Матрас-для-лежака.jpg 440w, 
+                              /Image/Матрас-для-лежака2x.jpg 880w, 
+                              /Image/Матрас-для-лежака3x.jpg 1320w" media="(min-width: 440px)"
+                sizes="(min-width: 440px) 440px, 100vw">
               <img class="product__image" src="/Image/Матрас-для-лежака.jpg" alt="Матрас для лежака">
             </picture>
             <a href="#" class="product__link">Матрас для лежака</a>
@@ -238,7 +293,6 @@
         </ul>
         <a href="#форма" class="catalog__link">Оставить заявку</a>
       </div>
-
     </section>
 
     <section class="custom-order">
@@ -296,7 +350,12 @@
         <ol class="article__list">
           <li class="article__item">
             <div class="article__reviews-Anna reviews">
-              <img class="reviews__image" src="/Image/Анна.jpg" alt="Анна Иванова">
+              <picture>
+                <source srcset="/Image/Анна.jpg 440w, 
+                                /Image/Анна2x.jpg 880w, 
+                                /Image/Анна3x.jpg 1320w" sizes="(min-width: 440px) 440px, 100vw" media="(min-width: 440px)">
+                <img class="reviews__image" src="/Image/Анна.jpg" alt="Анна Иванова">
+              </picture>              
               <h3 class="reviews__author">Анна Иванова</h3>
               <blockquote class="reviews__text">
                 Качество и прочность этой мебели просто потрясают меня. Она
@@ -316,7 +375,12 @@
           </li>
           <li class="article__item">
             <div class="article__reviews-Kirill reviews">
-              <img class="reviews__image" src="/Image/Кирилл.jpg" alt="Кирилл Котов">
+              <picture>
+                <source srcset="/Image/Кирилл.jpg 440w, 
+                                /Image/Кирилл2x.jpg 880w, 
+                                /Image/Кирилл3x.jpg 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
+                <img class="reviews__image" src="/Image/Кирилл.jpg" alt="Кирилл Котов">
+              </picture>              
               <h3 class="reviews__author">Кирилл Котов</h3>
               <blockquote class="reviews__text">
                 Я бы хотел поделиться своим восхищением относительно мебели из
@@ -333,7 +397,12 @@
           </li>
           <li class="article__item">
             <div class="article__reviews-Andrey reviews">
-              <img class="reviews__image" src="/Image/Андрей.jpg" alt="Андрей Головин">
+              <picture>
+                <source srcset="/Image/Андрей.jpg 440w, 
+                                /Image/Андрей2x.jpg 880w, 
+                                /Image/Андрей3x.jpg 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
+                <img class="reviews__image" src="/Image/Андрей.jpg" alt="Андрей Головин">
+              </picture>              
               <h3 class="reviews__author">Андрей Головин</h3>
               <blockquote class="reviews__text">
                 В целом, дачная мебель из дерева оправдала все наши ожидания и
@@ -354,27 +423,57 @@
         <h2 class="clients__title">Наши клиенты</h2>
         <ul class="clients-list">
           <li class="clients-list__item">
-            <img class="clients-list__image" src="/Image/miami-beach.png" alt="Аквапарк Майами">
+            <picture>
+              <source srcset="/Image/miami-beach.png 440w, 
+                              /Image/miami-beach2x.png 880w, 
+                              /Image/miami-beach3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
+              <img class="clients-list__image" src="/Image/miami-beach.png" alt="Аквапарк Майами">
+            </picture>
             <p class="clients-list__name">Аквапарк Майами</p>
           </li>
           <li class="clients-list__item">
-            <img class="clients-list__image-Hawai" src="/Image/Hawai.png" alt="Аквапарк Гаваии">
+            <picture>
+              <source srcset="/Image/Hawai.png 440w, 
+                              /Image/Hawai2x.png 880w, 
+                              /Image/Hawai3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
+              <img class="clients-list__image-Hawai" src="/Image/Hawai.png" alt="Аквапарк Гаваии">
+            </picture>            
             <p class="clients-list__name">Аквапарк Гаваии</p>
           </li>
           <li class="clients-list__item">
-            <img class="clients-list__image" src="/Image/Aqua-town.png" alt="Аквапарк Акватаун">
+            <picture>
+              <source srcset="/Image/Aqua-town.png 440w, 
+                              /Image/Aqua-town2x.png 880w, 
+                              /Image/Aqua-town3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
+              <img class="clients-list__image" src="/Image/Aqua-town.png" alt="Аквапарк Акватаун">
+            </picture>            
             <p class="clients-list__name">Аквапарк Акватаун</p>
           </li>
           <li class="clients-list__item">
-            <img class="clients-list__image" src="/Image/Baganashil.png" alt="Бассейн Баганашил">
+            <picture>
+              <source srcset="/Image/Baganashil.png 440w, 
+                              /Image/Baganashil2x.png 880w, 
+                              /Image/Baganashil3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
+              <img class="clients-list__image" src="/Image/Baganashil.png" alt="Бассейн Баганашил">
+            </picture>            
             <p class="clients-list__name">Бассейн Баганашил</p>
           </li>
           <li class="clients-list__item">
-            <img class="clients-list__image" src="/Image/Grand-park.png" alt="ТРЦ “Грандпарк”">
+            <picture>
+              <source srcset="/Image/Grand-park.png 440w, 
+                              /Image/Grand-park2x.png 880w, 
+                              /Image/Grand-park3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
+              <img class="clients-list__image" src="/Image/Grand-park.png" alt="ТРЦ 'Грандпарк'">
+            </picture>            
             <p class="clients-list__name">ТРЦ “Грандпарк”</p>
           </li>
           <li class="clients-list__item">
-            <img class="clients-list__image" src="/Image/shumbulack.png" alt="ГК Шымбулак">
+            <picture>
+              <source srcset="/Image/shumbulack.png 440w, 
+                              /Image/shumbulack2x.png 880w, 
+                              /Image/shumbulack3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
+              <img class="clients-list__image" src="/Image/shumbulack.png" alt="ГК Шымбулак">
+            </picture>            
             <p class="clients-list__name">ГК Шымбулак</p>
           </li>
         </ul>

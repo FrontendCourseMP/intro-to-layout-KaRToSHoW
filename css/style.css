@@ -240,10 +240,12 @@ body {
     display: block;
     position: relative;
 }
-.navigation__link:hover{
-    font-size: 1.9rem;
+.navigation__link:hover {
+    transform: scale(1.1); 
     color: #98b164;
+    transition: transform 0.3s ease; 
 }
+
 .navigation__link::before{
     content: "";
     width: 100%;
@@ -806,7 +808,7 @@ body {
     font-weight: 700;
     line-height: 1.6rem;
     text-decoration: none;
-    padding: 0 18px 0 0;
+    padding: 0 10px 0 0;
 }
 
 .product__link:hover {
@@ -1332,9 +1334,9 @@ body {
 }
 
 .clients-list__image-Hawai {
-    width: 107px;
-    height: 73px;
-    margin: 20px 0 0 21px;
+    /* width: 107px; */
+    height: 66px;
+    margin: 24px 0 0 21px;
 }
 
 .clients-list__name {
@@ -1488,9 +1490,7 @@ button:focus {
 .products__link:active,
 .clients__link:active {
     background-color: #98b164;
-    /* Цвет фона */
     box-shadow: 0 0 0 4px #F3F1EC, 0 0 0 5px #8a9b66;
-    /* Тень в виде рамки */
 }
 
 .outdoor-furniture__link:focus,
@@ -1501,11 +1501,28 @@ button:focus {
 .products__link:focus,
 .clients__link:focus{
     background-color: #98b164;
-    /* Цвет фона */
     box-shadow: 0 0 0 4px #F3F1EC, 0 0 0 5px #8a9b66;
-    /* Тень в виде рамки */
 }
-
+@media (min-resolution: 2dppx) {
+    .outdoor-furniture {
+        background-image: url('/Image/Background-first-block2x.jpg');
+    }
+}
+.skip-link {
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 20%;
+    padding: 9px 118px;
+    color: #ffffff;
+    background: #208002;
+    transform: translateY(-100%);
+    text-decoration: none;
+    font-size: 2rem;
+}
+.skip-link:focus {
+    transform: translateY(20%);
+}
 @media (min-width:535px) {
     .product__image-big {
         min-height: 320px;
@@ -1534,6 +1551,10 @@ button:focus {
 
     .article__list {
         gap: 30px;
+    }
+    .clients-list__image-Hawai {
+        height: 102px;
+        margin: 0px 0 0 21px;
     }
 }
 
@@ -1959,10 +1980,6 @@ button:focus {
         margin: 0;
         position: relative;
         z-index: 80;
-    }
-
-    .outdoor-furniture {
-        background-position: 0px -150px;
     }
 
     .outdoor-furniture__wrapper {
@@ -2433,6 +2450,7 @@ button:focus {
         margin-top: 60px;
         padding: 20px 260px;
     }
+
 }
 
 @media (min-width:1440px) {
