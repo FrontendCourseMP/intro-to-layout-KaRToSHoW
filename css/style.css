@@ -1435,9 +1435,7 @@ button {
 
 button:hover {
     background-color: #98b164;
-    /* Цвет фона */
     box-shadow: 0 0 0 4px #F3F1EC, 0 0 0 5px #8a9b66;
-    /* Тень в виде рамки */
 }
 
 .header__button-menu:hover {
@@ -1447,16 +1445,12 @@ button:hover {
 
 button:active {
     background-color: #98b164;
-    /* Цвет фона */
     box-shadow: 0 0 0 4px #F3F1EC, 0 0 0 5px #8a9b66;
-    /* Тень в виде рамки */
 }
 
 button:focus {
     background-color: #98b164;
-    /* Цвет фона */
     box-shadow: 0 0 0 4px #F3F1EC, 0 0 0 5px #8a9b66;
-    /* Тень в виде рамки */
 }
 
 .outdoor-furniture__link,
@@ -1477,9 +1471,7 @@ button:focus {
 .products__link:hover,
 .clients__link:hover {
     background-color: #98b164;
-    /* Цвет фона */
     box-shadow: 0 0 0 4px #F3F1EC, 0 0 0 5px #8a9b66;
-    /* Тень в виде рамки */
 }
 
 .outdoor-furniture__link:active,
