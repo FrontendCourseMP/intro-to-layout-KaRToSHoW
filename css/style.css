@@ -70,25 +70,14 @@
     --backgroundfooter-color: #6c7754;
     --text-color: #FFFFFF;
     --subtext-color: #000;
-    --number-color: #9EAF7C;
+    --number-color: #6c7754;
     --title-color: #4B4B4B;
     --border-color: #C3BEBE;
     --form-color: #FFFFFF;
     font-size: 62.5%;
 }
 
-p::selection,
-h1::selection,
-h2::selection,
-h3::selection,
-blockquote::selection,
-img::selection,
-a::selection,
-input::selection,
-strong::selection,
-span::selection,
-button::selection,
-textarea::selection {
+::selection {
     background: #a1bb68;
 }
 
@@ -1034,7 +1023,7 @@ body {
 .custom-order__agreement {
     color: #FFF;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-style: normal;
     line-height: 1.5rem;
     margin: 15px 0 0 0px;
@@ -1495,6 +1484,17 @@ button:focus {
     background-color: #98b164;
     box-shadow: 0 0 0 4px #F3F1EC, 0 0 0 5px #8a9b66;
 }
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 @media (min-resolution: 2dppx) {
     .outdoor-furniture {
         background-image: url('/Image/Background-first-block2x.jpg');
@@ -1680,7 +1680,7 @@ button:focus {
     }
 
     .custom-order__agreement {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .custom-order__button {
@@ -2215,7 +2215,7 @@ button:focus {
     }
 
     .custom-order__agreement {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         margin: 0;
     }
 

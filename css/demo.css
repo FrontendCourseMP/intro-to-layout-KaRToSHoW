@@ -38,7 +38,7 @@
     overflow: hidden;
     backface-visibility: hidden;
     position: absolute;
-    transition: transform .6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
 }
 
 .front {
@@ -62,7 +62,7 @@ h2 {
 
 span {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .card:hover>.front {
@@ -107,7 +107,8 @@ span {
     margin-left: 137px;
     font-size: 8rem;
 }
-@media (min-width: 390px){
+
+@media (min-width: 390px) {
     .footer__title {
         margin: 91px 0 37px 45px;
         font-size: 3.8rem;

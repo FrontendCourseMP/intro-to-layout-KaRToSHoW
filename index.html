@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Покупайте мебель у нас!">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="/Image/favicon.png" type="image/png">
@@ -20,8 +21,8 @@
         <a class="header__telephone" href="tel:79009001010">+7 (900) 900-10-10</a>
       </div>
       <a href="#" class="header__logo-link">Logo</a>
-      <button type="button" name="menu" class="header__button-menu">
-        <svg class="menu menuRotate ham1" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
+      <button type="button" name="menu" class="header__button-menu" aria-label="Открыть меню"  onclick="this.classList.toggle('active')">
+        <svg class="menu menuRotate ham1" viewBox="0 0 100 100" width="40">
           <path class="line top"
             d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
           <path class="line middle" d="m 30,50 h 40" />
@@ -53,12 +54,15 @@
         <ul class="header__messenger messenger">
           <li class="messenger__item">
             <a href="#"><img class="messenger__image" src="/Image/instagram.svg" alt="Инстаграмм"></a>
+            <span class="sr-only">Перейти в Инстаграмм</span>
           </li>
           <li class="messenger__item">
             <a href="#"><img class="messenger__image" src="/Image/telegram.svg" alt="Телеграмм"></a>
+            <span class="sr-only">Перейти в Телеграммpan>
           </li>
           <li class="messenger__item">
             <a href="#"><img class="messenger__image" src="/Image/whatsapp.svg" alt="Ватсапп"></a>
+            <span class="sr-only">Перейти в Ватсап</span>
           </li>
         </ul>
       </nav>
@@ -160,7 +164,6 @@
               media="(min-width: 440px)">
             <img class="sofa-two__image" src="/Image/Диваны.png" alt="Диваны">
           </picture>
-
         </div>
         <div class="products__detail-textile information">
           <button type="button" name="details" class="information__toggle" aria-label="Подробнее о ткани"></button>
@@ -175,7 +178,7 @@
       </div>
     </section>
 
-    <section class="catalog" id="каталог">
+    <section class="catalog">
       <div class="catalog__wrapper rwd-wrapper">
         <h2 class="catalog__title">Каталог</h2>
         <ul class="catalog__list">
@@ -188,7 +191,7 @@
                                   /Image/Классический-лежак2x.jpg 880w, 
                                   /Image/Классический-лежак3x.jpg 1320w" media="(min-width: 440px)"
                     sizes="(min-width: 440px) 440px, 100vw">
-                  <img class="product__image-big" src="/Image/Классический-лежак.jpg" alt="Классический лежак">
+                  <img class="product__image-big" src="/Image/Классический-лежак.jpg" alt="">
                 </picture>
                 <a href="#" class="product__link">Классический лежак</a>
               </li>
@@ -198,7 +201,7 @@
                   <source srcset="/Image/Кресло-шезлонг.jpg 440w, 
                                   /Image/Кресло-шезлонг2x.jpg 880w, 
                                   /Image/Кресло-шезлонг3x.jpg 1320w" media="(min-width:440px)" sizes="(min-width: 440px) 440px, 100vw">
-                  <img class="product__image-big" src="/Image/Кресло-шезлонг.jpg" alt="Кресло шезлонг">
+                  <img class="product__image-big" src="/Image/Кресло-шезлонг.jpg" alt="">
                 </picture>
                 <a href="#" class="product__link">Кресло шезлонг</a>
               </li>
@@ -210,7 +213,7 @@
               <source srcset="/Image/Топчан.jpg 440w, 
                               /Image/Топчан2x.jpg 880w, 
                               /Image/Топчан3x.jpg 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
-              <img class="product__image" src="/Image/Топчан.jpg" alt="Топчан">
+              <img class="product__image" src="/Image/Топчан.jpg" alt="">
             </picture>
             <a href="#" class="product__link">Топчан</a>
           </li>
@@ -221,7 +224,7 @@
                               /Image/Комплект-уличной-мебели2x.jpg 880w, 
                               /Image/Комплект-уличной-мебели3x.jpg 1320w" media="(min-width: 440px)"
                 sizes="(min-width: 440px) 440px, 100vw">
-              <img class="product__image" src="/Image/Комплект-уличной-мебели.jpg" alt="Комплект уличной мебели">
+              <img class="product__image" src="/Image/Комплект-уличной-мебели.jpg" alt="">
             </picture>
             <a href="#" class="product__link">Комплект уличной мебели</a>
           </li>
@@ -231,7 +234,7 @@
                               /Image/Скамейка-со-спинкой2x.jpg 880w, 
                               /Image/Скамейка-со-спинкой3x.jpg 1320w" media="(min-width: 440px)"
                 sizes="(min-width: 440px) 440px, 100vw">
-              <img class="product__image" src="/Image/Скамейка-со-спинкой.jpg" alt="Скамейка со спинкой">
+              <img class="product__image" src="/Image/Скамейка-со-спинкой.jpg" alt="">
             </picture>
             <a href="#" class="product__link">Скамейка со спинкой</a>
           </li>
@@ -242,7 +245,7 @@
                               /Image/Обеденный-стол-со-стульями2x.jpg 880w, 
                               /Image/Обеденный-стол-со-стульями3x.jpg 1320w" media="(min-width: 440px)"
                 sizes="(min-width: 440px) 440px, 100vw">
-              <img class="product__image" src="/Image/Обеденный-стол-со-стульями.jpg" alt="Обеденный стол со стульями">
+              <img class="product__image" src="/Image/Обеденный-стол-со-стульями.jpg" alt="">
             </picture>
             <a href="#" class="product__link">Обеденный стол со стульями</a>
           </li>
@@ -253,7 +256,7 @@
                               /Image/Складной-стульчик2x.jpg 880w, 
                               /Image/Складной-стульчик3x.jpg 1320w" media="(min-width: 440px)"
                 sizes="(min-width: 440px) 440px, 100vw">
-              <img class="product__image" src="/Image/Складной-стульчик.jpg" alt="Складной стульчик">
+              <img class="product__image" src="/Image/Складной-стульчик.jpg" alt="">
             </picture>
             <a href="#" class="product__link">Складной стульчик</a>
           </li>
@@ -264,7 +267,7 @@
                               /Image/Столик-бар2x.jpg 880w, 
                               /Image/Столик-бар3x.jpg 1320w" media="(min-width: 440px)"
                 sizes="(min-width: 440px) 440px, 100vw">
-              <img class="product__image" src="/Image/Столик-бар.jpg" alt="Столик-бар">
+              <img class="product__image" src="/Image/Столик-бар.jpg" alt="">
             </picture>
             <a href="#" class="product__link">Столик-бар</a>
           </li>
@@ -275,7 +278,7 @@
                               /Image/Кофейный-столик2x.jpg 880w, 
                               /Image/Кофейный-столик3x.jpg 1320w" media="(min-width: 440px)"
                 sizes="(min-width: 440px) 440px, 100vw">
-              <img class="product__image" src="/Image/Кофейный-столик.jpg" alt="Кофейный столик">
+              <img class="product__image" src="/Image/Кофейный-столик.jpg" alt="">
             </picture>
             <a href="#" class="product__link">Кофейный столик</a>
           </li>
@@ -286,7 +289,7 @@
                               /Image/Матрас-для-лежака2x.jpg 880w, 
                               /Image/Матрас-для-лежака3x.jpg 1320w" media="(min-width: 440px)"
                 sizes="(min-width: 440px) 440px, 100vw">
-              <img class="product__image" src="/Image/Матрас-для-лежака.jpg" alt="Матрас для лежака">
+              <img class="product__image" src="/Image/Матрас-для-лежака.jpg" alt="">
             </picture>
             <a href="#" class="product__link">Матрас для лежака</a>
           </li>
@@ -301,13 +304,13 @@
         <p class="custom-order__para">Тогда мы можем изготовить для вас мебель</p>
         <p class="custom-order__subpara">по индивидуальному дизайну</p>
         <form class="custom-order__form" action="//httpbin.org/post" method="post">
-          <label class="custom-order__label-name">
-            <input class="custom-order__input" type="text" placeholder="Ваше имя*" required>
+          <label class="custom-order__label-name"><span class="sr-only">Введите имя</span>
+            <input class="custom-order__input" type="text" name="name" placeholder="Ваше имя*" required>
           </label>
-          <label class="custom-order__label-telephone">
-            <input class="custom-order__input" type="text" placeholder="Ваш телефон*" required>
+          <label class="custom-order__label-telephone"><span class="sr-only">Введите телефон</span>
+            <input class="custom-order__input" type="tel" name="telephon" placeholder="Ваш телефон*" required>
           </label>
-          <label class="custom-order__label-textarea">
+          <label class="custom-order__label-textarea"><span class="sr-only">Введите комментарий</span>
             <textarea class="custom-order__textarea" name="comment" placeholder="Ваш комментарий"></textarea>
           </label>
           <p class="custom-order__agreement">Нажимая на кнопку, вы даете согласие на
@@ -323,19 +326,19 @@
         <h2 class="order-process__title">Как получить заказ?</h2>
         <ol class="order-process__list">
           <li class="order-process__item">
-            <img class="order-process__image-pc" src="/Image/Computer.svg" alt="Компьютер и телефон">
+            <img class="order-process__image-pc" src="/Image/Computer.svg" alt="">
             <h3 class="order-process__subtitle">Заявка</h3>
             <p class="order-process__description">Оставьте заявку и наш менеджер свяжется с вами в течении 15-ти минут
             </p>
           </li>
           <li class="order-process__item">
-            <img class="order-process__image" src="/Image/medal.svg" alt="Надежность">
+            <img class="order-process__image" src="/Image/medal.svg" alt="">
             <h3 class="order-process__subtitle">Предоплата</h3>
             <p class="order-process__description">После внесения предоплаты в 100% от суммы чека мы отправляем заказ
               транспортными компаниями </p>
           </li>
           <li class="order-process__item">
-            <img class="order-process__image" src="/Image/marker.svg" alt="Доставка">
+            <img class="order-process__image" src="/Image/marker.svg" alt="">
             <h3 class="order-process__subtitle">Получение</h3>
             <p class="order-process__description">Срок доставки зависит от вашего региона и занимает от 3-7 дней</p>
           </li>
@@ -354,7 +357,7 @@
                 <source srcset="/Image/Анна.jpg 440w, 
                                 /Image/Анна2x.jpg 880w, 
                                 /Image/Анна3x.jpg 1320w" sizes="(min-width: 440px) 440px, 100vw" media="(min-width: 440px)">
-                <img class="reviews__image" src="/Image/Анна.jpg" alt="Анна Иванова">
+                <img class="reviews__image" src="/Image/Анна.jpg" alt="">
               </picture>              
               <h3 class="reviews__author">Анна Иванова</h3>
               <blockquote class="reviews__text">
@@ -379,7 +382,7 @@
                 <source srcset="/Image/Кирилл.jpg 440w, 
                                 /Image/Кирилл2x.jpg 880w, 
                                 /Image/Кирилл3x.jpg 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
-                <img class="reviews__image" src="/Image/Кирилл.jpg" alt="Кирилл Котов">
+                <img class="reviews__image" src="/Image/Кирилл.jpg" alt="">
               </picture>              
               <h3 class="reviews__author">Кирилл Котов</h3>
               <blockquote class="reviews__text">
@@ -401,7 +404,7 @@
                 <source srcset="/Image/Андрей.jpg 440w, 
                                 /Image/Андрей2x.jpg 880w, 
                                 /Image/Андрей3x.jpg 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
-                <img class="reviews__image" src="/Image/Андрей.jpg" alt="Андрей Головин">
+                <img class="reviews__image" src="/Image/Андрей.jpg" alt="">
               </picture>              
               <h3 class="reviews__author">Андрей Головин</h3>
               <blockquote class="reviews__text">
@@ -427,7 +430,7 @@
               <source srcset="/Image/miami-beach.png 440w, 
                               /Image/miami-beach2x.png 880w, 
                               /Image/miami-beach3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
-              <img class="clients-list__image" src="/Image/miami-beach.png" alt="Аквапарк Майами">
+              <img class="clients-list__image" src="/Image/miami-beach.png" alt="">
             </picture>
             <p class="clients-list__name">Аквапарк Майами</p>
           </li>
@@ -436,7 +439,7 @@
               <source srcset="/Image/Hawai.png 440w, 
                               /Image/Hawai2x.png 880w, 
                               /Image/Hawai3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
-              <img class="clients-list__image-Hawai" src="/Image/Hawai.png" alt="Аквапарк Гаваии">
+              <img class="clients-list__image-Hawai" src="/Image/Hawai.png" alt="">
             </picture>            
             <p class="clients-list__name">Аквапарк Гаваии</p>
           </li>
@@ -445,7 +448,7 @@
               <source srcset="/Image/Aqua-town.png 440w, 
                               /Image/Aqua-town2x.png 880w, 
                               /Image/Aqua-town3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
-              <img class="clients-list__image" src="/Image/Aqua-town.png" alt="Аквапарк Акватаун">
+              <img class="clients-list__image" src="/Image/Aqua-town.png" alt="">
             </picture>            
             <p class="clients-list__name">Аквапарк Акватаун</p>
           </li>
@@ -454,7 +457,7 @@
               <source srcset="/Image/Baganashil.png 440w, 
                               /Image/Baganashil2x.png 880w, 
                               /Image/Baganashil3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
-              <img class="clients-list__image" src="/Image/Baganashil.png" alt="Бассейн Баганашил">
+              <img class="clients-list__image" src="/Image/Baganashil.png" alt="">
             </picture>            
             <p class="clients-list__name">Бассейн Баганашил</p>
           </li>
@@ -463,7 +466,7 @@
               <source srcset="/Image/Grand-park.png 440w, 
                               /Image/Grand-park2x.png 880w, 
                               /Image/Grand-park3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
-              <img class="clients-list__image" src="/Image/Grand-park.png" alt="ТРЦ 'Грандпарк'">
+              <img class="clients-list__image" src="/Image/Grand-park.png" alt="">
             </picture>            
             <p class="clients-list__name">ТРЦ “Грандпарк”</p>
           </li>
@@ -472,7 +475,7 @@
               <source srcset="/Image/shumbulack.png 440w, 
                               /Image/shumbulack2x.png 880w, 
                               /Image/shumbulack3x.png 1320w" media="(min-width: 440px)" sizes="(min-width: 440px) 440px, 100vw">
-              <img class="clients-list__image" src="/Image/shumbulack.png" alt="ГК Шымбулак">
+              <img class="clients-list__image" src="/Image/shumbulack.png" alt="">
             </picture>            
             <p class="clients-list__name">ГК Шымбулак</p>
           </li>
