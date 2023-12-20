@@ -1023,7 +1023,7 @@ body {
 .custom-order__agreement {
     color: #FFF;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-style: normal;
     line-height: 1.5rem;
     margin: 15px 0 0 0px;
@@ -1688,7 +1688,7 @@ button:focus {
     }
 
     .custom-order__agreement {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .custom-order__button {
@@ -2223,7 +2223,7 @@ button:focus {
     }
 
     .custom-order__agreement {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         margin: 0;
     }
 
