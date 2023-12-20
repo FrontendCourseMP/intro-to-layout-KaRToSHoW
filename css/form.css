@@ -376,7 +376,10 @@
 }
 .footer__logo-link {
     transform: rotate(30deg) scale(1.5) skewX(20deg) skewY(20deg);
-    width: 427px;
+    width: 200px;
+    color: #0c680c;
+    bottom: 160px;
+    left: -69px;
 }
 .footer__title {
     margin-left: 137px;
@@ -400,5 +403,9 @@
     }
     .form-container {
         width: 311px;
+    }
+    .footer__title{
+        font-size: 3.8rem;
+        margin: 91px 0 300px 45px;
     }
 }

@@ -1503,6 +1503,17 @@ button:focus {
     background-color: #98b164;
     box-shadow: 0 0 0 4px #F3F1EC, 0 0 0 5px #8a9b66;
 }
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 @media (min-resolution: 2dppx) {
     .outdoor-furniture {
         background-image: url('/Image/Background-first-block2x.jpg');
