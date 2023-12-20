@@ -77,18 +77,7 @@
     font-size: 62.5%;
 }
 
-p::selection,
-h1::selection,
-h2::selection,
-h3::selection,
-blockquote::selection,
-img::selection,
-a::selection,
-input::selection,
-strong::selection,
-span::selection,
-button::selection,
-textarea::selection {
+::selection {
     background: #a1bb68;
 }
 
